@@ -20,10 +20,10 @@
   "rich-text#hello-vtex": {
     "title": "Text of MOBILE",
     "props": {
-      "text": "Éxisto en Tablet y Phone -->> VTEX Store Framework",
+      "text": "Éxisto en Tablet y Phone -->> VTEX Store Framework - Roboto Font",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-3"
+      "font": "t-heading-1"
     }
   }
 }

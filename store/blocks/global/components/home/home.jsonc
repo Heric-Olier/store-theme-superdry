@@ -6,18 +6,22 @@
     ],
     "props": {
       "marginTop": 10,
-      "border": ["all"],
-      "borderWidth": 1,
-      "borderColor": "success"
+      "paddingTop": 10,
+      "paddingBottom": 10,
+      // "border": ["all"],
+      // "borderWidth": 1,
+      // "borderColor": "emphasis",
+      "blockClass": "home__section"
     }
   },
 
   "rich-text#home__section--global": {
     "title": "Text Favorites",
     "props": {
-      "blockClass": "",
-      "text": "Soy un texto que vive en Desktop, Tablet y Phone :D",
-      "font": "t-heading-1",
+      "blockClass": "home__section--global",
+      "text": "Soy un texto que vive en Desktop, Tablet y Phone :D - Poppins Font",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-3",
       "textAlignment": "CENTER",
       "textPosition": "CENTER"
     }
