@@ -1,0 +1,34 @@
+.link--link__disscount__promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.label--link__disscount__promo {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.25s ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.label--link__disscount__promo:hover {
+    color: #000000;
+}
+
+
+

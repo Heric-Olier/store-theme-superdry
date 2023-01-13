@@ -1,0 +1,104 @@
+{
+
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "title": "Header Desktop",
+    "children": [
+      "header-row#header__top"
+    ]
+  },
+  "header-layout.mobile": {
+    "title": "Header Mobile",
+    "children": [
+      "header-row#header__top",
+      "header-row#header__middle"
+    ]
+  },
+  "header-row#header__top": {
+    "title": "Header Superior",
+    "children": [
+      "flex-layout.row#header__top--disccount",
+      "logo#header__top--logo",
+      "header-spacer",
+      "search-bar",
+      "header-spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header__top",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#header__top--disccount": {
+    "title": "Header Superior descuento",
+    "children": [
+      "link#header__top--disccount"
+    ],
+    "props": {
+      "blockClass": "header__top--disccount",
+      "fullWidth": true
+    }
+  },
+  "logo#header__top--logo": {
+    "title": "logo",
+    "props": {
+      "url": "assets/img/logo.png",
+      "href": "/",
+      "width": 180,
+      "blockClass": "header__top--logo"
+    }
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "¿Qué estás buscando?",
+      "blockClass": "search-bar-mod"
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true,
+      "iconLabel": "Mi cuenta"
+    }
+  },
+  "header-row#header__middle": {
+    "title": "Header Medio",
+    "children": [
+      "drawer#header__mobile-menu"
+    ],
+    "props": {
+      "blockClass": "header__middle"
+    }
+  },
+  "link#header__top--disccount": {
+    "title": "Link de descuento",
+    "props": {
+      "blockClass": "link__disscount__promo",
+      "href": "/sale",
+      "label": "SALE Hasta 50% OFF en ref seleccionadas 🚚",
+      "openNewTab": false
+    }
+  },
+  "drawer#header__mobile-menu": {
+    "title": "Mobile Menu",
+    "children": []
+  }
+}

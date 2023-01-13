@@ -1,0 +1,17 @@
+.profileIcon {
+    color: #fb441f;
+}
+
+.profileIcon:hover {
+    color: #FF6307;
+}
+
+.label {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.accesCodeOptionBtn {
+    color: #fb441f !important;
+}
