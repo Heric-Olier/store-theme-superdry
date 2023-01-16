@@ -1,5 +1,4 @@
 {
-
   "header": {
     "blocks": [
       "header-layout.desktop",
@@ -15,42 +14,31 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
-      "header-row#header__top"
+      "header-row#header__top",
+      "header-row#header__middle",
+      "header-row#header__bottom"
     ]
   },
   "header-layout.mobile": {
     "title": "Header Mobile",
     "children": [
       "header-row#header__top",
-      "header-row#header__middle"
+      // "header-row#header__middle",
+      "header-row#header__middle--mobile",
+      "header-row#header__middle--mobile--search-bar"
+      // "header-row#header__bottom"
     ]
   },
   "header-row#header__top": {
     "title": "Header Superior",
     "children": [
-      "flex-layout.row#header__top--disccount",
-      "logo#header__top--logo",
-      "header-spacer",
-      "search-bar",
-      "header-spacer",
-      "login",
-      "minicart.v2"
+      "link#header__top--discount"
     ],
     "props": {
-      "blockClass": "header__top",
+      "blockClass": "header__top--discount",
       "fullWidth": true,
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true
-    }
-  },
-  "flex-layout.row#header__top--disccount": {
-    "title": "Header Superior descuento",
-    "children": [
-      "link#header__top--disccount"
-    ],
-    "props": {
-      "blockClass": "header__top--disccount",
-      "fullWidth": true
     }
   },
   "logo#header__top--logo": {
@@ -58,7 +46,7 @@
     "props": {
       "url": "assets/img/logo.png",
       "href": "/",
-      "width": 180,
+      "width": 170,
       "blockClass": "header__top--logo"
     }
   },
@@ -82,16 +70,47 @@
   "header-row#header__middle": {
     "title": "Header Medio",
     "children": [
-      "drawer#header__mobile-menu"
+      // "drawer#header__mobile-menu",
+      "logo#header__top--logo",
+      "header-spacer",
+      "search-bar",
+      "header-spacer",
+      "login",
+      "minicart.v2"
     ],
     "props": {
-      "blockClass": "header__middle"
+      "blockClass": "header__middle",
+      "fullWidth": true
     }
   },
-  "link#header__top--disccount": {
+  "header-row#header__middle--mobile": {
+    "title": "Header Medio Mobile",
+    "children": [
+      "drawer#header__mobile-menu",
+      "logo#header__top--logo",
+      "header-spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header__middle--mobile",
+      "fullWidth": true
+    }
+  },
+  "header-row#header__middle--mobile--search-bar": {
+    "title": "Header Medio Mobile Search Bar",
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "header__middle--mobile--search-bar",
+      "fullWidth": true
+    }
+  },
+  "link#header__top--discount": {
     "title": "Link de descuento",
     "props": {
-      "blockClass": "link__disscount__promo",
+      "blockClass": "link__discount--promo",
       "href": "/sale",
       "label": "SALE Hasta 50% OFF en ref seleccionadas 🚚",
       "openNewTab": false
@@ -99,6 +118,338 @@
   },
   "drawer#header__mobile-menu": {
     "title": "Mobile Menu",
-    "children": []
+    "children": [
+      "menu#header__mobile-menu--menu"
+    ],
+    "props": {
+      "title": "Mobile-Menu",
+      "blockClass": "header__mobile-menu",
+      "fullWidth": true
+    }
+  },
+  "menu#header__mobile-menu--menu": {
+    "title": "Menu",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "header__mobile-menu--menu",
+      "fullWidth": true
+    },
+    "children": [
+      "menu-item#category__one",
+      "menu-item#category__two"
+    ]
+  },
+  "menu-item#category__one": {
+    "title": "Menu Item Category One",
+    "props": {
+      "id": "category__one",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/category/one",
+        "tagTitle": "Category One Tag",
+        "text": "Category One Text",
+        "label": "Category One",
+        "blockClass": "category__one"
+      }
+    }
+  },
+  "menu-item#category__two": {
+    "title": "Menu Item Category Two",
+    "props": {
+      "id": "category__two",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/category/two",
+        "tagTitle": "Category Two Tag",
+        "text": "Category Two Text",
+        "label": "Category Two",
+        "blockClass": "category__two"
+      }
+    }
+  },
+  "header-row#header__bottom": {
+    // Parte inferior del header en desktop
+    "title": "Header Inferior",
+    "children": [
+      "vtex.menu@2.x:menu#header__bottom--menu"
+    ],
+    "props": {
+      "blockClass": "header__bottom",
+      "fullWidth": true
+    }
+  },
+  "vtex.menu@2.x:menu#header__bottom--menu": {
+    // Menu de la parte inferior del header en desktop
+    "title": "Menu",
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "header__bottom--menu",
+      "fullWidth": true
+    },
+    "children": [
+      "menu-item#department__man",
+      "menu-item#department__woman",
+      "menu-item#department__news",
+      "header-spacer",
+      "menu-item#department__sustainable",
+      "menu-item#department__topproducts",
+      "menu-item#department__sale"
+    ]
+  },
+
+  "menu-item#department__man": {
+    "props": {
+      "id": "department__man",
+      "type": "custom",
+      "fullWidth": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre",
+        "tagTitle": "item hombre",
+        "text": "HOMBRE",
+        "label": "Hombre",
+        "blockClass": "menu__item--man",
+        "showSubmenu": true,
+        "fullWidth": true,
+        "noFollow": false,
+        "openNewTab": false
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department__man"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department__man": {
+    "children": [
+      "menu#department__man"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenu__department",
+      "fullWidth": true
+    }
+  },
+  "menu#department__man": {
+    "children": [
+      "menu-item#category__new-season",
+      "menu-item#category__winter-clothes",
+      "menu-item#category__upper-clothes",
+      "menu-item#category__bottom-clothes",
+      "menu-item#category__accessories",
+      "menu-item#category__shoes"
+    ]
+  },
+  "menu-item#category__new-season": {
+    "props": {
+      "id": "category-newseason",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre",
+        "tagTitle": "item Nueva temporada",
+        "text": "NUEVA TEMPORADA",
+        "label": "Nueva temporada",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true,
+        "openNewTab": false
+      }
+    }
+  },
+  "menu-item#category__winter-clothes": {
+    "props": {
+      "id": "category-winter-clothes",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prendas-de-abrigo",
+        "tagTitle": "item prendas de abrigo",
+        "text": "PRENDAS DE ABRIGO",
+        "label": "Prendas de abrigo",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    },
+    "children": [
+      "menu#category__winter-clothes"
+    ]
+  },
+  "menu#category__winter-clothes": {
+    "children": [
+      "menu-item#category__winter-clothes__jackets",
+      "menu-item#category__winter-clothes__sweaters"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
+    }
+  },
+  "menu-item#category__winter-clothes__jackets": {
+    "props": {
+      "id": "category-winter-clothes-jackets",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/abrigos",
+        "tagTitle": "item abrigos",
+        "text": "Chaquetas",
+        "label": "Chaquetas",
+        "blockClass": "menu__item-category",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__winter-clothes__sweaters": {
+    "props": {
+      "id": "category-winter-clothes-sweaters",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/buzos",
+        "tagTitle": "item Buzos",
+        "text": "Buzos",
+        "label": "Buzos",
+        "blockClass": "menu__item-category",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__upper-clothes": {
+    "props": {
+      "id": "category-upper-clothes",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prendas-superiores",
+        "tagTitle": "item prendas superiores",
+        "text": "PRENDAS SUPERIORES",
+        "label": "Prendas superiores",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__bottom-clothes": {
+    "props": {
+      "id": "category-bottom-clothes",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prendas-inferiores",
+        "tagTitle": "item prendas inferiores",
+        "text": "PRENDAS INFERIORES",
+        "label": "Prendas inferiores",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__accessories": {
+    "props": {
+      "id": "category-accessories",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/accesorios",
+        "tagTitle": "item accesorios",
+        "text": "ACCESORIOS",
+        "label": "Accesorios",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__shoes": {
+    "props": {
+      "id": "category-shoes",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/zapatos",
+        "tagTitle": "item sale",
+        "text": "ZAPATOS",
+        "label": "Zapatos",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    }
+  },
+
+  "menu-item#department__woman": {
+    "props": {
+      "id": "item-woman",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer",
+        "tagTitle": "item Mujer",
+        "text": "MUJER",
+        "label": "Mujer",
+        "blockClass": "menu__item--woman"
+      }
+    }
+  },
+  "menu-item#department__news": {
+    "props": {
+      "id": "item-news",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/Novedades",
+        "tagTitle": "item Novedades",
+        "text": "NOVEDADES",
+        "label": "Novedades",
+        "blockClass": "menu__item--news"
+      }
+    }
+  },
+  "menu-item#department__sustainable": {
+    "props": {
+      "id": "item-sustainable",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/sostenible",
+        "tagTitle": "item Sostenible",
+        "text": "SOSTENIBLE",
+        "label": "Sostenible",
+        "blockClass": "menu__item--sustainable"
+      }
+    }
+  },
+  "menu-item#department__topproducts": {
+    "props": {
+      "id": "item-topproducts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/productos-top",
+        "tagTitle": "item Top Products",
+        "text": "PRODUCTOS TOP",
+        "label": "Productos Top",
+        "blockClass": "menu__item--topproducts"
+      }
+    }
+  },
+  "menu-item#department__sale": {
+    "props": {
+      "id": "item-sale",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/sale",
+        "tagTitle": "item Sale",
+        "text": "SALE",
+        "label": "Sale",
+        "blockClass": "menu__item--sale"
+      }
+    }
+  },
+  "header-spacer": {
+    "props": {
+      "blockClass": "header__spacer"
+    }
   }
 }

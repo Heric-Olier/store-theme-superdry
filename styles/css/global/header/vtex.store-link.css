@@ -1,15 +1,11 @@
-.link--link__disscount__promo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
 
-.label--link__disscount__promo {
+.link--link__discount--promo {
     color: #ffffff;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
     transition: all 0.25s ease-in-out;
     animation: pulse 2s infinite;
 }
@@ -26,7 +22,7 @@
     }
 }
 
-.label--link__disscount__promo:hover {
+.link--link__discount--promo:hover {
     color: #000000;
 }
 

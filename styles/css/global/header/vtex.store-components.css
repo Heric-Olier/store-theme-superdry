@@ -3,3 +3,11 @@
     padding: 0 1rem;
     margin-right: -1rem;
 }
+
+
+
+.logoLink--header__top--logo,
+.logoImage--header__top--logo{
+    padding-right: 1rem;
+
+}
