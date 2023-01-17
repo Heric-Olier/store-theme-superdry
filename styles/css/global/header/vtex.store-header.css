@@ -23,5 +23,6 @@
 .headerRowContainer--header__bottom {
     background-color: #f7f7f7;
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
-    padding: 6px;
+    display: flex;
+    align-items: center;
 }

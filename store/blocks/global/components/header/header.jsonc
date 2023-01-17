@@ -199,11 +199,15 @@
     ]
   },
 
+//<----------TODO MENU HOMBRE --------->//
+
   "menu-item#department__man": {
+    "title": "Menu Item Hombre",
     "props": {
       "id": "department__man",
       "type": "custom",
       "fullWidth": true,
+      "blockClass": "menu__item",
       "itemProps": {
         "type": "internal",
         "href": "/hombre",
@@ -227,24 +231,26 @@
     ],
     "props": {
       "orientation": "vertical",
-      "blockClass": "submenu__department",
+      "blockClass": "submenu__department--test",
       "fullWidth": true
     }
   },
   "menu#department__man": {
     "children": [
-      "menu-item#category__new-season",
-      "menu-item#category__winter-clothes",
-      "menu-item#category__upper-clothes",
-      "menu-item#category__bottom-clothes",
-      "menu-item#category__accessories",
-      "menu-item#category__shoes"
+      "menu-item#category__new-season-man",
+      "menu-item#category__winter-clothes-man",
+      "menu-item#category__upper-clothes-man",
+      "menu-item#category__bottom-clothes-man",
+      "menu-item#category__accessories-man",
+      "menu-item#category__shoes-man"
     ]
   },
-  "menu-item#category__new-season": {
+  "menu-item#category__new-season-man": {
+    "title": "Menu Item Nueva temporada",
     "props": {
       "id": "category-newseason",
       "type": "custom",
+      "blockClass": "main__menu--category",
       "itemProps": {
         "type": "internal",
         "href": "/hombre",
@@ -257,10 +263,15 @@
       }
     }
   },
-  "menu-item#category__winter-clothes": {
+
+  //<---------- MENU PRENDAS DE ABRIGO HOMBRE --------->//
+
+  "menu-item#category__winter-clothes-man": {
+    "title": "Menu Item Prendas de abrigo",
     "props": {
-      "id": "category-winter-clothes",
+      "id": "category-winter-clothes-man",
       "type": "custom",
+      "blockClass": "main__menu--category",
       "itemProps": {
         "type": "internal",
         "href": "/hombre/prendas-de-abrigo",
@@ -272,13 +283,13 @@
       }
     },
     "children": [
-      "menu#category__winter-clothes"
+      "menu#category__winter-clothes-man"
     ]
   },
-  "menu#category__winter-clothes": {
+  "menu#category__winter-clothes-man": {
     "children": [
-      "menu-item#category__winter-clothes__jackets",
-      "menu-item#category__winter-clothes__sweaters"
+      "menu-item#category__winter-clothes__jackets-man",
+      "menu-item#category__winter-clothes__sweaters-man"
     ],
     "props": {
       "orientation": "vertical",
@@ -286,40 +297,47 @@
       "fullWidth": true
     }
   },
-  "menu-item#category__winter-clothes__jackets": {
+  "menu-item#category__winter-clothes__jackets-man": {
+    "title": "Menu Item Chaquetas",
     "props": {
-      "id": "category-winter-clothes-jackets",
+      "id": "category-winter-clothes-jackets-man",
       "type": "custom",
+      "blockClass": "menu__item-category",
       "itemProps": {
         "type": "internal",
-        "href": "/hombre/abrigos",
+        "href": "/hombre/prendas-de-abrigo/abrigos",
         "tagTitle": "item abrigos",
         "text": "Chaquetas",
         "label": "Chaquetas",
-        "blockClass": "menu__item-category",
         "noFollow": true
       }
     }
   },
-  "menu-item#category__winter-clothes__sweaters": {
+  "menu-item#category__winter-clothes__sweaters-man": {
+    "title": "Menu Item Buzos",
     "props": {
-      "id": "category-winter-clothes-sweaters",
+      "id": "category-winter-clothes-sweaters-man",
       "type": "custom",
+      "blockClass": "menu__item-category",
       "itemProps": {
         "type": "internal",
-        "href": "/hombre/buzos",
+        "href": "/hombre/prendas-de-abrigo/buzos",
         "tagTitle": "item Buzos",
         "text": "Buzos",
         "label": "Buzos",
-        "blockClass": "menu__item-category",
         "noFollow": true
       }
     }
   },
-  "menu-item#category__upper-clothes": {
+
+  //<---------- MENU PRENDAS SUPERIORES HOMBRE --------->//
+
+  "menu-item#category__upper-clothes-man": {
+    "title": "Menu Item Prendas superiores",
     "props": {
-      "id": "category-upper-clothes",
+      "id": "category-upper-clothes-man",
       "type": "custom",
+      "blockClass": "main__menu--category",
       "itemProps": {
         "type": "internal",
         "href": "/hombre/prendas-superiores",
@@ -329,12 +347,80 @@
         "blockClass": "main__menu--item-category",
         "noFollow": true
       }
+    },
+    "children": [
+      "menu#category__upper-clothes-man"
+    ]
+  },
+  "menu#category__upper-clothes-man": {
+    "children": [
+      "menu-item#category__upper-clothes__tshirts-man",
+      "menu-item#category__upper-clothes__shirts-man",
+      "menu-item#category__upper-clothes__polo-man"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
     }
   },
-  "menu-item#category__bottom-clothes": {
+  "menu-item#category__upper-clothes__tshirts-man": {
+    "title": "Menu Item Camisetas",
     "props": {
-      "id": "category-bottom-clothes",
+      "id": "category-upper-clothes-tshirts-man",
       "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prensas-superiores/camisetas",
+        "tagTitle": "item camisetas",
+        "text": "Camisetas",
+        "label": "Camisetas",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__upper-clothes__shirts-man": {
+    "title": "Menu Item Camisas",
+    "props": {
+      "id": "category-upper-clothes-shirts-man",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prensas-superiores/camisas",
+        "tagTitle": "item camisas",
+        "text": "Camisas",
+        "label": "Camisas",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__upper-clothes__polo-man": {
+    "title": "Menu Item Polos",
+    "props": {
+      "id": "category-upper-clothes-polos-man",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prensas-superiores/polos",
+        "tagTitle": "item polos",
+        "text": "Polos",
+        "label": "Polos",
+        "noFollow": true
+      }
+    }
+  },
+
+  //<---------- MENU PRENDAS INFERIORES HOMBRE --------->//
+
+  "menu-item#category__bottom-clothes-man": {
+    "title": "Menu Item Prendas inferiores",
+    "props": {
+      "id": "category-bottom-clothes-man",
+      "type": "custom",
+      "blockClass": "main__menu--category",
       "itemProps": {
         "type": "internal",
         "href": "/hombre/prendas-inferiores",
@@ -344,12 +430,97 @@
         "blockClass": "main__menu--item-category",
         "noFollow": true
       }
+    },
+    "children": [
+      "menu#category__bottom-clothes-man"
+    ]
+  },
+  "menu#category__bottom-clothes-man": {
+    "children": [
+      "menu-item#category__bottom-clothes__jeans-man",
+      "menu-item#category__bottom-clothes__pants-man",
+      "menu-item#category__bottom-clothes__bermuda-man",
+      "menu-item#category__bottom-clothes__swimsuits-man"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
     }
   },
-  "menu-item#category__accessories": {
+  "menu-item#category__bottom-clothes__jeans-man": {
+    "title": "Menu Item Jeans",
     "props": {
-      "id": "category-accessories",
+      "id": "category-bottom-clothes-jeans-man",
       "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prendas-inferiores/jeans",
+        "tagTitle": "item jeans",
+        "text": "Jeans",
+        "label": "Jeans",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__bottom-clothes__pants-man": {
+    "title": "Menu Item Pantalones",
+    "props": {
+      "id": "category-bottom-clothes-pants-man",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prendas-inferiores/pantalones",
+        "tagTitle": "item pantalones",
+        "text": "Pantalones",
+        "label": "Pantalones",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__bottom-clothes__bermuda-man": {
+    "title": "Menu Item Bermuda",
+    "props": {
+      "id": "category-bottom-clothes-bermuda-man",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prendas-inferiores/bermudas",
+        "tagTitle": "item bermudas",
+        "text": "Bermudas",
+        "label": "Bermudas",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__bottom-clothes__swimsuits-man": {
+    "title": "Menu Item Trajes de baño",
+    "props": {
+      "id": "category-bottom-clothes-swimsuits-man",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/prendas-inferiores/trajes-de-bano",
+        "tagTitle": "item trajes de baño",
+        "text": "Trajes de baño",
+        "label": "Trajes de baño",
+        "noFollow": true
+      }
+    }
+  },
+
+  //<---------- MENU ACCESORIOS HOMBRE --------->//
+
+  "menu-item#category__accessories-man": {
+    "title": "Menu Item Accesorios",
+    "props": {
+      "id": "category-accessories-man",
+      "type": "custom",
+      "blockClass": "main__menu--category",
       "itemProps": {
         "type": "internal",
         "href": "/hombre/accesorios",
@@ -359,12 +530,80 @@
         "blockClass": "main__menu--item-category",
         "noFollow": true
       }
+    },
+    "children": [
+      "menu#category__accessories-man"
+    ]
+  },
+  "menu#category__accessories-man": {
+    "children": [
+      "menu-item#category__accessories__bags-man",
+      "menu-item#category__accessories__underwear-man",
+      "menu-item#category__accessories__accessories-man"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
     }
   },
-  "menu-item#category__shoes": {
+  "menu-item#category__accessories__bags-man": {
+    "title": "Menu Item Bolsos",
     "props": {
-      "id": "category-shoes",
+      "id": "category-accessories-bags-man",
       "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/accesorios/bolsos",
+        "tagTitle": "item bolsos",
+        "text": "Bolsos",
+        "label": "Bolsos",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__accessories__underwear-man": {
+    "title": "Menu Item Ropa interior",
+    "props": {
+      "id": "category-accessories-underwear-man",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/accesorios/ropa-interior",
+        "tagTitle": "item ropa interior",
+        "text": "Ropa interior",
+        "label": "Ropa interior",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__accessories__accessories-man": {
+    "title": "Menu Item Accesorios",
+    "props": {
+      "id": "category-accessories-accessories-man",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/accesorios/accesorios",
+        "tagTitle": "item accesorios",
+        "text": "Accesorios",
+        "label": "Accesorios",
+        "noFollow": true
+      }
+    }
+  },
+
+  //<---------- MENU ZAPATOS HOMBRE --------->//
+
+  "menu-item#category__shoes-man": {
+    "title": "Menu Item Zapatos",
+    "props": {
+      "id": "category-shoes-man",
+      "type": "custom",
+      "blockClass": "main__menu--category",
       "itemProps": {
         "type": "internal",
         "href": "/hombre/zapatos",
@@ -374,13 +613,63 @@
         "blockClass": "main__menu--item-category",
         "noFollow": true
       }
+    },
+    "children": [
+      "menu#category__shoes-man"
+    ]
+  },
+  "menu#category__shoes-man": {
+    "children": [
+      "menu-item#category__shoes__tenis-man",
+      "menu-item#category__shoes__sandalias-man"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
+    }
+  },
+  "menu-item#category__shoes__tenis-man": {
+    "title": "Menu Item Tenis",
+    "props": {
+      "id": "category-shoes-tenis-man",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/zapatos/tenis",
+        "tagTitle": "item tenis",
+        "text": "Tenis",
+        "label": "Tenis",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__shoes__sandalias-man": {
+    "title": "Menu Item Sandalias",
+    "props": {
+      "id": "category-shoes-sandalias-man",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/hombre/zapatos/sandalias",
+        "tagTitle": "item sandalias",
+        "text": "Sandalias",
+        "label": "Sandalias",
+        "noFollow": true
+      }
     }
   },
 
+  //<----------TODO MENU MUJER --------->//
+
   "menu-item#department__woman": {
+    "title": "Menu Item Mujer",
     "props": {
       "id": "item-woman",
       "type": "custom",
+      "blockClass": "menu__item",
       "itemProps": {
         "type": "internal",
         "href": "/mujer",
@@ -389,12 +678,456 @@
         "label": "Mujer",
         "blockClass": "menu__item--woman"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department__woman"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department__woman": {
+    "children": [
+      "menu#department__woman"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenu__department",
+      "fullWidth": true
     }
   },
+  "menu#department__woman": {
+    "children": [
+      "menu-item#category__new-season-woman",
+      "menu-item#category__winter-clothes-woman",
+      "menu-item#category__upper-clothes-woman",
+      "menu-item#category__bottom-clothes-woman",
+      "menu-item#category__accessories-woman",
+      "menu-item#category__shoes-woman"
+    ]
+  },
+  "menu-item#category__new-season-woman": {
+    "title": "Menu Item Nueva temporada",
+    "props": {
+      "id": "category-newseason",
+      "type": "custom",
+      "blockClass": "main__menu--category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer",
+        "tagTitle": "item Nueva temporada",
+        "text": "NUEVA TEMPORADA",
+        "label": "Nueva temporada",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true,
+        "openNewTab": false
+      }
+    }
+  },
+
+  //<---------- MENU PRENDAS DE ABRIGO MUJER --------->//
+
+  "menu-item#category__winter-clothes-woman": {
+    "title": "Menu Item Prendas de abrigo",
+    "props": {
+      "id": "category-winter-clothes-woman",
+      "type": "custom",
+      "blockClass": "main__menu--category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prendas-de-abrigo",
+        "tagTitle": "item prendas de abrigo",
+        "text": "PRENDAS DE ABRIGO",
+        "label": "Prendas de abrigo",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    },
+    "children": [
+      "menu#category__winter-clothes-woman"
+    ]
+  },
+  "menu#category__winter-clothes-woman": {
+    "children": [
+      "menu-item#category__winter-clothes__jackets-woman",
+      "menu-item#category__winter-clothes__sweaters-woman"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
+    }
+  },
+  "menu-item#category__winter-clothes__jackets-woman": {
+    "title": "Menu Item Chaquetas",
+    "props": {
+      "id": "category-winter-clothes-jackets-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prendas-de-abrigo/abrigos",
+        "tagTitle": "item abrigos",
+        "text": "Chaquetas",
+        "label": "Chaquetas",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__winter-clothes__sweaters-woman": {
+    "title": "Menu Item Buzos",
+    "props": {
+      "id": "category-winter-clothes-sweaters-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prendas-de-abrigo/buzos",
+        "tagTitle": "item Buzos",
+        "text": "Buzos",
+        "label": "Buzos",
+        "noFollow": true
+      }
+    }
+  },
+
+  //<---------- MENU PRENDAS SUPERIORES MUJER --------->//
+
+  "menu-item#category__upper-clothes-woman": {
+    "title": "Menu Item Prendas superiores",
+    "props": {
+      "id": "category-upper-clothes-woman",
+      "type": "custom",
+      "blockClass": "main__menu--category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prendas-superiores",
+        "tagTitle": "item prendas superiores",
+        "text": "PRENDAS SUPERIORES",
+        "label": "Prendas superiores",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    },
+    "children": [
+      "menu#category__upper-clothes-woman"
+    ]
+  },
+  "menu#category__upper-clothes-woman": {
+    "children": [
+      "menu-item#category__upper-clothes__tshirts-woman",
+      "menu-item#category__upper-clothes__shirts-woman",
+      "menu-item#category__upper-clothes__polo-woman"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
+    }
+  },
+  "menu-item#category__upper-clothes__tshirts-woman": {
+    "title": "Menu Item Camisetas",
+    "props": {
+      "id": "category-upper-clothes-tshirts-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prensas-superiores/camisetas",
+        "tagTitle": "item camisetas",
+        "text": "Camisetas",
+        "label": "Camisetas",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__upper-clothes__shirts-woman": {
+    "title": "Menu Item Camisas",
+    "props": {
+      "id": "category-upper-clothes-shirts-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prensas-superiores/camisas",
+        "tagTitle": "item camisas",
+        "text": "Camisas",
+        "label": "Camisas",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__upper-clothes__polo-woman": {
+    "title": "Menu Item Polos",
+    "props": {
+      "id": "category-upper-clothes-polos-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prensas-superiores/polos",
+        "tagTitle": "item polos",
+        "text": "Polos",
+        "label": "Polos",
+        "noFollow": true
+      }
+    }
+  },
+
+  //<---------- MENU PRENDAS INFERIORES MUJER --------->//
+
+  "menu-item#category__bottom-clothes-woman": {
+    "title": "Menu Item Prendas inferiores",
+    "props": {
+      "id": "category-bottom-clothes-woman",
+      "type": "custom",
+      "blockClass": "main__menu--category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prendas-inferiores",
+        "tagTitle": "item prendas inferiores",
+        "text": "PRENDAS INFERIORES",
+        "label": "Prendas inferiores",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    },
+    "children": [
+      "menu#category__bottom-clothes-woman"
+    ]
+  },
+  "menu#category__bottom-clothes-woman": {
+    "children": [
+      "menu-item#category__bottom-clothes__jeans-woman",
+      "menu-item#category__bottom-clothes__pants-woman",
+      "menu-item#category__bottom-clothes__bermuda-woman",
+      "menu-item#category__bottom-clothes__swimsuits-woman"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
+    }
+  },
+  "menu-item#category__bottom-clothes__jeans-woman": {
+    "title": "Menu Item Jeans",
+    "props": {
+      "id": "category-bottom-clothes-jeans-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prendas-inferiores/jeans",
+        "tagTitle": "item jeans",
+        "text": "Jeans",
+        "label": "Jeans",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__bottom-clothes__pants-woman": {
+    "title": "Menu Item Pantalones",
+    "props": {
+      "id": "category-bottom-clothes-pants-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prendas-inferiores/pantalones",
+        "tagTitle": "item pantalones",
+        "text": "Pantalones",
+        "label": "Pantalones",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__bottom-clothes__bermuda-woman": {
+    "title": "Menu Item Bermuda",
+    "props": {
+      "id": "category-bottom-clothes-bermuda-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prendas-inferiores/bermudas",
+        "tagTitle": "item bermudas",
+        "text": "Bermudas",
+        "label": "Bermudas",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__bottom-clothes__swimsuits-woman": {
+    "title": "Menu Item Trajes de baño",
+    "props": {
+      "id": "category-bottom-clothes-swimsuits-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/prendas-inferiores/trajes-de-bano",
+        "tagTitle": "item trajes de baño",
+        "text": "Trajes de baño",
+        "label": "Trajes de baño",
+        "noFollow": true
+      }
+    }
+  },
+
+  //<---------- MENU ACCESORIOS MUJER --------->//
+
+  "menu-item#category__accessories-woman": {
+    "title": "Menu Item Accesorios",
+    "props": {
+      "id": "category-accessories-woman",
+      "type": "custom",
+      "blockClass": "main__menu--category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/accesorios",
+        "tagTitle": "item accesorios",
+        "text": "ACCESORIOS",
+        "label": "Accesorios",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    },
+    "children": [
+      "menu#category__accessories-woman"
+    ]
+  },
+  "menu#category__accessories-woman": {
+    "children": [
+      "menu-item#category__accessories__bags-woman",
+      "menu-item#category__accessories__underwear-woman",
+      "menu-item#category__accessories__accessories-woman"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
+    }
+  },
+  "menu-item#category__accessories__bags-woman": {
+    "title": "Menu Item Bolsos",
+    "props": {
+      "id": "category-accessories-bags-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/accesorios/bolsos",
+        "tagTitle": "item bolsos",
+        "text": "Bolsos",
+        "label": "Bolsos",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__accessories__underwear-woman": {
+    "title": "Menu Item Ropa interior",
+    "props": {
+      "id": "category-accessories-underwear-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/accesorios/ropa-interior",
+        "tagTitle": "item ropa interior",
+        "text": "Ropa interior",
+        "label": "Ropa interior",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__accessories__accessories-woman": {
+    "title": "Menu Item Accesorios",
+    "props": {
+      "id": "category-accessories-accessories-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/accesorios/accesorios",
+        "tagTitle": "item accesorios",
+        "text": "Accesorios",
+        "label": "Accesorios",
+        "noFollow": true
+      }
+    }
+  },
+
+  //<---------- MENU ZAPATOS MUJER --------->//
+
+  "menu-item#category__shoes-woman": {
+    "title": "Menu Item Zapatos",
+    "props": {
+      "id": "category-shoes-woman",
+      "type": "custom",
+      "blockClass": "main__menu--category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/zapatos",
+        "tagTitle": "item sale",
+        "text": "ZAPATOS",
+        "label": "Zapatos",
+        "blockClass": "main__menu--item-category",
+        "noFollow": true
+      }
+    },
+    "children": [
+      "menu#category__shoes-woman"
+    ]
+  },
+  "menu#category__shoes-woman": {
+    "children": [
+      "menu-item#category__shoes__tenis-woman",
+      "menu-item#category__shoes__sandalias-woman"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
+    }
+  },
+  "menu-item#category__shoes__tenis-woman": {
+    "title": "Menu Item Tenis",
+    "props": {
+      "id": "category-shoes-tenis-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/zapatos/tenis",
+        "tagTitle": "item tenis",
+        "text": "Tenis",
+        "label": "Tenis",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__shoes__sandalias-woman": {
+    "title": "Menu Item Sandalias",
+    "props": {
+      "id": "category-shoes-sandalias-woman",
+      "type": "custom",
+      "blockClass": "menu__item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer/zapatos/sandalias",
+        "tagTitle": "item sandalias",
+        "text": "Sandalias",
+        "label": "Sandalias",
+        "noFollow": true
+      }
+    }
+  },
+
+  //<---------- MENU NOVEDADES  --------->//
+
   "menu-item#department__news": {
+    "title": "Menu Item Novedades",
     "props": {
       "id": "item-news",
       "type": "custom",
+      "blockClass": "menu__item",
       "itemProps": {
         "type": "internal",
         "href": "/Novedades",
@@ -403,12 +1136,88 @@
         "label": "Novedades",
         "blockClass": "menu__item--news"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department__news"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department__news": {
+    "children": [
+      "menu#category__news"
+    ]
+  },
+  "menu#category__news": {
+    "children": [
+      "menu-item#category__news--newseasonman",
+      "menu-item#category__news--newseasonwoman",
+      "menu-item#category__news--allnewseason"
+    ],
+    "props": {
+      "orientation": "vertical",
+      // "blockClass": "submenu__category",
+      "fullWidth": true
     }
   },
+  "menu-item#category__news--newseasonman": {
+    "title": "Menu Item Nueva temporada para hombre",
+    "props": {
+      "id": "category-news-newseasonman",
+      "type": "custom",
+      "blockClass": "main__menu--category-news",
+      "itemProps": {
+        "type": "internal",
+        "href": "/novedades/hombre",
+        "tagTitle": "item novedades hombre",
+        "text": "NUEVA TEMPORADA PARA HOMBRE",
+        "label": "Hombre",
+        "blockClass": "menu__item-category",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__news--newseasonwoman": {
+    "title": "Menu Item Nueva temporada para mujer",
+    "props": {
+      "id": "category-news-newseasonwoman",
+      "type": "custom",
+      "blockClass": "main__menu--category-news",
+      "itemProps": {
+        "type": "internal",
+        "href": "/novedades/mujer",
+        "tagTitle": "item novedades mujer",
+        "text": "NUEVA TEMPORADA PARA MUJER",
+        "label": "Mujer",
+        "blockClass": "menu__item-category",
+        "noFollow": true
+      }
+    }
+  },
+  "menu-item#category__news--allnewseason": {
+    "title": "Menu Item Toda la nueva temporada",
+    "props": {
+      "id": "category-news-allnewseason",
+      "type": "custom",
+      "blockClass": "main__menu--category-news",
+      "itemProps": {
+        "type": "internal",
+        "href": "/novedades",
+        "tagTitle": "item novedades todos",
+        "text": "TODA LA NUEVA TEMPORADA",
+        "label": "Todos",
+        "blockClass": "menu__item-category",
+        "noFollow": true
+      }
+    }
+  },
+
+  //<---------- MENU SOSTENIBLE --------->//
+
   "menu-item#department__sustainable": {
+    "title": "Menu Item Sostenible",
     "props": {
       "id": "item-sustainable",
       "type": "custom",
+      "blockClass": "menu__item",
       "itemProps": {
         "type": "internal",
         "href": "/sostenible",
@@ -419,10 +1228,15 @@
       }
     }
   },
+
+  //<---------- MENU TOP PRODUCTS --------->//
+
   "menu-item#department__topproducts": {
+    "title": "Menu Item Top Products",
     "props": {
       "id": "item-topproducts",
       "type": "custom",
+      "blockClass": "menu__item",
       "itemProps": {
         "type": "internal",
         "href": "/productos-top",
@@ -433,10 +1247,15 @@
       }
     }
   },
+
+  //<---------- MENU SALE --------->//
+
   "menu-item#department__sale": {
+    "title": "Menu Item Sale",
     "props": {
       "id": "item-sale",
       "type": "custom",
+      "blockClass": "menu__item",
       "itemProps": {
         "type": "internal",
         "href": "/sale",
