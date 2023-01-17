@@ -1,0 +1,30 @@
+
+.link--link__discount--promo {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.link--link__discount--promo:hover {
+    color: #000000;
+}
+
+
+

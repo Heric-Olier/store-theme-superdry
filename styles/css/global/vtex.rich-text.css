@@ -1,3 +1,7 @@
 .paragraph{
     margin: 0px;
 }
+
+.paragraph--text__test {
+    color: #fb441f;
+}
