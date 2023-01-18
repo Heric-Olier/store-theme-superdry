@@ -1,5 +1,38 @@
-/* Example desktop:
-.flexRow--home__section-2 {
-    margin: 50px auto;
+.flexRowContent--home__slider--section-2 {
     max-width: 1200px;
+    margin: 0 auto 10px;
+}
+
+.flexRowContent--mobile__home--slider {
+    margin: 0 auto;
+}
+
+.flexColChild--mobile__home--banner--sale--one,
+.flexColChild--mobile__home--banner--sale--two,
+.flexColChild--mobile__home--banner--sale--three {
+    margin-bottom: 1rem;
+}
+
+.flexRow--home__product-list--section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flexColChild--home__product-list--section {
+    margin: 0 6px;
+}
+
+.flexRow--home__section-7 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flexColChild--home__section-7--one--left,
+.flexColChild--home__section-7--one--right {
+    margin: 0 6px;
+}
+
+/* .flexRowContent--home__sale--section {
+    max-width: 300px;
+    margin: 0 auto 10px;
 } */

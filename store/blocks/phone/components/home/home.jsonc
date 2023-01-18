@@ -7,13 +7,13 @@
   },
 
   "rich-text#phone__section-1": {
-    "title": "Text Favorites",
-    "props": {
-      "blockClass": "",
-      "text": "Favoritos en PHONE",
-      "font": "t-heading-2",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
+    // "title": "Text Favorites",
+    // "props": {
+    //   "blockClass": "",
+    //   "text": "Favoritos en PHONE",
+    //   "font": "t-heading-2",
+    //   "textAlignment": "CENTER",
+    //   "textPosition": "CENTER"
+    // }
   }
 }

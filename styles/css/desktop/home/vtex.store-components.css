@@ -1,0 +1,10 @@
+.imageElement--banner__image--one,
+.imageElement--banner__image--two,
+.imageElement--banner__image--three {
+    max-height: initial !important;
+    width: 100% !important;
+}
+
+.imageElement--home__product-list--section {
+    padding-bottom: 10px;
+}

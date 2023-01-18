@@ -38,7 +38,8 @@
       "blockClass": "header__top--discount",
       "fullWidth": true,
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "sticky": true
     }
   },
   "logo#header__top--logo": {
@@ -80,7 +81,8 @@
     ],
     "props": {
       "blockClass": "header__middle",
-      "fullWidth": true
+      "fullWidth": true,
+      "sticky": true
     }
   },
   "header-row#header__middle--mobile": {
@@ -94,7 +96,8 @@
     ],
     "props": {
       "blockClass": "header__middle--mobile",
-      "fullWidth": true
+      "fullWidth": true,
+      "sticky": true
     }
   },
   "header-row#header__middle--mobile--search-bar": {
