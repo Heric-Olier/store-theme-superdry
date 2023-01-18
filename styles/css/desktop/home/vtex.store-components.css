@@ -8,3 +8,14 @@
 .imageElement--home__product-list--section {
     padding-bottom: 10px;
 }
+
+.imageElement--home__section-7--one,
+.imageElement--home__section-7--two {
+transition: all 0.25s ease-in-out;
+}
+
+.imageElement--home__section-7--one:hover,
+.imageElement--home__section-7--two:hover {
+    filter: brightness(0.6);
+}
+

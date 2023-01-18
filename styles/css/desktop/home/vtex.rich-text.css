@@ -1,0 +1,19 @@
+.paragraph--home__section-7--one--text--top,
+.paragraph--home__section-7--two--text--top {
+    font-size: 3.3rem;
+    font-weight: bold;
+    font-family: "Roboto-Black", sans-serif;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    letter-spacing: -0.05rem;
+    line-height: 0.9;
+    /* margin-bottom: 0.5rem; */
+}
+
+.paragraph--home__section-7--one--text--bottom,
+.paragraph--home__section-7--two--text--bottom {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}

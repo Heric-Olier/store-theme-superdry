@@ -15,3 +15,29 @@
     background-color: #000000;
     color: #fff;
 }
+
+.link--home__section-7--one--button,
+.link--home__section-7--two--button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    width: 12.5rem;
+    height: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transition: all 0.18s ease-in-out;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+}
+
+.link--home__section-7--one--button:hover,
+.link--home__section-7--two--button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}

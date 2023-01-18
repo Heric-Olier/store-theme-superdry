@@ -264,7 +264,7 @@
     "title": "Home Section 7 One left",
     "children": [
       "image#home__section-7--one",
-      "flex-layout.row#home__section-7--one--button"
+      "flex-layout.col#home__section-7--one--button"
     ],
     "props": {
       "blockClass": "home__section-7--one--left"
@@ -278,7 +278,7 @@
       "title": "Home Section 7 One image"
     }
   },
-  "flex-layout.row#home__section-7--one--button": {
+  "flex-layout.col#home__section-7--one--button": {
     "title": "Home Section 7 One button",
     "children": [
       "rich-text#home__section-7--one--top",
@@ -286,7 +286,8 @@
       "link#home__section-7--one--button--buy"
     ],
     "props": {
-      "blockClass": "home__section-7--one--button"
+      "blockClass": "home__section-7--one--button",
+      "colGap": 0
     }
   },
   "rich-text#home__section-7--one--top": {
@@ -317,7 +318,7 @@
     "title": "Home Section 7 One right",
     "children": [
       "image#home__section-7--two",
-      "flex-layout.row#home__section-7--two--button"
+      "flex-layout.col#home__section-7--two--button"
     ],
     "props": {
       "blockClass": "home__section-7--one--right"
@@ -331,7 +332,7 @@
       "title": "Home Section 7 Two image"
     }
   },
-  "flex-layout.row#home__section-7--two--button": {
+  "flex-layout.col#home__section-7--two--button": {
     "title": "Home Section 7 Two button",
     "children": [
       "rich-text#home__section-7--two--top",
@@ -339,7 +340,8 @@
       "link#home__section-7--two--button--buy"
     ],
     "props": {
-      "blockClass": "home__section-7--two--button"
+      "blockClass": "home__section-7--two--button",
+      "orientation": "vertical"
     }
   },
   "rich-text#home__section-7--two--top": {

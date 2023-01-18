@@ -32,6 +32,21 @@
     margin: 0 6px;
 }
 
+.flexCol--home__section-7--one--left,
+.flexCol--home__section-7--one--right {
+    position: relative;
+}
+
+.flexCol--home__section-7--one--button,
+.flexCol--home__section-7--two--button {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    height: 20%;
+    width: 80%;
+    margin: -14% 0 0 -41%;
+}
+
 /* .flexRowContent--home__sale--section {
     max-width: 300px;
     margin: 0 auto 10px;
