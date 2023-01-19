@@ -1,0 +1,108 @@
+{
+  "responsive-layout.mobile#phone__and__tablet--sale--slider": {
+    "title": "Responsive Mobile Slider",
+    "children": [
+      "flex-layout.row#mobile__home--slider--sale--container",
+      "flex-layout.row#home__section--7--mobile"
+    ]
+  },
+
+  "slider-layout#mobile__home--slider--sale": {
+    "title": "Mobile Home Slider Sale",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "home__slider",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "image#product-list-sale--one",
+      "image#product-list-sale--two",
+      "image#product-list-sale--three",
+      "image#product-list-sale--four",
+      "image#product-list-sale--five"
+    ]
+  },
+
+  "flex-layout.row#mobile__home--slider--sale--container": {
+    "title": "Mobile Home Slider Sale Container",
+    "children": [
+      "slider-layout#mobile__home--slider--sale",
+      "flex-layout.row#mobile__home--slider--sale--buttons"
+    ],
+    "props": {
+      "blockClass": "home__slider--mobile--sale--container"
+    }
+  },
+
+  "flex-layout.row#mobile__home--slider--sale--buttons": {
+    "title": "Mobile Home Slider Sale Buttons",
+    "children": [
+      "link#mobile__home--slider--sale--man",
+      "link#mobile__home--slider--sale--woman"
+    ],
+    "props": {
+      "blockClass": "home__slider--mobile--buttons--container"
+    }
+  },
+
+  "link#mobile__home--slider--sale--man": {
+    "title": "Link products man mobile",
+    "props": {
+      "href": "/hombre/prendas-de-abrigo",
+      "blockClass": "home__slider--mobile--button",
+      "text": "Hombre",
+      "label": "Hombre"
+    }
+  },
+  "link#mobile__home--slider--sale--woman": {
+    "title": "Link products woman mobile",
+    "props": {
+      "href": "/mujer/prendas-de-abrigo",
+      "blockClass": "home__slider--mobile--button",
+      "text": "Mujer",
+      "label": "Mujer"
+    }
+  },
+
+  // ------------------ Images ------------------
+  "flex-layout.row#home__section--7--mobile": {
+    "title": "Home Section 7 Mobile",
+    "children": [
+      "flex-layout.col#home__section--7--mobile--col--1",
+      "flex-layout.col#home__section--7--mobile--col--2"
+    ],
+    "props": {
+      "blockClass": "home__section--7--mobile",
+      "marginTop": 4
+    }
+  },
+  "flex-layout.col#home__section--7--mobile--col--1": {
+    "title": "Home Section 7 Mobile Col 1",
+    "children": [
+      "image#home__section-7--one"
+    ],
+    "props": {
+      "blockClass": "home__section--7--mobile--col--1",
+      "marginBottom": 2
+    }
+  },
+  "flex-layout.col#home__section--7--mobile--col--2": {
+    "title": "Home Section 7 Mobile Col 2",
+    "children": [
+      "image#home__section-7--two"
+    ],
+    "props": {
+      "blockClass": "home__section--7--mobile--col--2",
+      "marginBottom": 2
+    }
+  }
+}

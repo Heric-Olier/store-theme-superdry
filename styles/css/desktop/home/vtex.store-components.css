@@ -1,8 +1,17 @@
 .imageElement--banner__image--one,
 .imageElement--banner__image--two,
-.imageElement--banner__image--three {
+.imageElement--banner__image--three,
+.imageElement--home__section-8--sale {
     max-height: initial !important;
     width: 100% !important;
+    transition: all 0.25s ease-in-out;
+}
+
+.imageElement--banner__image--one:hover,
+.imageElement--banner__image--two:hover,
+.imageElement--banner__image--three:hover {
+    filter: opacity(0.9);
+    transform: scale(1.02);
 }
 
 .imageElement--home__product-list--section {
@@ -18,4 +27,5 @@ transition: all 0.25s ease-in-out;
 .imageElement--home__section-7--two:hover {
     filter: brightness(0.6);
 }
+
 

@@ -17,3 +17,19 @@
     color: #fff;
     text-shadow: 0 0 10px #000;
 }
+
+.paragraph--home__section-8--text--top {
+    font-size: 5.2rem;
+    font-weight: bold;
+    font-family: "Roboto-Black", sans-serif;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
+    letter-spacing: 0.9rem;
+}
+
+.paragraph--home__section-8--text--bottom {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
+}

@@ -77,7 +77,12 @@
     "props": {
       "src": "assets/img/banner-jeans-home-desk-2023.gif",
       "blockClass": "banner__image--two",
-      "title": "Banner Image Two"
+      "title": "Banner Image Two",
+      "link": {
+        "url": "/jean",
+        "newTab": false,
+        "attributeNoFollow": true
+      }
     }
   },
 
@@ -108,7 +113,12 @@
     "props": {
       "src": "assets/img/banner-home-tenis-superdry-desk-oct-2022.gif",
       "blockClass": "banner__image--three",
-      "title": "Banner Image Three"
+      "title": "Banner Image Three",
+      "link": {
+        "url": "/tenis",
+        "newTab": false,
+        "attributeNoFollow": true
+      }
     }
   },
 
@@ -248,6 +258,7 @@
   },
 
   // <----- SECTION 7 ------>
+
   "flex-layout.row#home__section-7": {
     "title": "Home Section 7",
     "children": [
@@ -287,7 +298,7 @@
     ],
     "props": {
       "blockClass": "home__section-7--one--button",
-      "colGap": 0
+      "preventVerticalStretch": true
     }
   },
   "rich-text#home__section-7--one--top": {
@@ -341,7 +352,8 @@
     ],
     "props": {
       "blockClass": "home__section-7--two--button",
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "preventVerticalStretch": true
     }
   },
   "rich-text#home__section-7--two--top": {
@@ -365,6 +377,94 @@
       "blockClass": "home__section-7--two--button",
       "text": "COMPRAR",
       "label": "COMPRAR"
+    }
+  },
+
+  //<----- SECTION 8 ------>
+
+  "flex-layout.row#home__section-8": {
+    "title": "Home Section 8",
+    "children": [
+      "flex-layout.col#home__section-8--image"
+    ],
+    "props": {
+      "blockClass": "home__section-banner-products--sale--8",
+      "fullWidth": true,
+      "marginTop": 3
+    }
+  },
+  "image#home__section-8--sale": {
+    "title": "Home Section 8 sale",
+    "props": {
+      "src": "assets/img/camisas2022-desk.jpg",
+      "blockClass": "home__section-8--sale",
+      "title": "Home Section 8 sale"
+    }
+  },
+  "flex-layout.col#home__section-8--image": {
+    "title": "Home Section 8 image",
+    "children": [
+      "image#home__section-8--sale",
+      "flex-layout.col#home__section-8--buttons"
+    ],
+    "props": {
+      "blockClass": "home__section-8--image"
+    }
+  },
+  "flex-layout.col#home__section-8--buttons": {
+    "title": "Home Section 8 buttons",
+    "children": [
+      "rich-text#home__section-8--text--top",
+      "rich-text#home__section-8--text--bottom",
+      "flex-layout.row#home__section-8--buttons--container"
+ 
+    ],
+    "props": {
+      "blockClass": "home__section-8--buttons",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#home__section-8--buttons--container": {
+    "title": "Home Section 8 buttons container",
+    "children": [
+      "link#home__section-8--button--buy--man",
+      "link#home__section-8--button--buy--woman"
+    ],
+    "props": {
+      "blockClass": "home__section-8--buttons--container",
+      "colGap": 0
+    }
+  },
+  "rich-text#home__section-8--text--top": {
+    "title": "Home Section 8 text top",
+    "props": {
+      "text": "CAMISETAS",
+      "blockClass": "home__section-8--text--top"
+    }
+  },
+  "rich-text#home__section-8--text--bottom": {
+    "title": "Home Section 8 text bottom",
+    "props": {
+      "text": "Camisetas de corte clásico arraigadas en la historia de la marca Superdry.",
+      "blockClass": "home__section-8--text--bottom"
+    }
+  },
+  "link#home__section-8--button--buy--man": {
+    "title": "Home Section 8 button",
+    "props": {
+      "href": "/hombre/camisetas",
+      "blockClass": "home__section-8--button--buy",
+      "text": "COMPRAR HOMBRE",
+      "label": "COMPRAR HOMBRE"
+    }
+  },
+  "link#home__section-8--button--buy--woman": {
+    "title": "Home Section 8 button",
+    "props": {
+      "href": "/mujer/camisetas",
+      "blockClass": "home__section-8--button--buy",
+      "text": "COMPRAR MUJER",
+      "label": "COMPRAR MUJER"
     }
   }
 }
