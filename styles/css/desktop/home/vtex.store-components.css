@@ -28,4 +28,7 @@ transition: all 0.25s ease-in-out;
     filter: brightness(0.6);
 }
 
+.imageElement--home__services--image {
+    width: 80px;
+}
 

@@ -417,7 +417,6 @@
       "rich-text#home__section-8--text--top",
       "rich-text#home__section-8--text--bottom",
       "flex-layout.row#home__section-8--buttons--container"
- 
     ],
     "props": {
       "blockClass": "home__section-8--buttons",
@@ -465,6 +464,190 @@
       "blockClass": "home__section-8--button--buy",
       "text": "COMPRAR MUJER",
       "label": "COMPRAR MUJER"
+    }
+  },
+
+  //<----- SECTION 9 SERVICES ------>
+
+  "flex-layout.row#home__section-9": {
+    "title": "Home Section 9",
+    "children": [
+      "flex-layout.col#home__services--one",
+      "flex-layout.col#home__services--two",
+      "flex-layout.col#home__services--three",
+      "flex-layout.col#home__services--four"
+    ],
+    "props": {
+      "blockClass": "home__section-services--9",
+      "fullWidth": true,
+      "marginTop": 4
+    }
+  },
+
+  // <----- Services one ----->
+
+  "flex-layout.col#home__services--one": {
+    "title": "Home Section 9 one",
+    "children": [
+      "image#home__services--one--image",
+      "rich-text#home__services--one--title",
+      "rich-text#home__services--one--paragraph"
+    ],
+    "props": {
+      "blockClass": "home__services--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#home__services--one--image": {
+    "title": "Home Section 9 one image",
+    "props": {
+      "src": "assets/img/free-delivery.png",
+      "blockClass": "home__services--image",
+      "title": "Home Section 9 one image",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#home__services--one--title": {
+    "title": "Home Section 9 one title",
+    "props": {
+      "text": "ENVÍOS",
+      "blockClass": "home__services--title",
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#home__services--one--paragraph": {
+    "title": "Home Section 9 one paragraph",
+    "props": {
+      "text": "¡Llegamos a gran parte de Colombia! Envíos gratis a partir de $250 COP.",
+      "blockClass": "home__services--paragraph",
+      "preventHorizontalStretch": true,
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Services two ----->
+
+  "flex-layout.col#home__services--two": {
+    "title": "Home Section 9 two",
+    "children": [
+      "image#home__services--two--image",
+      "rich-text#home__services--two--title",
+      "rich-text#home__services--two--paragraph"
+    ],
+    "props": {
+      "blockClass": "home__services--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#home__services--two--image": {
+    "title": "Home Section 9 two image",
+    "props": {
+      "src": "assets/img/next-day.png",
+      "blockClass": "home__services--image",
+      "title": "Home Section 9 two image",
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#home__services--two--title": {
+    "title": "Home Section 9 two title",
+    "props": {
+      "text": "PAGOS",
+      "blockClass": "home__services--title",
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#home__services--two--paragraph": {
+    "title": "Home Section 9 two paragraph",
+    "props": {
+      "text": "Múltiples medios de pago. Paga a través de MercadoPago.",
+      "blockClass": "home__services--paragraph",
+      "preventHorizontalStretch": true,
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Services three ----->
+
+  "flex-layout.col#home__services--three": {
+    "title": "Home Section 9 three",
+    "children": [
+      "image#home__services--three--image",
+      "rich-text#home__services--three--title",
+      "rich-text#home__services--three--paragraph"
+    ],
+    "props": {
+      "blockClass": "home__services--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#home__services--three--image": {
+    "title": "Home Section 9 three image",
+    "props": {
+      "src": "assets/img/free-returns.png",
+      "blockClass": "home__services--image",
+      "title": "Home Section 9 three image"
+    }
+  },
+  "rich-text#home__services--three--title": {
+    "title": "Home Section 9 three title",
+    "props": {
+      "text": "CAMBIOS Y DEVOLUCIONES",
+      "blockClass": "home__services--title"
+    }
+  },
+  "rich-text#home__services--three--paragraph": {
+    "title": "Home Section 9 three paragraph",
+    "props": {
+      "text": "¿No es lo que querías? Puedes solicitar la devolución de cualquier producto, en un plazo de 5 días a partir de la fecha de entrega.",
+      "blockClass": "home__services--paragraph",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Services four ----->
+
+  "flex-layout.col#home__services--four": {
+    "title": "Home Section 9 four",
+    "children": [
+      "image#home__services--four--image",
+      "rich-text#home__services--four--title",
+      "rich-text#home__services--four--paragraph"
+    ],
+    "props": {
+      "blockClass": "home__services--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#home__services--four--image": {
+    "title": "Home Section 9 four image",
+    "props": {
+      "src": "assets/img/click-collect.png",
+      "blockClass": "home__services--image",
+      "title": "Home Section 9 four image"
+    }
+  },
+  "rich-text#home__services--four--title": {
+    "title": "Home Section 9 four title",
+    "props": {
+      "text": "COMPRAS 100% SEGURAS",
+      "blockClass": "home__services--title"
+    }
+  },
+  "rich-text#home__services--four--paragraph": {
+    "title": "Home Section 9 four paragraph",
+    "props": {
+      "text": "Compra de forma segura con la tecnología SSL",
+      "blockClass": "home__services--paragraph",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
   }
 }

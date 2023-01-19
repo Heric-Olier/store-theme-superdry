@@ -74,7 +74,15 @@
     margin: -14% 0 0 -41%;
 }
 
-/* .flexRowContent--home__sale--section {
-    max-width: 300px;
-    margin: 0 auto 10px;
-} */
+.flexRow--home__section-services--9 {
+    background-color: #ececec;
+    padding: 1.5rem;
+    margin-top: 0.7rem;
+}
+
+.flexCol--home__services--container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}

@@ -30,6 +30,10 @@
   "responsive-layout.desktop#home__section-8": {
     "title": "Home Section 6 Desktop",
     "children": ["flex-layout.row#home__section-8"]
+  },
+  "responsive-layout.desktop#home__section-9": {
+    "title": "Home Section 6 Desktop",
+    "children": ["flex-layout.row#home__section-9"]
   }
 
 }
