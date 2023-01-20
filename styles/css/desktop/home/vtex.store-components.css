@@ -3,14 +3,14 @@
 .imageElement--banner__image--three,
 .imageElement--home__section-8--sale {
     max-height: initial !important;
-    width: 100% !important;
+    width     : 100% !important;
     transition: all 0.25s ease-in-out;
 }
 
 .imageElement--banner__image--one:hover,
 .imageElement--banner__image--two:hover,
 .imageElement--banner__image--three:hover {
-    filter: opacity(0.9);
+    filter   : opacity(0.9);
     transform: scale(1.02);
 }
 
@@ -20,7 +20,7 @@
 
 .imageElement--home__section-7--one,
 .imageElement--home__section-7--two {
-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .imageElement--home__section-7--one:hover,
@@ -32,3 +32,10 @@ transition: all 0.25s ease-in-out;
     width: 80px;
 }
 
+.imageElement--home__payment-methods--image {
+    width     : 60px;
+    height    : 40px;
+    margin    : 0 auto 10px;
+    object-fit: contain;
+
+}

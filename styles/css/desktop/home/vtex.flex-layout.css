@@ -1,6 +1,6 @@
 .flexRowContent--home__slider--section-2 {
     max-width: 1200px;
-    margin: 0 auto 10px;
+    margin   : 0 auto 10px;
 }
 
 .flexRowContent--mobile__home--slider {
@@ -15,7 +15,7 @@
 
 .flexRow--home__product-list--section {
     max-width: 1200px;
-    margin: 0 auto;
+    margin   : 0 auto;
 }
 
 .flexColChild--home__product-list--section {
@@ -26,7 +26,7 @@
 .flexColChild--home__section-8--image,
 .flexRow--home__section-banner-products {
     max-width: 1440px;
-    margin: 0 auto;
+    margin   : 0 auto;
 }
 
 
@@ -34,16 +34,16 @@
     position: relative;
 }
 
-.flexCol--home__section-8--buttons{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* width: 720px;
-    height: 280px; */
-    display: flex;
+.flexCol--home__section-8--buttons {
+    position       : absolute;
+    top            : 50%;
+    left           : 50%;
+    transform      : translate(-50%, -50%);
+    /* width       : 720px;
+    height         : 280px; */
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 }
 
 .flexRow--home__section-8--buttons--container {
@@ -67,22 +67,46 @@
 .flexCol--home__section-7--one--button,
 .flexCol--home__section-7--two--button {
     position: absolute;
-    top: 72%;
-    left: 50%;
-    height: 20%;
-    width: 80%;
-    margin: -14% 0 0 -41%;
+    top     : 72%;
+    left    : 50%;
+    height  : 20%;
+    width   : 80%;
+    margin  : -14% 0 0 -41%;
 }
 
 .flexRow--home__section-services--9 {
     background-color: #ececec;
-    padding: 1.5rem;
-    margin-top: 0.7rem;
+    padding         : 1.5rem;
+    margin-top      : 0.7rem;
 }
 
-.flexCol--home__services--container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px;
+.flexRowContent--home__section-10 {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 95% !important;
+    margin          : 1rem auto 1rem;
+    padding         : 2rem;
+    background-color: #000;
+    border-radius   : 6px;
 }
+
+/* .flexRowContent--home__payment-methods {
+    display        : flex;
+    justify-content: space-evenly;
+    width          : 100%;
+    flex-wrap      : nowrap;
+    padding        : 10px 0;
+} */
+
+.flexRow--home__payment-methods {
+    display        : flex;
+    justify-content: space-evenly;
+    width          : 100%;
+    flex-wrap      : wrap;
+    padding        : 10px 0;
+}
+
+/* .flexCol--home__text--container {
+    width: 18% !important;
+} */

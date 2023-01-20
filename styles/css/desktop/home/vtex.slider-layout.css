@@ -1,5 +1,5 @@
 .imageElement--home__slider--banner {
-    max-height: initial !important;
+  max-height: initial !important;
 }
 
 /* .slideChildrenContainer--home__slider--banner {
@@ -8,14 +8,14 @@
 
 .sliderLeftArrow--home__slider--banner,
 .sliderRightArrow--home__slider--banner {
-  width: 24px !important;
-  height: 24px !important;
-  padding: 4px !important;
-  cursor: pointer !important;
-  color: #000 !important;
+  width        : 24px !important;
+  height       : 24px !important;
+  padding      : 4px !important;
+  cursor       : pointer !important;
+  color        : #000 !important;
   border-radius: 50% !important;
-  outline: 0 !important;
-  background: #fff !important;
+  outline      : 0 !important;
+  background   : #fff !important;
 }
 
 .sliderLeftArrow--home__slider--banner {
@@ -28,11 +28,11 @@
 
 .paginationDotsContainer--home__slider--banner,
 .paginationDotsContainer--mobile__home--slider--banner {
-    transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 .paginationDot--isActive {
-    background: #fb441f !important;
+  background: #fb441f !important;
 }
 
 .sliderLeftArrow--home__slider--banner:hover,

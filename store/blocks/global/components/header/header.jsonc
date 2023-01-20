@@ -107,7 +107,8 @@
     ],
     "props": {
       "blockClass": "header__middle--mobile--search-bar",
-      "fullWidth": true
+      "fullWidth": true,
+      "sticky": true
     }
   },
   "link#header__top--discount": {

@@ -3,7 +3,8 @@
     "title": "Responsive Mobile Slider",
     "children": [
       "flex-layout.row#mobile__home--slider--sale--container",
-      "flex-layout.row#home__section--7--mobile"
+      "flex-layout.row#home__section--7--mobile",
+      "flex-layout.row#home__section--8--mobile"
     ]
   },
 
@@ -73,7 +74,9 @@
     }
   },
 
-  // ------------------ Images ------------------
+  // <-------  SECTION 7 MOBILE  --------->
+  // ------------------ Images man - woman ------------------
+
   "flex-layout.row#home__section--7--mobile": {
     "title": "Home Section 7 Mobile",
     "children": [
@@ -82,7 +85,10 @@
     ],
     "props": {
       "blockClass": "home__section--7--mobile",
-      "marginTop": 4
+      "marginTop": 4,
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false
     }
   },
   "flex-layout.col#home__section--7--mobile--col--1": {
@@ -92,7 +98,9 @@
     ],
     "props": {
       "blockClass": "home__section--7--mobile--col--1",
-      "marginBottom": 2
+      "marginBottom": 2,
+      "fullWidth": true,
+      "width": "100%"
     }
   },
   "flex-layout.col#home__section--7--mobile--col--2": {
@@ -102,7 +110,58 @@
     ],
     "props": {
       "blockClass": "home__section--7--mobile--col--2",
-      "marginBottom": 2
+      "marginBottom": 2,
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+
+  // <-------  SECTION 8 MOBILE  --------->
+  "flex-layout.row#home__section--8--mobile": {
+    "title": "Home Section 8 Mobile",
+    "children": [
+      "flex-layout.col#home__section--8--mobile--image"
+    ],
+    "props": {
+      "blockClass": "home__section--8--mobile--image",
+      "marginTop": 4,
+      "margin": 0,
+      "padding": 0,
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#home__section--8--mobile--image": {
+    "title": "Home Section 8 Mobile Image",
+    "children": [
+      "image#home__section-8--one",
+      "flex-layout.col#home__section-8--mobile--buttons"
+    ],
+    "props": {
+      "blockClass": "home__section--8--mobile--image"
+    }
+  },
+  "flex-layout.col#home__section-8--mobile--buttons": {
+    "title": "Home Section 8 Mobile Buttons",
+    "children": [
+      "rich-text#home__section-8--text--top",
+      "rich-text#home__section-8--text--bottom",
+      "flex-layout.row#home__section-8--buttons--container"
+    ],
+    "props": {
+      "blockClass": "home__section--8--mobile--buttons",
+      "marginTop": 2,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "image#home__section-8--one": {
+    "title": "Home Section 8 Image One",
+    "props": {
+      "src": "assets/img/camisas2022-mobile.jpg",
+      "alt": "Section 8 Mobile Image One",
+      "blockClass": "home__section--8--mobile--image--one"
     }
   }
 }
