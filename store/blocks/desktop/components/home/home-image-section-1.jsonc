@@ -1,0 +1,26 @@
+{
+  "image#section__one--image": {
+    "title": "Section 1 Image",
+    "props": {
+      "src": "assets/img/banner-home-buzos-chaquetas-sale-ene-1.webp",
+      "blockClass": "home__slider--section-2--image",
+      "title": "Section 1 Image"
+    }
+  },
+  "image#section__two--image": {
+    "title": "Section 2 Image",
+    "props": {
+      "src": "assets/img/banner-home-camisetas-sale-20-ene-1.webp",
+      "blockClass": "home__slider--section-2--image",
+      "title": "Section 2 Image"
+    }
+  },
+  "image#section__three--image": {
+    "title": "Section 3 Image",
+    "props": {
+      "src": "assets/img/banner-home-jeans-sale-20-ene-1.webp",
+      "blockClass": "home__slider--section-2--image",
+      "title": "Section 3 Image"
+    }
+  }
+}

@@ -1,29 +1,58 @@
 {
   "flex-layout.row#home__section--global": {
-    "title": "Global Row with text example",
+    "title": "Home Section Global",
     "children": [
-      "rich-text#home__section--global"
+      "flex-layout.row#home__section-2"
     ],
     "props": {
-      "marginTop": 10,
-      "paddingTop": 10,
-      "paddingBottom": 10,
-      // "border": ["all"],
-      // "borderWidth": 1,
-      // "borderColor": "emphasis",
-      "blockClass": "home__section"
+      "blockClass": "home__sale--section"
     }
   },
+  // <----- SECTION 2 ------>
 
-  "rich-text#home__section--global": {
-    "title": "Text Favorites",
+  "flex-layout.row#home__section-2": {
+    "title": "Home Section 2",
+    "children": [
+      "flex-layout.col#section__one--image",
+      "flex-layout.col#section__two--image",
+      "flex-layout.col#section__three--image"
+    ],
     "props": {
-      "blockClass": "home__section--global",
-      "text": "Soy un texto que vive en Desktop, Tablet y Phone :D - Poppins Font",
-      "textColor": "c-on-emphasis",
-      "font": "t-heading-3",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "blockClass": "home__slider--section-2",
+      "paddingTop": 2,
+      "paddingBottom": 3,
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#section__one--image": {
+    "title": "Section 1 Image",
+    "children": [
+      "image#section__one--image"
+    ],
+    "props": {
+      "blockClass": "home__slider--section-2--image",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#section__two--image": {
+    "title": "Section 2 Image",
+    "children": [
+      "image#section__two--image"
+    ],
+    "props": {
+      "blockClass": "home__slider--section-2--image",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#section__three--image": {
+    "title": "Section 3 Image",
+    "children": [
+      "image#section__three--image"
+    ],
+    "props": {
+      "blockClass": "home__slider--section-2--image",
+      "width": "100%"
     }
   }
 }

@@ -1,0 +1,48 @@
+{
+  "list-context.image-list#home__slider--list": {
+    "title": "image-list",
+    "children": [
+      "slider-layout#home__slider--list"
+    ],
+    "props": {
+      "preload": true,
+      "link": {
+        "url": "/sale",
+        "params": {
+          "map": "c"
+        }
+      },
+      "images": [
+        {
+          "image": "assets/img/banner-home-sale-2023-ene-desk-1.webp",
+          "description": "Slide 1"
+        },
+        {
+          "image": "assets/img/banner-home-sale-lovers-sp-ene-2023-desk-2.webp",
+          "description": "Slide 2"
+        },
+        {
+          "image": "assets/img/banner-home-addi-sale-desk-2023-ene-3.webp",
+          "description": "Slide 3"
+        }
+      ]
+    }
+  },
+  "slider-layout#home__slider--list": {
+    "title": "Slider Layout",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "home__slider--banner",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
+    }
+  }
+}

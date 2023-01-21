@@ -1,29 +1,61 @@
 {
   "responsive-layout.mobile#phone__and__tablet": {
     "title": "Responsive Mobile",
-    "children": ["flex-layout.row#mobile__home"]
+    "children": [
+      "flex-layout.row#mobile__home--slider"
+    ]
   },
 
-  "flex-layout.row#mobile__home": {
-    "title": "Mobile Row with text",
+  "flex-layout.row#mobile__home--slider": {
+    "title": "Mobile Home Slider",
     "children": [
-      "rich-text#hello-vtex"
+      "list-context.image-list#mobile__home--slider--list"
     ],
     "props": {
-      "marginTop": 10,
-      "border": ["top", "bottom"],
-      "borderWidth": 1,
-      "borderColor": "danger"
+      "marginTop": 3,
+      "blockClass": "mobile__home--slider",
+      "fullWidth": true,
+      "paddingBottom": 6
     }
   },
-
-  "rich-text#hello-vtex": {
-    "title": "Text of MOBILE",
+  "list-context.image-list#mobile__home--slider--list": {
+    "title": "mobile-image-list",
+    "children": [
+      "slider-layout#mobile__home--slider--list"
+    ],
     "props": {
-      "text": "Éxisto en Tablet y Phone -->> VTEX Store Framework - Roboto Font",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/banner-home-sale-2023-ene-mobile.webp",
+          "description": "Slide 1"
+        },
+        {
+          "image": "assets/img/banner-home-sale-lovers-sp-ene-2023-mobile.webp",
+          "description": "Slide 2"
+        },
+        {
+          "image": "assets/img/banner-home-addi-sale-mobile-2023-ene.webp",
+          "description": "Slide 3"
+        }
+      ]
+    }
+  },
+  "slider-layout#mobile__home--slider--list": {
+    "title": "Mobile Slider Layout",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "mobile__home--slider--banner",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
     }
   }
 }
