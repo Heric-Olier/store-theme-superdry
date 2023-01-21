@@ -17,3 +17,24 @@
     font-family: "Roboto-Regular";
     src: url(assets/fonts/Roboto-Regular.ttf); 
 }
+
+@font-face{
+    font-family: "Roboto-Thin";
+    src: url(assets/fonts/Roboto-Thin.ttf); 
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(assets/fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+

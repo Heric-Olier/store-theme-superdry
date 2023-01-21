@@ -3,10 +3,21 @@
     "title": "Store home",
     "blocks": [
       "responsive-layout.desktop#home__section-1",
+      "responsive-layout.mobile#phone__and__tablet",
+      "flex-layout.row#home__section--global",
+      // "responsive-layout.desktop#home__section-2",
+      "responsive-layout.desktop#home__section-3",
+      "responsive-layout.desktop#home__section-4",
+      "responsive-layout.desktop#home__section-5",
+      "responsive-layout.desktop#home__section-6",
+      "responsive-layout.desktop#home__section-7",
+      "responsive-layout.desktop#home__section-8",
+      "responsive-layout.desktop#home__section-9",
+      "responsive-layout.desktop#home__section-10",
       "responsive-layout.tablet#home__section-1",
       "responsive-layout.phone#home__section-1",
-      "responsive-layout.mobile#phone__and__tablet",
-      "flex-layout.row#home__section--global"
+      "responsive-layout.mobile#phone__and__tablet--sale",
+      "responsive-layout.mobile#phone__and__tablet--sale--slider"
     ]
   }
 }

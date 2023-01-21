@@ -1,0 +1,134 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "title": "Header Desktop",
+    "children": [
+      "header-row#header__top",
+      "header-row#header__middle",
+      "header-row#header__bottom"
+    ]
+  },
+  "header-layout.mobile": {
+    "title": "Header Mobile",
+    "children": [
+      "header-row#header__top",
+      // "header-row#header__middle",
+      "header-row#header__middle--mobile",
+      "header-row#header__middle--mobile--search-bar"
+      // "header-row#header__bottom"
+    ]
+  },
+  "header-row#header__top": {
+    "title": "Header Superior",
+    "children": [
+      "link#header__top--discount"
+    ],
+    "props": {
+      "blockClass": "header__top--discount",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "sticky": true
+    }
+  },
+  "logo#header__top--logo": {
+    "title": "logo",
+    "props": {
+      "url": "assets/img/logo.png",
+      "href": "/",
+      "width": 170,
+      "blockClass": "header__top--logo"
+    }
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "¿Qué estás buscando?",
+      "blockClass": "search-bar-mod"
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true,
+      "iconLabel": "Mi cuenta"
+    }
+  },
+  "header-row#header__middle": {
+    "title": "Header Medio",
+    "children": [
+      // "drawer#header__mobile-menu",
+      "logo#header__top--logo",
+      "header-spacer",
+      "search-bar",
+      "header-spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header__middle",
+      "fullWidth": true,
+      "sticky": true
+    }
+  },
+  "header-row#header__middle--mobile": {
+    "title": "Header Medio Mobile",
+    "children": [
+      "drawer#header__mobile-menu",
+      "logo#header__top--logo",
+      "header-spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header__middle--mobile",
+      "fullWidth": true,
+      "sticky": true
+    }
+  },
+  "header-row#header__middle--mobile--search-bar": {
+    "title": "Header Medio Mobile Search Bar",
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "header__middle--mobile--search-bar",
+      "fullWidth": true,
+      "sticky": true
+    }
+  },
+  "link#header__top--discount": {
+    "title": "Link de descuento",
+    "props": {
+      "blockClass": "link__discount--promo",
+      "href": "/sale",
+      "label": "SALE Hasta 50% OFF en ref seleccionadas 🚚",
+      "openNewTab": false
+    }
+  },
+  "drawer#header__mobile-menu": {
+    "title": "Mobile Menu",
+    "children": [
+      "menu#header__mobile-menu--menu"
+    ],
+    "props": {
+      "title": "Mobile-Menu",
+      "blockClass": "header__mobile-menu",
+      "fullWidth": true
+    }
+  }
+}

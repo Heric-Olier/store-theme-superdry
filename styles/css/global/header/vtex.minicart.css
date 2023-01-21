@@ -1,0 +1,8 @@
+.cartIcon {
+    color: #ffffff;
+    transition: all 0.25s ease-in-out;
+}
+
+.cartIcon:hover {
+    color: #fb441f;
+}
