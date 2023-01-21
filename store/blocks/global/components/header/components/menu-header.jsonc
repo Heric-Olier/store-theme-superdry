@@ -49,7 +49,8 @@
     ],
     "props": {
       "blockClass": "header__bottom",
-      "fullWidth": true
+      "fullWidth": true,
+      "sticky": true
     }
   },
   "vtex.menu@2.x:menu#header__bottom--menu": {
@@ -1127,7 +1128,7 @@
     "props": {
       "id": "item-sale",
       "type": "custom",
-      "blockClass": "menu__item",
+      "blockClass": "menu__item--black",
       "itemProps": {
         "type": "internal",
         "href": "/sale",

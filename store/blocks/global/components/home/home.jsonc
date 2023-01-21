@@ -21,8 +21,8 @@
       "blockClass": "home__slider--section-2",
       "paddingTop": 2,
       "paddingBottom": 3,
-      "colSizing": "equal",
-      "colGutter": 2
+      "fullWidth": true,
+      "width": "100%"
     }
   },
   "flex-layout.col#section__one--image": {
@@ -31,7 +31,8 @@
       "image#section__one--image"
     ],
     "props": {
-      "blockClass": "home__slider--section-2--image"
+      "blockClass": "home__slider--section-2--image",
+      "width": "100%"
     }
   },
   "flex-layout.col#section__two--image": {
@@ -40,7 +41,8 @@
       "image#section__two--image"
     ],
     "props": {
-      "blockClass": "home__slider--section-2--image"
+      "blockClass": "home__slider--section-2--image",
+      "width": "100%"
     }
   },
   "flex-layout.col#section__three--image": {
@@ -49,7 +51,8 @@
       "image#section__three--image"
     ],
     "props": {
-      "blockClass": "home__slider--section-2--image"
+      "blockClass": "home__slider--section-2--image",
+      "width": "100%"
     }
   }
 }

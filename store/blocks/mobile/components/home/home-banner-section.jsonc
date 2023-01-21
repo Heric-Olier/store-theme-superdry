@@ -3,7 +3,12 @@
     "title": "Responsive Mobile Sale Banner",
     "children": [
       "flex-layout.row#mobile__home--banner--sale"
-    ]
+    ],
+    "props": {
+      "blockClass": "home__section--sale--mobile",
+      "fullWidth": true,
+      "width": "100%"
+    }
   },
   "flex-layout.row#mobile__home--banner--sale": {
     "title": "Mobile Home Banner Sale",
@@ -15,7 +20,10 @@
     "props": {
       "marginTop": 3,
       "blockClass": "mobile__home--banner--sale",
-      "fullWidth": true
+      "fullWidth": true,
+      "width": "100%",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
     }
   },
   "flex-layout.col#mobile__home--banner--sale--one": {
@@ -24,7 +32,9 @@
       "image#section__banner__one--mobile"
     ],
     "props": {
-      "blockClass": "mobile__home--banner--sale--one"
+      "blockClass": "mobile__home--banner--sale--one",
+      "fullWidth": true,
+      "width": "100%"
     }
   },
   "flex-layout.col#mobile__home--banner--sale--two": {
@@ -33,7 +43,9 @@
       "image#section__banner__two--mobile"
     ],
     "props": {
-      "blockClass": "mobile__home--banner--sale--two"
+      "blockClass": "mobile__home--banner--sale--two",
+      "fullWidth": true,
+      "width": "100%"
     }
   },
   "flex-layout.col#mobile__home--banner--sale--three": {
@@ -42,7 +54,9 @@
       "image#section__banner__three--mobile"
     ],
     "props": {
-      "blockClass": "mobile__home--banner--sale--three"
+      "blockClass": "mobile__home--banner--sale--three",
+      "fullWidth": true,
+      "width": "100%"
     }
   }
 }
