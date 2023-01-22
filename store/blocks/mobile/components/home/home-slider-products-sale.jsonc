@@ -4,7 +4,8 @@
     "children": [
       "flex-layout.row#mobile__home--slider--sale--container",
       "flex-layout.row#home__section--7--mobile",
-      "flex-layout.row#home__section--8--mobile"
+      "flex-layout.row#home__section--8--mobile",
+      "flex-layout.row#home__section--9--mobile"
     ]
   },
 
@@ -189,6 +190,7 @@
   },
 
   // <-------  SECTION 8 MOBILE  --------->
+
   "flex-layout.row#home__section--8--mobile": {
     "title": "Home Section 8 Mobile",
     "children": [
@@ -234,6 +236,83 @@
       "src": "assets/img/camisas2022-mobile.jpg",
       "alt": "Section 8 Mobile Image One",
       "blockClass": "home__section--8--mobile--image--one"
+    }
+  },
+
+  // <-------  SECTION 9 MOBILE - SERVICES  --------->
+
+  "flex-layout.row#home__section--9--mobile": {
+    "title": "Home Section 9 Mobile",
+    "children": [
+      "slider-layout#home__section--9--mobile--slider"
+    ],
+    "props": {
+      "blockClass": "home__section--9--mobile--slider",
+      "marginTop": 6,
+      "marginBottom": 6,
+      "margin": 0,
+      "padding": 0,
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  "slider-layout#home__section--9--mobile--slider": {
+    "title": "Mobile Home Slider Services",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "home__section--9--mobile--slider",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "flex-layout.row#mobile__home--slider--services--one",
+      "flex-layout.row#mobile__home--slider--services--two",
+      "flex-layout.row#mobile__home--slider--services--three",
+      "flex-layout.row#mobile__home--slider--services--four"
+    ]
+  },
+  "flex-layout.row#mobile__home--slider--services--one": {
+    "title": "Mobile Home Slider Services One",
+    "children": [
+      "link#home__services--one"
+    ],
+    "props": {
+      "blockClass": "mobile__home--slider--services--one"
+    }
+  },
+  "flex-layout.row#mobile__home--slider--services--two": {
+    "title": "Mobile Home Slider Services Two",
+    "children": [
+      "link#home__services--two"
+    ],
+    "props": {
+      "blockClass": "mobile__home--slider--services--two"
+    }
+  },
+  "flex-layout.row#mobile__home--slider--services--three": {
+    "title": "Mobile Home Slider Services Three",
+    "children": [
+      "link#home__services--three"
+    ],
+    "props": {
+      "blockClass": "mobile__home--slider--services--three"
+    }
+  },
+  "flex-layout.row#mobile__home--slider--services--four": {
+    "title": "Mobile Home Slider Services Four",
+    "children": [
+      "link#home__services--four"
+    ],
+    "props": {
+      "blockClass": "mobile__home--slider--services--four"
     }
   }
 }

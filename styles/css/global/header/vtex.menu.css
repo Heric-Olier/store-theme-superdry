@@ -71,6 +71,7 @@
 .submenuWrapper {
     width   : 100%;
     position: fixed;
+    overflow-x: scroll;
 }
 
 .vtex-menu-2-x-submenu {
