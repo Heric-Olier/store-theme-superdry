@@ -80,18 +80,7 @@
     margin-top      : 0.7rem;
 }
 
-.flexRowContent--home__section-10 {
-    display         : flex;
-    justify-content : space-between;
-    align-items     : center;
-    width           : 95% !important;
-    margin          : 1rem auto 1rem;
-    padding         : 2rem;
-    background-color: #000;
-    border-radius   : 6px;
-}
-
-.flexRow--home__payment-methods {
+.flexRowContent--home__payment-methods {
     display        : flex;
     justify-content: space-evenly;
     width          : 100%;

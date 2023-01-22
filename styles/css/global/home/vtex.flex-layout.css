@@ -13,3 +13,21 @@
     height         : auto;
     width          : 82%;
 }
+
+.flexRowContent--home__section-10 {
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+    width           : 95% !important;
+    margin          : 1rem auto 1rem;
+    padding         : 2rem;
+    background-color: #000;
+    border-radius   : 6px;
+}
+
+@media (max-width: 1025px) {
+    .flexRowContent--home__section-10 {
+        display: block;
+        padding: 1rem;
+    }
+}
