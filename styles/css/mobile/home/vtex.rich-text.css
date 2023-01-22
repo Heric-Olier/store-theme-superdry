@@ -1,0 +1,10 @@
+.paragraph--home__section--7--mobile--text {
+    font-size  : 1.8rem;
+    font-weight: 500;
+    font-family: "Roboto-Black", sans-serif;
+    color      : #fff;
+    text-shadow: 0 0 10px #000;
+    text-align : center;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}

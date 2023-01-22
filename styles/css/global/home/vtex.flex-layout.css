@@ -1,0 +1,15 @@
+.flexCol--home__slider--section-2--image {
+    position: relative;
+}
+
+.flexCol--home__slider--section-2--container__buttons {
+    justify-content: center;
+    align-items    : center;
+    flex-direction : row;
+    position       : absolute;
+    top            : 74%;
+    left           : 50%;
+    transform      : translate(-50%, -50%);
+    height         : auto;
+    width          : 82%;
+}

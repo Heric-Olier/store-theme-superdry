@@ -15,7 +15,9 @@
     width   : 100%;
 }
 
-.flexCol--home__section--8--mobile--buttons {
+.flexCol--home__section--8--mobile--buttons,
+.flexCol--home__section--7--mobile--buttons--container--one,
+.flexCol--home__section--7--mobile--buttons--container--two {
     position       : absolute;
     top            : 50%;
     left           : 50%;
@@ -23,10 +25,13 @@
     display        : flex;
     justify-content: center;
     align-items    : center;
-    width          : 100%;
+    flex-direction : column;
+    width          : 90%;
 }
 
-.vtex-flex-layout-0-x-flexRow--home__slider--mobile--sale--container {
+.vtex-flex-layout-0-x-flexRow--home__slider--mobile--sale--container,
+.flexCol--home__section--7--mobile--col--1,
+.flexCol--home__section--7--mobile--col--2 {
     position: relative !important;
 }
 

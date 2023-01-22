@@ -91,14 +91,6 @@
     border-radius   : 6px;
 }
 
-/* .flexRowContent--home__payment-methods {
-    display        : flex;
-    justify-content: space-evenly;
-    width          : 100%;
-    flex-wrap      : nowrap;
-    padding        : 10px 0;
-} */
-
 .flexRow--home__payment-methods {
     display        : flex;
     justify-content: space-evenly;
@@ -107,6 +99,8 @@
     padding        : 10px 0;
 }
 
-/* .flexCol--home__text--container {
-    width: 18% !important;
-} */
+.flexRowContent--banner__image--one,
+.flexRowContent--banner__image--two,
+.flexRowContent--banner__image--three {
+    overflow: hidden;
+}

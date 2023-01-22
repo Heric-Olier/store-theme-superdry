@@ -443,7 +443,11 @@
     "title": "Home Section 8 text top",
     "props": {
       "text": "CAMISETAS",
-      "blockClass": "home__section-8--text--top"
+      "blockClass": "home__section-8--text--top",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
   },
   "rich-text#home__section-8--text--bottom": {
@@ -452,7 +456,9 @@
       "text": "Camisetas de corte clásico arraigadas en la historia de la marca Superdry.",
       "blockClass": "home__section-8--text--bottom",
       "textPosition": "CENTER",
-      "textAlignment": "CENTER"
+      "textAlignment": "CENTER",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
     }
   },
   "link#home__section-8--button--buy--man": {

@@ -7,7 +7,8 @@
     "props": {
       "blockClass": "home__section--sale--mobile",
       "fullWidth": true,
-      "width": "100%"
+      "width": "100%",
+      "preventHorizontalStretch": true
     }
   },
   "flex-layout.row#mobile__home--banner--sale": {

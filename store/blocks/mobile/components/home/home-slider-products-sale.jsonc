@@ -8,6 +8,16 @@
     ]
   },
 
+  "flex-layout.row#mobile__home--slider--sale--container": {
+    "title": "Mobile Home Slider Sale Container",
+    "children": [
+      "slider-layout#mobile__home--slider--sale"
+    ],
+    "props": {
+      "blockClass": "home__slider--mobile--sale--container"
+    }
+  },
+
   "slider-layout#mobile__home--slider--sale": {
     "title": "Mobile Home Slider Sale",
     "props": {
@@ -25,52 +35,56 @@
       }
     },
     "children": [
-      "image#product-list-sale--one",
-      "image#product-list-sale--two",
-      "image#product-list-sale--three",
-      "image#product-list-sale--four",
-      "image#product-list-sale--five"
+      "flex-layout.row#mobile__home--slider--sale--1",
+      "flex-layout.row#mobile__home--slider--sale--2",
+      "flex-layout.row#mobile__home--slider--sale--3",
+      "flex-layout.row#mobile__home--slider--sale--4",
+      "flex-layout.row#mobile__home--slider--sale--5"
     ]
   },
-
-  "flex-layout.row#mobile__home--slider--sale--container": {
-    "title": "Mobile Home Slider Sale Container",
+  "flex-layout.row#mobile__home--slider--sale--1": {
+    "title": "Mobile Home Slider Sale 1",
     "children": [
-      "slider-layout#mobile__home--slider--sale",
-      "flex-layout.row#mobile__home--slider--sale--buttons"
+      "flex-layout.col#product-list-sale--one"
     ],
     "props": {
-      "blockClass": "home__slider--mobile--sale--container"
+      "blockClass": "home__slider--mobile--sale--1"
     }
   },
-
-  "flex-layout.row#mobile__home--slider--sale--buttons": {
-    "title": "Mobile Home Slider Sale Buttons",
+  "flex-layout.row#mobile__home--slider--sale--2": {
+    "title": "Mobile Home Slider Sale 2",
     "children": [
-      "link#mobile__home--slider--sale--man",
-      "link#mobile__home--slider--sale--woman"
+      "flex-layout.col#product-list-sale--two"
     ],
     "props": {
-      "blockClass": "home__slider--mobile--buttons--container"
+      "blockClass": "home__slider--mobile--sale--2"
     }
   },
-
-  "link#mobile__home--slider--sale--man": {
-    "title": "Link products man mobile",
+  "flex-layout.row#mobile__home--slider--sale--3": {
+    "title": "Mobile Home Slider Sale 3",
+    "children": [
+      "flex-layout.col#product-list-sale--three"
+    ],
     "props": {
-      "href": "/hombre/prendas-de-abrigo",
-      "blockClass": "home__slider--mobile--button",
-      "text": "Hombre",
-      "label": "Hombre"
+      "blockClass": "home__slider--mobile--sale--3"
     }
   },
-  "link#mobile__home--slider--sale--woman": {
-    "title": "Link products woman mobile",
+  "flex-layout.row#mobile__home--slider--sale--4": {
+    "title": "Mobile Home Slider Sale 4",
+    "children": [
+      "flex-layout.col#product-list-sale--four"
+    ],
     "props": {
-      "href": "/mujer/prendas-de-abrigo",
-      "blockClass": "home__slider--mobile--button",
-      "text": "Mujer",
-      "label": "Mujer"
+      "blockClass": "home__slider--mobile--sale--4"
+    }
+  },
+  "flex-layout.row#mobile__home--slider--sale--5": {
+    "title": "Mobile Home Slider Sale 5",
+    "children": [
+      "flex-layout.col#product-list-sale--five"
+    ],
+    "props": {
+      "blockClass": "home__slider--mobile--sale--5"
     }
   },
 
@@ -92,7 +106,8 @@
   "flex-layout.col#home__section--7--mobile--col--1": {
     "title": "Home Section 7 Mobile Col 1",
     "children": [
-      "image#home__section-7--one"
+      "image#home__section-7--one",
+      "flex-layout.col#home__section--7--mobile--buttons--one"
     ],
     "props": {
       "blockClass": "home__section--7--mobile--col--1",
@@ -104,13 +119,72 @@
   "flex-layout.col#home__section--7--mobile--col--2": {
     "title": "Home Section 7 Mobile Col 2",
     "children": [
-      "image#home__section-7--two"
+      "image#home__section-7--two",
+      "flex-layout.col#home__section--7--mobile--buttons--two"
     ],
     "props": {
       "blockClass": "home__section--7--mobile--col--2",
       "marginBottom": 2,
       "fullWidth": true,
       "width": "100%"
+    }
+  },
+  "flex-layout.col#home__section--7--mobile--buttons--one": {
+    "title": "Home Section 7 Mobile Buttons one",
+    "children": [
+      "rich-text#home__section--7--mobile--text--one",
+      "link#home__section--7--mobile--button--one"
+    ],
+    "props": {
+      "blockClass": "home__section--7--mobile--buttons--container--one",
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#home__section--7--mobile--text--one": {
+    "title": "Home Section 7 Mobile Text one",
+    "props": {
+      "text": "BUZOS Y CHAQUETAS HOMBRE",
+      "blockClass": "home__section--7--mobile--text"
+    }
+  },
+  "link#home__section--7--mobile--button--one": {
+    "title": "Link button section 7 mobile one",
+    "props": {
+      "href": "/hombre/prendas-de-abrigo",
+      "blockClass": "home__section--7--mobile--button",
+      "text": "VER HOMBRE",
+      "label": "VER HOMBRE"
+    }
+  },
+  "flex-layout.col#home__section--7--mobile--buttons--two": {
+    "title": "Home Section 7 Mobile Buttons two",
+    "children": [
+      "rich-text#home__section--7--mobile--text--two",
+      "link#home__section--7--mobile--button--two"
+    ],
+    "props": {
+      "blockClass": "home__section--7--mobile--buttons--container--two",
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#home__section--7--mobile--text--two": {
+    "title": "Home Section 7 Mobile Text two",
+    "props": {
+      "text": "BUZOS Y CHAQUETAS MUJER",
+      "blockClass": "home__section--7--mobile--text"
+    }
+  },
+  "link#home__section--7--mobile--button--two": {
+    "title": "Link button section 7 mobile two",
+    "props": {
+      "href": "/mujer/prendas-de-abrigo",
+      "blockClass": "home__section--7--mobile--button",
+      "text": "VER MUJER",
+      "label": "VER MUJER"
     }
   },
 
