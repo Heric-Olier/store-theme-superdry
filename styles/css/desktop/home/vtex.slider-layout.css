@@ -26,15 +26,6 @@
   right: 10px !important;
 }
 
-.paginationDotsContainer--home__slider--banner,
-.paginationDotsContainer--mobile__home--slider--banner {
-  transform: translateY(20px);
-}
-
-.paginationDot--isActive {
-  background: #fb441f !important;
-}
-
 .sliderLeftArrow--home__slider--banner:hover,
 .sliderRightArrow--home__slider--banner:hover {
   opacity: 0.8;

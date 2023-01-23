@@ -1,0 +1,23 @@
+.link--home__section--7--mobile--button {
+    font-size       : 1.1rem;
+    font-weight     : 600;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    background-color: #fff;
+    color           : #000;
+    width           : 11rem;
+    height          : 3rem;
+    text-decoration : none;
+    text-transform  : uppercase;
+    letter-spacing  : 0.05rem;
+    transition      : all 0.18s ease-in-out;
+    border          : 2px solid #fff;
+    box-shadow      : 0 0 10px rgb(0 0 0 / 34%);
+}
+
+.link--home__section--7--mobile--button:hover {
+    background-color: #000;
+    color           : #fff;
+    border          : 2px solid #fff;
+}

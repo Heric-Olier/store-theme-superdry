@@ -1,0 +1,473 @@
+{
+  //<----- SECTION 10 PAYMENT METHODS ------>
+  "flex-layout.row#home__section-10--global" : {
+    "title": "Home Section 10 Global",
+    "children": [
+      "flex-layout.row#home__section-10"
+    ],
+    "props": {
+      "blockClass": "home__section-10--global",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#home__section-10": {
+    "title": "Home Section 10",
+    "children": [
+      "flex-layout.col#home__text--container",
+      "flex-layout.row#home__payment--methods--container"
+    ],
+    "props": {
+      "blockClass": "home__section-10",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.row#home__payment--methods--container": {
+    "title": "Home Section 10 payment methods",
+    "children": [
+      "link#image--text--container--one",
+      "link#image--text--container--two",
+      "link#image--text--container--three",
+      "link#image--text--container--four",
+      "link#image--text--container--five",
+      "link#image--text--container--six",
+      "link#image--text--container--seven",
+      "link#image--text--container--eight",
+      "link#image--text--container--nine",
+      "link#image--text--container--ten",
+      "link#image--text--container--eleven",
+      "link#image--text--container--twelve"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#home__text--container": {
+    "title": "Home Section 10 text container",
+    "children": [
+      "rich-text#home__text--title--one",
+      "rich-text#home__text--title--two"
+    ],
+    "props": {
+      "blockClass": "home__text--container--payment-methods",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#home__text--title--one": {
+    "title": "Home Section 10 text title one",
+    "props": {
+      "text": "CONOCE NUESTROS",
+      "blockClass": "home__text--title--one",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#home__text--title--two": {
+    "title": "Home Section 10 text title two",
+    "props": {
+      "text": "MEDIOS DE PAGO",
+      "blockClass": "home__text--title--two",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods one ----->
+
+  "link#image--text--container--one": {
+    "title": "Home Section 10 image text container one",
+    "children": [
+      "image#home__payment-methods--one--image",
+      "rich-text#home__payment-methods--one--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--one--image": {
+    "title": "Home Section 10 image one",
+    "props": {
+      "src": "assets/img/payment-methods/pse-mp.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image one"
+    }
+  },
+  "rich-text#home__payment-methods--one--title": {
+    "title": "Home Section 10 title one",
+    "props": {
+      "text": "PSE",
+      "blockClass": "home__payment-methods--title"
+    }
+  },
+
+  // <----- Payment methods two ----->
+
+  "link#image--text--container--two": {
+    "title": "Home Section 10 image text container two",
+    "children": [
+      "image#home__payment-methods--two--image",
+      "rich-text#home__payment-methods--two--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--two--image": {
+    "title": "Home Section 10 image two",
+    "props": {
+      "src": "assets/img/payment-methods/american-mp.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image two"
+    }
+  },
+  "rich-text#home__payment-methods--two--title": {
+    "title": "Home Section 10 title two",
+    "props": {
+      "text": "American Express",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods three ----->
+
+  "link#image--text--container--three": {
+    "title": "Home Section 10 image text container three",
+    "children": [
+      "image#home__payment-methods--three--image",
+      "rich-text#home__payment-methods--three--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--three--image": {
+    "title": "Home Section 10 image three",
+    "props": {
+      "src": "assets/img/payment-methods/diners-mp.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image three"
+    }
+  },
+  "rich-text#home__payment-methods--three--title": {
+    "title": "Home Section 10 title three",
+    "props": {
+      "text": "Diners",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods four ----->
+
+  "link#image--text--container--four": {
+    "title": "Home Section 10 image text container four",
+    "children": [
+      "image#home__payment-methods--four--image",
+      "rich-text#home__payment-methods--four--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--four--image": {
+    "title": "Home Section 10 image four",
+    "props": {
+      "src": "assets/img/payment-methods/visa-mp.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image four"
+    }
+  },
+  "rich-text#home__payment-methods--four--title": {
+    "title": "Home Section 10 title four",
+    "props": {
+      "text": "Visa",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods five ----->
+
+  "link#image--text--container--five": {
+    "title": "Home Section 10 image text container five",
+    "children": [
+      "image#home__payment-methods--five--image",
+      "rich-text#home__payment-methods--five--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--five--image": {
+    "title": "Home Section 10 image five",
+    "props": {
+      "src": "assets/img/payment-methods/mastercard-mp.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image five"
+    }
+  },
+  "rich-text#home__payment-methods--five--title": {
+    "title": "Home Section 10 title five",
+    "props": {
+      "text": "Mastercard",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods six ----->
+
+  "link#image--text--container--six": {
+    "title": "Home Section 10 image text container six",
+    "children": [
+      "image#home__payment-methods--six--image",
+      "rich-text#home__payment-methods--six--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--six--image": {
+    "title": "Home Section 10 image six",
+    "props": {
+      "src": "assets/img/payment-methods/sistecredito-mp.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image six"
+    }
+  },
+  "rich-text#home__payment-methods--six--title": {
+    "title": "Home Section 10 title six",
+    "props": {
+      "text": "Sistecredito",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods seven ----->
+
+  "link#image--text--container--seven": {
+    "title": "Home Section 10 image text container seven",
+    "children": [
+      "image#home__payment-methods--seven--image",
+      "rich-text#home__payment-methods--seven--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--seven--image": {
+    "title": "Home Section 10 image seven",
+    "props": {
+      "src": "assets/img/payment-methods/codensa-mp.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image seven"
+    }
+  },
+  "rich-text#home__payment-methods--seven--title": {
+    "title": "Home Section 10 title seven",
+    "props": {
+      "text": "Codensa",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods eight ----->
+
+  "link#image--text--container--eight": {
+    "title": "Home Section 10 image text container eight",
+    "children": [
+      "image#home__payment-methods--eight--image",
+      "rich-text#home__payment-methods--eight--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--eight--image": {
+    "title": "Home Section 10 image eight",
+    "props": {
+      "src": "assets/img/payment-methods/mercado-pago-mp.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image eight"
+    }
+  },
+  "rich-text#home__payment-methods--eight--title": {
+    "title": "Home Section 10 title eight",
+    "props": {
+      "text": "Mercado Pago",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods nine ----->
+
+  "link#image--text--container--nine": {
+    "title": "Home Section 10 image text container nine",
+    "children": [
+      "image#home__payment-methods--nine--image",
+      "rich-text#home__payment-methods--nine--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--nine--image": {
+    "title": "Home Section 10 image nine",
+    "props": {
+      "src": "assets/img/payment-methods/nequi-mp.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image nine"
+    }
+  },
+  "rich-text#home__payment-methods--nine--title": {
+    "title": "Home Section 10 title nine",
+    "props": {
+      "text": "Nequi",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods ten ----->
+
+  "link#image--text--container--ten": {
+    "title": "Home Section 10 image text container ten",
+    "children": [
+      "image#home__payment-methods--ten--image",
+      "rich-text#home__payment-methods--ten--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--ten--image": {
+    "title": "Home Section 10 image ten",
+    "props": {
+      "src": "assets/img/payment-methods/cupon-de-descuento-dark.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image ten"
+    }
+  },
+  "rich-text#home__payment-methods--ten--title": {
+    "title": "Home Section 10 title ten",
+    "props": {
+      "text": "Cupón de Descuento",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods eleven ----->
+
+  "link#image--text--container--eleven": {
+    "title": "Home Section 10 image text container eleven",
+    "children": [
+      "image#home__payment-methods--eleven--image",
+      "rich-text#home__payment-methods--eleven--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--eleven--image": {
+    "title": "Home Section 10 image eleven",
+    "props": {
+      "src": "assets/img/payment-methods/LOGO-ADDI-REDONDEADO.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image eleven"
+    }
+  },
+  "rich-text#home__payment-methods--eleven--title": {
+    "title": "Home Section 10 title eleven",
+    "props": {
+      "text": "ADDI",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Payment methods twelve ----->
+
+  "link#image--text--container--twelve": {
+    "title": "Home Section 10 image text container twelve",
+    "children": [
+      "image#home__payment-methods--twelve--image",
+      "rich-text#home__payment-methods--twelve--title"
+    ],
+    "props": {
+      "blockClass": "home__payment-methods--container",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "href": "/metodos-de-pago"
+    }
+  },
+  "image#home__payment-methods--twelve--image": {
+    "title": "Home Section 10 image twelve",
+    "props": {
+      "src": "assets/img/payment-methods/LogoBoton_Circulo Blanco.png",
+      "blockClass": "home__payment-methods--image",
+      "title": "Home Section 10 image twelve"
+    }
+  },
+  "rich-text#home__payment-methods--twelve--title": {
+    "title": "Home Section 10 title twelve",
+    "props": {
+      "text": "Botón Bancolombia",
+      "blockClass": "home__payment-methods--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  }
+}
