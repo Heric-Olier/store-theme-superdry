@@ -4,6 +4,7 @@
     text-decoration : none;
     width           : 90%;
     height          : 35px;
+    font-weight     : 500;
     display         : flex;
     justify-content : center;
     align-items     : center;
