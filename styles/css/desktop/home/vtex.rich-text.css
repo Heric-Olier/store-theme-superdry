@@ -55,6 +55,7 @@
     line-height: 1.2;
     font-size  : 14px;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .paragraph--home__payment-methods--title:hover {

@@ -1,0 +1,8 @@
+.departmentsTitle,
+.goBackButtonText {
+    display: none;
+}
+
+.vtex-mega-menu-2-x-caretIcon {
+    color: #FF5E00 !important;
+}
