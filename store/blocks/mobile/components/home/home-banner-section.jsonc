@@ -1,0 +1,63 @@
+{
+  "responsive-layout.mobile#phone__and__tablet--sale": {
+    "title": "Responsive Mobile Sale Banner",
+    "children": [
+      "flex-layout.row#mobile__home--banner--sale"
+    ],
+    "props": {
+      "blockClass": "home__section--sale--mobile",
+      "fullWidth": true,
+      "width": "100%",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#mobile__home--banner--sale": {
+    "title": "Mobile Home Banner Sale",
+    "children": [
+      "flex-layout.col#mobile__home--banner--sale--one",
+      "flex-layout.col#mobile__home--banner--sale--two",
+      "flex-layout.col#mobile__home--banner--sale--three"
+    ],
+    "props": {
+      "marginTop": 3,
+      "blockClass": "mobile__home--banner--sale",
+      "fullWidth": true,
+      "width": "100%",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#mobile__home--banner--sale--one": {
+    "title": "Mobile Banner Sale One",
+    "children": [
+      "image#section__banner__one--mobile"
+    ],
+    "props": {
+      "blockClass": "mobile__home--banner--sale--one",
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#mobile__home--banner--sale--two": {
+    "title": "Mobile Banner Sale Two",
+    "children": [
+      "image#section__banner__two--mobile"
+    ],
+    "props": {
+      "blockClass": "mobile__home--banner--sale--two",
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#mobile__home--banner--sale--three": {
+    "title": "Mobile Banner Sale Three",
+    "children": [
+      "image#section__banner__three--mobile"
+    ],
+    "props": {
+      "blockClass": "mobile__home--banner--sale--three",
+      "fullWidth": true,
+      "width": "100%"
+    }
+  }
+}

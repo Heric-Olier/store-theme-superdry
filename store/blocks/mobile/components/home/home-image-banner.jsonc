@@ -1,0 +1,29 @@
+{
+  "image#section__banner__one--mobile": {
+    "title": "Section banner 1 Image",
+    "props": {
+      "src": "assets/img/banner-camisetas-home-mobile-2023.webp",
+      "blockClass": "home__slider--section-2--image",
+      "title": "Section banner 1 Image",
+      "width": "100%"
+    }
+  },
+  "image#section__banner__two--mobile": {
+    "title": "Section banner 2 Image",
+    "props": {
+      "src": "assets/img/banner-home-tenis-superdry-mobile-oct-2022.gif",
+      "blockClass": "home__slider--section-2--image",
+      "title": "Section banner 2 Image",
+      "width": "100%"
+    }
+  },
+  "image#section__banner__three--mobile": {
+    "title": "Section banner 3 Image",
+    "props": {
+      "src": "assets/img/banner-jeans-home-mobile-2023.gif",
+      "blockClass": "home__slider--section-2--image",
+      "title": "Section banner 3 Image",
+      "width": "100%"
+    }
+  }
+}

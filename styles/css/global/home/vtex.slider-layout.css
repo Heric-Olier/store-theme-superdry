@@ -1,0 +1,7 @@
+.paginationDotsContainer {
+  transform: translateY(20px);
+}
+
+.paginationDot--isActive {
+  background: #fb441f !important;
+}

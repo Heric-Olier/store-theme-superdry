@@ -1,49 +1,63 @@
-
 /* .submenuWrapper--submenu__department--test {
     width: 100vw;
 } */
 
-.styledLinkContent--menu__item{
-    font-weight: bold;
+.styledLinkContent--menu__item {
+    font-weight     : bold;
     background-color: #fb441f;
-    color: #ffffff;
-    font-size: 14px;
-    border-radius: 10px 10px 0 0;
-    padding: 12px 20px;
-    transform: translateY(6px);
-    transition: background-color 0.3s;
+    color           : #ffffff;
+    font-size       : 14px;
+    border-radius   : 10px 10px 0 0;
+    padding         : 8px 14px;
+    transform       : translateY(2px);
+    transition      : background-color 0.3s;
+}
+
+.styledLinkContent--menu__item--black {
+    font-weight     : bold;
+    background-color: #000000;
+    color           : #ffffff;
+    font-size       : 14px;
+    border-radius   : 10px 10px 0 0;
+    padding         : 8px 14px;
+    transform       : translateY(2px);
+    transition      : background-color 0.3s;
+}
+
+.styledLinkContent--menu__item--black:hover {
+    background-color: #fb441f;
 }
 
 .styledLinkContent--menu__item:hover {
-    background-color: #6e2415;
+    background-color: #000000;
 }
 
-.styledLinkContainer--menu__item {
-    margin: 0 10px;
-    padding: 6px 0;
+.styledLinkContainer--menu__item,
+.styledLinkContainer--menu__item--black {
+    margin : 0 10px;
+    padding: 2px 0;
 }
 
 .styledLinkContent--main__menu--category {
     font-weight: bold;
-    font-size: 1rem;
-    margin: 0.9rem 0;
+    font-size  : 1rem;
+    margin     : 0.9rem 0;
     font-family: 'Roboto-Medium', sans-serif;
-    transition: all 0.15s ease-in-out;
+    transition : all 0.15s ease-in-out;
 }
-
 
 .styledLinkContent--main__menu--category-news {
     font-weight: bold;
-    font-size: 1rem;
-    margin: 0.1rem 0;
+    font-size  : 1rem;
+    margin     : 0.1rem 0;
     font-family: 'Roboto-Medium', sans-serif;
-    transition: all 0.15s ease-in-out;
+    transition : all 0.15s ease-in-out;
 }
 
 .styledLinkContent--main__menu--category:hover,
 .styledLinkContent--main__menu--category-news:hover {
     color: #fb441f;
-    
+
 }
 
 .styledLinkContent--menu__item-category {
@@ -52,4 +66,18 @@
 
 .styledLinkContent--menu__item-category:hover {
     color: #fb441f;
+}
+
+.submenuWrapper {
+    width   : 100%;
+    position: fixed;
+    overflow-x: scroll;
+}
+
+.vtex-menu-2-x-submenu {
+    justify-content: flex-start !important;
+}
+
+.vtex-menu-2-x-menuItem--menu__item--isOpen {
+    background-color: #000000;
 }

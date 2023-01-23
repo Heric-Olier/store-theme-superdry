@@ -1,19 +1,658 @@
 {
+  // <----- SECTION 1 ------>
+
   "flex-layout.row#home__section-1": {
-    "title": "DESKTOP Row with text",
+    "title": "Home Section 1",
     "children": [
-      "rich-text#section-1"
-    ]
+      "list-context.image-list#home__slider--list"
+    ],
+    "props": {
+      "marginTop": 3,
+      "blockClass": "home__slider--section-1",
+      "fullWidth": true,
+      "paddingBottom": 6
+    }
   },
 
-  "rich-text#section-1": {
-    "title": "Text Favorites at desktop",
+  // <----- SECTION 3 ------>
+
+  "flex-layout.row#home__section-3": {
+    "title": "Home Section 3",
+    "children": [
+      "flex-layout.col#banner__image--one"
+    ],
     "props": {
-      "blockClass": "",
-      "text": "Favoritos en DESKTOP",
-      "font": "t-heading-2",
+      "marginTop": 3,
+      "blockClass": "banner__image--one",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#banner__image--one": {
+    "title": "Banner Image One",
+    "children": [
+      "image#banner__image--one"
+    ],
+    "props": {
+      "blockClass": "banner__image--one"
+    }
+  },
+  "image#banner__image--one": {
+    "title": "Banner Image One",
+    "props": {
+      "src": "assets/img/banner-camisetas-home-desk-2023.webp",
+      "blockClass": "banner__image--one",
+      "title": "Banner Image One",
+      "link": {
+        "url": "/camisetas",
+        "newTab": false,
+        "attributeNoFollow": true
+      }
+    }
+  },
+
+  // <----- SECTION 4 ------>
+
+  "flex-layout.row#home__section-4": {
+    "title": "Home Section 4",
+    "children": [
+      "flex-layout.col#banner__image--two"
+    ],
+    "props": {
+      "marginTop": 3,
+      "blockClass": "banner__image--two",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#banner__image--two": {
+    "title": "Banner Image Two",
+    "children": [
+      "image#banner__image--two"
+    ],
+    "props": {
+      "blockClass": "banner__image--two"
+    }
+  },
+  "image#banner__image--two": {
+    "title": "Banner Image Two",
+    "props": {
+      "src": "assets/img/banner-jeans-home-desk-2023.gif",
+      "blockClass": "banner__image--two",
+      "title": "Banner Image Two",
+      "link": {
+        "url": "/jean",
+        "newTab": false,
+        "attributeNoFollow": true
+      }
+    }
+  },
+
+  // <----- SECTION 5 ------>
+
+  "flex-layout.row#home__section-5": {
+    "title": "Home Section 5",
+    "children": [
+      "flex-layout.col#banner__image--three"
+    ],
+    "props": {
+      "marginTop": 3,
+      "blockClass": "banner__image--three",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#banner__image--three": {
+    "title": "Banner Image Three",
+    "children": [
+      "image#banner__image--three"
+    ],
+    "props": {
+      "blockClass": "banner__image--three"
+    }
+  },
+  "image#banner__image--three": {
+    "title": "Banner Image Three",
+    "props": {
+      "src": "assets/img/banner-home-tenis-superdry-desk-oct-2022.gif",
+      "blockClass": "banner__image--three",
+      "title": "Banner Image Three",
+      "link": {
+        "url": "/tenis",
+        "newTab": false,
+        "attributeNoFollow": true
+      }
+    }
+  },
+
+  // <----- SECTION 6 ------>
+
+  "flex-layout.row#home__section-6": {
+    "title": "Home Section 6",
+    "children": [
+      "flex-layout.col#product-list-sale--one",
+      "flex-layout.col#product-list-sale--two",
+      "flex-layout.col#product-list-sale--three",
+      "flex-layout.col#product-list-sale--four",
+      "flex-layout.col#product-list-sale--five"
+    ],
+    "props": {
+      "marginTop": 3,
+      "blockClass": "home__product-list--section"
+    }
+  },
+  // <----- Product one ------>
+  "flex-layout.col#product-list-sale--one": {
+    "title": "Product List Sale One",
+    "children": [
+      "image#product-list-sale--one",
+      "link#product-list-sale--man",
+      "link#product-list-sale--woman"
+    ],
+    "props": {
+      "blockClass": "home__product-list--section"
+    }
+  },
+  "image#product-list-sale--one": {
+    "title": "Product List Sale One",
+    "props": {
+      "src": "assets/img/buzos-y-chaquetas-hombre-divisiones-superdry.webp",
+      "blockClass": "home__product-list--section",
+      "title": "Product List Sale One"
+    }
+  },
+  "link#product-list-sale--man": {
+    "title": "Link products man",
+    "props": {
+      "href": "/hombre/prendas-de-abrigo",
+      "blockClass": "home__product-list--section--button",
+      "text": "Hombre",
+      "label": "Hombre"
+    }
+  },
+  "link#product-list-sale--woman": {
+    "title": "Link products woman",
+    "props": {
+      "href": "/mujer/prendas-de-abrigo",
+      "blockClass": "home__product-list--section--button",
+      "text": "Mujer",
+      "label": "Mujer"
+    }
+  },
+  // <----- Product two ------>
+  "flex-layout.col#product-list-sale--two": {
+    "title": "Product List Sale two",
+    "children": [
+      "image#product-list-sale--two",
+      "link#product-list-sale--man",
+      "link#product-list-sale--woman"
+    ],
+    "props": {
+      "blockClass": "home__product-list--section"
+    }
+  },
+  "image#product-list-sale--two": {
+    "title": "Product List Sale two",
+    "props": {
+      "src": "assets/img/camisas-mujer-divisiones-superdry.webp",
+      "blockClass": "home__product-list--section",
+      "title": "Product List Sale two"
+    }
+  },
+  // <----- Product three ------>
+  "flex-layout.col#product-list-sale--three": {
+    "title": "Product List Sale three",
+    "children": [
+      "image#product-list-sale--three",
+      "link#product-list-sale--man",
+      "link#product-list-sale--woman"
+    ],
+    "props": {
+      "blockClass": "home__product-list--section"
+    }
+  },
+  "image#product-list-sale--three": {
+    "title": "Product List Sale three",
+    "props": {
+      "src": "assets/img/camisetas-divisiones-hombre-superdry.webp",
+      "blockClass": "home__product-list--section",
+      "title": "Product List Sale three"
+    }
+  },
+  // <----- Product four ------>
+  "flex-layout.col#product-list-sale--four": {
+    "title": "Product List Sale four",
+    "children": [
+      "image#product-list-sale--four",
+      "link#product-list-sale--man",
+      "link#product-list-sale--woman"
+    ],
+    "props": {
+      "blockClass": "home__product-list--section"
+    }
+  },
+  "image#product-list-sale--four": {
+    "title": "Product List Sale four",
+    "props": {
+      "src": "assets/img/jeans-mujer-divisiones-superdry.webp",
+      "blockClass": "home__product-list--section",
+      "title": "Product List Sale four"
+    }
+  },
+  // <----- Product five ------>
+  "flex-layout.col#product-list-sale--five": {
+    "title": "Product List Sale five",
+    "children": [
+      "image#product-list-sale--five",
+      "link#product-list-sale--man",
+      "link#product-list-sale--woman"
+    ],
+    "props": {
+      "blockClass": "home__product-list--section"
+    }
+  },
+  "image#product-list-sale--five": {
+    "title": "Product List Sale five",
+    "props": {
+      "src": "assets/img/zapotos-divisiones-hombre-superdry.webp",
+      "blockClass": "home__product-list--section",
+      "title": "Product List Sale five"
+    }
+  },
+
+  // <----- SECTION 7 ------>
+
+  "flex-layout.row#home__section-7": {
+    "title": "Home Section 7",
+    "children": [
+      "flex-layout.col#home__section-7--left",
+      "flex-layout.col#home__section-7--right"
+    ],
+    "props": {
+      "marginTop": 3,
+      "blockClass": "home__section-banner-products"
+    }
+  },
+  //<----- Section 7 left ------>
+  "flex-layout.col#home__section-7--left": {
+    "title": "Home Section 7 One left",
+    "children": [
+      "image#home__section-7--one",
+      "flex-layout.col#home__section-7--one--button"
+    ],
+    "props": {
+      "blockClass": "home__section-7--one--left"
+    }
+  },
+  "image#home__section-7--one": {
+    "title": "Home Section 7 One image",
+    "props": {
+      "src": "assets/img/chaquetahombre2022.webp",
+      "blockClass": "home__section-7--one",
+      "title": "Home Section 7 One image"
+    }
+  },
+  "flex-layout.col#home__section-7--one--button": {
+    "title": "Home Section 7 One button",
+    "children": [
+      "rich-text#home__section-7--one--top",
+      "rich-text#home__section-7--one--bottom",
+      "link#home__section-7--one--button--buy"
+    ],
+    "props": {
+      "blockClass": "home__section-7--one--button",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#home__section-7--one--top": {
+    "title": "Home Section 7 One top",
+    "props": {
+      "text": "BUZOS Y CHAQUETAS",
+      "blockClass": "home__section-7--one--text--top"
+    }
+  },
+  "rich-text#home__section-7--one--bottom": {
+    "title": "Home Section 7 One bottom",
+    "props": {
+      "text": "PARA HOMBRE",
+      "blockClass": "home__section-7--one--text--bottom"
+    }
+  },
+  "link#home__section-7--one--button--buy": {
+    "title": "Home Section 7 One button",
+    "props": {
+      "href": "/hombre/buzos-y-chaquetas",
+      "blockClass": "home__section-7--one--button",
+      "text": "COMPRAR",
+      "label": "COMPRAR"
+    }
+  },
+  //<----- Section 7 right ------>
+  "flex-layout.col#home__section-7--right": {
+    "title": "Home Section 7 One right",
+    "children": [
+      "image#home__section-7--two",
+      "flex-layout.col#home__section-7--two--button"
+    ],
+    "props": {
+      "blockClass": "home__section-7--one--right"
+    }
+  },
+  "image#home__section-7--two": {
+    "title": "Home Section 7 Two image",
+    "props": {
+      "src": "assets/img/chaquetamujer2022.webp",
+      "blockClass": "home__section-7--two",
+      "title": "Home Section 7 Two image"
+    }
+  },
+  "flex-layout.col#home__section-7--two--button": {
+    "title": "Home Section 7 Two button",
+    "children": [
+      "rich-text#home__section-7--two--top",
+      "rich-text#home__section-7--two--bottom",
+      "link#home__section-7--two--button--buy"
+    ],
+    "props": {
+      "blockClass": "home__section-7--two--button",
+      "orientation": "vertical",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#home__section-7--two--top": {
+    "title": "Home Section 7 Two top",
+    "props": {
+      "text": "BUZOS Y CHAQUETAS",
+      "blockClass": "home__section-7--two--text--top"
+    }
+  },
+  "rich-text#home__section-7--two--bottom": {
+    "title": "Home Section 7 Two bottom",
+    "props": {
+      "text": "PARA MUJER",
+      "blockClass": "home__section-7--two--text--bottom"
+    }
+  },
+  "link#home__section-7--two--button--buy": {
+    "title": "Home Section 7 Two button",
+    "props": {
+      "href": "/mujer/buzos-y-chaquetas",
+      "blockClass": "home__section-7--two--button",
+      "text": "COMPRAR",
+      "label": "COMPRAR"
+    }
+  },
+
+  //<----- SECTION 8 ------>
+
+  "flex-layout.row#home__section-8": {
+    "title": "Home Section 8",
+    "children": [
+      "flex-layout.col#home__section-8--image"
+    ],
+    "props": {
+      "blockClass": "home__section-banner-products--sale--8",
+      "fullWidth": true,
+      "marginTop": 3
+    }
+  },
+  "image#home__section-8--sale": {
+    "title": "Home Section 8 sale",
+    "props": {
+      "src": "assets/img/camisas2022-desk.jpg",
+      "blockClass": "home__section-8--sale",
+      "title": "Home Section 8 sale"
+    }
+  },
+  "flex-layout.col#home__section-8--image": {
+    "title": "Home Section 8 image",
+    "children": [
+      "image#home__section-8--sale",
+      "flex-layout.col#home__section-8--buttons"
+    ],
+    "props": {
+      "blockClass": "home__section-8--image",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#home__section-8--buttons": {
+    "title": "Home Section 8 buttons",
+    "children": [
+      "rich-text#home__section-8--text--top",
+      "rich-text#home__section-8--text--bottom",
+      "flex-layout.row#home__section-8--buttons--container"
+    ],
+    "props": {
+      "blockClass": "home__section-8--buttons",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#home__section-8--buttons--container": {
+    "title": "Home Section 8 buttons container",
+    "children": [
+      "link#home__section-8--button--buy--man",
+      "link#home__section-8--button--buy--woman"
+    ],
+    "props": {
+      "blockClass": "home__section-8--buttons--container",
+      "colGap": 0,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#home__section-8--text--top": {
+    "title": "Home Section 8 text top",
+    "props": {
+      "text": "CAMISETAS",
+      "blockClass": "home__section-8--text--top",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#home__section-8--text--bottom": {
+    "title": "Home Section 8 text bottom",
+    "props": {
+      "text": "Camisetas de corte clásico arraigadas en la historia de la marca Superdry.",
+      "blockClass": "home__section-8--text--bottom",
+      "textPosition": "CENTER",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "link#home__section-8--button--buy--man": {
+    "title": "Home Section 8 button",
+    "props": {
+      "href": "/hombre/camisetas",
+      "blockClass": "home__section-8--button--buy",
+      "text": "COMPRAR HOMBRE",
+      "label": "COMPRAR HOMBRE"
+    }
+  },
+  "link#home__section-8--button--buy--woman": {
+    "title": "Home Section 8 button",
+    "props": {
+      "href": "/mujer/camisetas",
+      "blockClass": "home__section-8--button--buy",
+      "text": "COMPRAR MUJER",
+      "label": "COMPRAR MUJER"
+    }
+  },
+
+  //<----- SECTION 9 SERVICES ------>
+
+  "flex-layout.row#home__section-9": {
+    "title": "Home Section 9",
+    "children": [
+      "link#home__services--one",
+      "link#home__services--two",
+      "link#home__services--three",
+      "link#home__services--four"
+    ],
+    "props": {
+      "blockClass": "home__section-services--9",
+      "fullWidth": true,
+      "marginTop": 4
+    }
+  },
+
+  // <----- Services one ----->
+
+  "link#home__services--one": {
+    "title": "Home Section 9 one",
+    "children": [
+      "image#home__services--one--image",
+      "rich-text#home__services--one--title",
+      "rich-text#home__services--one--paragraph"
+    ],
+    "props": {
+      "blockClass": "home__services--container",
+
+      "href": "/centro-de-ayuda"
+    }
+  },
+  "image#home__services--one--image": {
+    "title": "Home Section 9 one image",
+    "props": {
+      "src": "assets/img/free-delivery.png",
+      "blockClass": "home__services--image",
+      "title": "Home Section 9 one image"
+    }
+  },
+  "rich-text#home__services--one--title": {
+    "title": "Home Section 9 one title",
+    "props": {
+      "text": "ENVÍOS",
+      "blockClass": "home__services--title",
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#home__services--one--paragraph": {
+    "title": "Home Section 9 one paragraph",
+    "props": {
+      "text": "¡Llegamos a gran parte de Colombia! Envíos gratis a partir de $250 COP.",
+      "blockClass": "home__services--paragraph",
+      "preventHorizontalStretch": true,
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Services two ----->
+
+  "link#home__services--two": {
+    "title": "Home Section 9 two",
+    "children": [
+      "image#home__services--two--image",
+      "rich-text#home__services--two--title",
+      "rich-text#home__services--two--paragraph"
+    ],
+    "props": {
+      "blockClass": "home__services--container",
+      "href": "/centro-de-ayuda"
+    }
+  },
+  "image#home__services--two--image": {
+    "title": "Home Section 9 two image",
+    "props": {
+      "src": "assets/img/next-day.png",
+      "blockClass": "home__services--image",
+      "title": "Home Section 9 two image"
+    }
+  },
+  "rich-text#home__services--two--title": {
+    "title": "Home Section 9 two title",
+    "props": {
+      "text": "PAGOS",
+      "blockClass": "home__services--title"
+    }
+  },
+  "rich-text#home__services--two--paragraph": {
+    "title": "Home Section 9 two paragraph",
+    "props": {
+      "text": "Múltiples medios de pago. Paga a través de MercadoPago.",
+      "blockClass": "home__services--paragraph",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Services three ----->
+
+  "link#home__services--three": {
+    "title": "Home Section 9 three",
+    "children": [
+      "image#home__services--three--image",
+      "rich-text#home__services--three--title",
+      "rich-text#home__services--three--paragraph"
+    ],
+    "props": {
+      "blockClass": "home__services--container",
+      "href": "/centro-de-ayuda"
+    }
+  },
+  "image#home__services--three--image": {
+    "title": "Home Section 9 three image",
+    "props": {
+      "src": "assets/img/free-returns.png",
+      "blockClass": "home__services--image",
+      "title": "Home Section 9 three image"
+    }
+  },
+  "rich-text#home__services--three--title": {
+    "title": "Home Section 9 three title",
+    "props": {
+      "text": "CAMBIOS Y DEVOLUCIONES",
+      "blockClass": "home__services--title"
+    }
+  },
+  "rich-text#home__services--three--paragraph": {
+    "title": "Home Section 9 three paragraph",
+    "props": {
+      "text": "¿No es lo que querías? Puedes solicitar la devolución de cualquier producto, en un plazo de 5 días a partir de la fecha de entrega.",
+      "blockClass": "home__services--paragraph",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // <----- Services four ----->
+
+  "link#home__services--four": {
+    "title": "Home Section 9 four",
+    "children": [
+      "image#home__services--four--image",
+      "rich-text#home__services--four--title",
+      "rich-text#home__services--four--paragraph"
+    ],
+    "props": {
+      "blockClass": "home__services--container",
+      "href": "/centro-de-ayuda"
+    }
+  },
+  "image#home__services--four--image": {
+    "title": "Home Section 9 four image",
+    "props": {
+      "src": "assets/img/click-collect.png",
+      "blockClass": "home__services--image",
+      "title": "Home Section 9 four image"
+    }
+  },
+  "rich-text#home__services--four--title": {
+    "title": "Home Section 9 four title",
+    "props": {
+      "text": "COMPRAS 100% SEGURAS",
+      "blockClass": "home__services--title"
+    }
+  },
+  "rich-text#home__services--four--paragraph": {
+    "title": "Home Section 9 four paragraph",
+    "props": {
+      "text": "Compra de forma segura con la tecnología SSL",
+      "blockClass": "home__services--paragraph",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
   }
 }
