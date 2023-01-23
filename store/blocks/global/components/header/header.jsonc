@@ -51,11 +51,20 @@
       "blockClass": "header__top--logo"
     }
   },
-  "search-bar": {
+  "search-bar#header__search": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
     "props": {
       "placeholder": "¿Qué estás buscando?",
-      "blockClass": "search-bar-mod"
+      "blockClass": "search-bar-mod",
+      "openAutocompleteOnFocus": true
     }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": [
+      "product-summary"
+    ]
   },
   "login": {
     "props": {
@@ -74,7 +83,7 @@
       // "drawer#header__mobile-menu",
       "logo#header__top--logo",
       "header-spacer",
-      "search-bar",
+      "search-bar#header__search",
       "header-spacer",
       "login",
       "minicart.v2"
@@ -103,7 +112,7 @@
   "header-row#header__middle--mobile--search-bar": {
     "title": "Header Medio Mobile Search Bar",
     "children": [
-      "search-bar"
+      "search-bar#header__search"
     ],
     "props": {
       "blockClass": "header__middle--mobile--search-bar",

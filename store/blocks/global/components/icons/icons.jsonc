@@ -1,0 +1,16 @@
+{
+  "icon#header__cart--icon": {
+    "props": {
+      "id": "shopping-bag",
+      "size": 20,
+      "blockClass": "header__cart--icon"
+    }
+  },
+  "icon#header__cart--icon--big": {
+    "props": {
+      "id": "shopping-bag-big",
+      "size": 64,
+      "blockClass": "header__cart--icon--big"
+    }
+  }
+}
