@@ -45,9 +45,9 @@
 }
 
 .paragraph--home__services--paragraph {
-    padding       : 0 2.1rem;
+    padding       : 0 1.9rem;
     font-weight   : 500;
-    letter-spacing: 0.07rem;
+    letter-spacing: 0.05rem;
 }
 
 .paragraph--home__payment-methods--title {

@@ -8,7 +8,7 @@
     color           : #ffffff;
     font-size       : 14px;
     border-radius   : 10px 10px 0 0;
-    padding         : 10px 18px;
+    padding         : 8px 14px;
     transform       : translateY(2px);
     transition      : background-color 0.3s;
 }
@@ -19,7 +19,7 @@
     color           : #ffffff;
     font-size       : 14px;
     border-radius   : 10px 10px 0 0;
-    padding         : 10px 18px;
+    padding         : 8px 14px;
     transform       : translateY(2px);
     transition      : background-color 0.3s;
 }
@@ -71,6 +71,7 @@
 .submenuWrapper {
     width   : 100%;
     position: fixed;
+    overflow-x: scroll;
 }
 
 .vtex-menu-2-x-submenu {
