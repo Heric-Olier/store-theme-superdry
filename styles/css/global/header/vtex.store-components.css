@@ -1,13 +1,19 @@
 .searchBarIcon--search-bar-mod--search {
     background-color: #FF5E00;
-    padding: 0 1rem;
-    margin-right: -1rem;
+    padding         : 0 1rem;
+    margin-right    : -1rem;
 }
 
-
-
 .logoLink--header__top--logo,
-.logoImage--header__top--logo{
+.logoImage--header__top--logo {
     padding-right: 2.2rem;
 
+}
+
+.imageElement--minicart-empty-state--image {
+    transition: all 0.3s ease-in-out;
+}
+
+.imageElement--minicart-empty-state--image:hover {
+    transform: scale(1.1);
 }

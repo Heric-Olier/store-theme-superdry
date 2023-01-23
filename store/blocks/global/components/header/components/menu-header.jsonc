@@ -1,46 +1,5 @@
 {
-  "menu#header__mobile-menu--menu": {
-    "title": "Menu",
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "header__mobile-menu--menu",
-      "fullWidth": true
-    },
-    "children": [
-      "menu-item#category__one",
-      "menu-item#category__two"
-    ]
-  },
-  "menu-item#category__one": {
-    "title": "Menu Item Category One",
-    "props": {
-      "id": "category__one",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/category/one",
-        "tagTitle": "Category One Tag",
-        "text": "Category One Text",
-        "label": "Category One",
-        "blockClass": "category__one"
-      }
-    }
-  },
-  "menu-item#category__two": {
-    "title": "Menu Item Category Two",
-    "props": {
-      "id": "category__two",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/category/two",
-        "tagTitle": "Category Two Tag",
-        "text": "Category Two Text",
-        "label": "Category Two",
-        "blockClass": "category__two"
-      }
-    }
-  },
+
   "header-row#header__bottom": {
     // Parte inferior del header en desktop
     "title": "Header Inferior",
