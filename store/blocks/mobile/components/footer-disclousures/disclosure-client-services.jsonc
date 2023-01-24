@@ -1,0 +1,185 @@
+{
+  // DISCLOSURE LAYOUTS
+  //--------> CLIENT SERVICE <--------//
+
+  "disclosure-layout-group#client-service": {
+    "children": [
+      "disclosure-layout#client-service"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-layout-group",
+      "animated": true
+    }
+  },
+  "disclosure-layout#client-service": {
+    "children": [
+      "disclosure-trigger#client-service",
+      "disclosure-content#client-service"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-layout"
+    }
+  },
+  "disclosure-trigger#client-service": {
+    "children": [
+      "flex-layout.row#client-service__trigger"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-trigger"
+    }
+  },
+  "flex-layout.row#client-service__trigger": {
+    "children": [
+      "flex-layout.col#client-service__trigger"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-row",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#client-service__trigger": {
+    "children": [
+      "rich-text#client-service",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--trigger--container",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#client-service": {
+    "props": {
+      "text": "SERVICIO AL CLIENTE",
+      "blockClass": "footer__mobile--rich-text--title"
+    }
+  },
+  "disclosure-content#client-service": {
+    "children": [
+      "flex-layout.row#client-service"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-content",
+      "animated": true
+    }
+  },
+  "flex-layout.row#client-service": {
+    "children": [
+      "link#client-service--container--1",
+      "link#client-service--container--2",
+      "link#client-service--container--3",
+      "link#client-service--container--4",
+      "link#client-service--container--5"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-row",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+
+  // client service container 1
+
+  "link#client-service--container--1": {
+    "children": [
+      "rich-text#client-service--1",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#client-service--1": {
+    "props": {
+      "text": "LINEA ETICA",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // client service container 2
+
+  "link#client-service--container--2": {
+    "children": [
+      "rich-text#client-service--2",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#client-service--2": {
+    "props": {
+      "text": "CENTRO DE AYUDA",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // client service container 3
+
+  "link#client-service--container--3": {
+    "children": [
+      "rich-text#client-service--3",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#client-service--3": {
+    "props": {
+      "text": "ENVIOS Y DEVOLUCIONES",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // client service container 4
+
+  "link#client-service--container--4": {
+    "children": [
+      "rich-text#client-service--4",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#client-service--4": {
+    "props": {
+      "text": "PREGUNTAS FRECUENTES",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // client service container 5
+
+  "link#client-service--container--5": {
+    "children": [
+      "rich-text#client-service--5",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#client-service--5": {
+    "props": {
+      "text": "PONTE EN CONTACTO",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  }
+}

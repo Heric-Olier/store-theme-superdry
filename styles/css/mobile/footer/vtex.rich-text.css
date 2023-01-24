@@ -1,0 +1,28 @@
+.paragraph--footer__mobile--rich-text,
+.paragraph--footer__mobile--rich-text--title {
+    color      : #fff;
+    font-weight: 400;
+    font-size  : 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph--footer__mobile--rich-text--title {
+    font-weight: 600;
+}
+
+.paragraph--footer__mobile--rich-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container--footer__mobile--rich-text {
+    margin-left: 10px;
+    color      : white;
+    font-weight: 400;
+}
+
+.paragraph--footer__mobile--bottom--col--1--text{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}

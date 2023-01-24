@@ -1,0 +1,23 @@
+.link--footer__mobile--flex-layout-col--container,
+.link--footer__mobile--flex-layout-col {
+    margin         : 0 10px;
+    display        : flex;
+    flex-direction : row;
+    padding        : 10px 0;
+    border-top     : 1px dotted #fff;
+    width          : 100%;
+    text-decoration: none;
+}
+
+.childrenContainer--footer__mobile--flex-layout-col {
+    display        : flex;
+    margin         : 4px 0;
+    width          : 100%;
+}
+
+.childrenContainer--footer__mobile--flex-layout-col--container {
+    display        : flex;
+    margin         : 4px 0;
+    justify-content: space-between;
+    width          : 100%;
+}

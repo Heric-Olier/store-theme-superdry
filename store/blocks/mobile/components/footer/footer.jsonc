@@ -1,0 +1,58 @@
+{
+  "flex-layout.row#footer-mobile": {
+    "title": "Footer Mobile",
+    "children": [
+      "flex-layout.col#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "footer-mobile",
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  "disclosure-state-indicator": {
+    "title": "Disclosure State Indicator",
+    "props": {
+      "Show": "image#more",
+      "Hide": "image#less"
+    }
+  },
+  "image#more": {
+    "title": "Image More Icon",
+    "props": {
+      "src": "assets/img/footer-icons/more.png",
+      "width": 14,
+      "height": 14
+    }
+  },
+
+  "image#less": {
+    "title": "Image Less Icon",
+    "props": {
+      "src": "assets/img/footer-icons/less.png",
+      "width": 14
+    }
+  },
+  "image#next": {
+    "title": "Image Next Icon",
+    "props": {
+      "src": "assets/img/footer-icons/next.png",
+      "height": 14
+    }
+  },
+
+  "flex-layout.col#footer-mobile": {
+    "title": "Footer Mobile Col",
+    "children": [
+      "disclosure-layout-group#follow-us",
+      "disclosure-layout-group#our-company",
+      "disclosure-layout-group#client-service",
+      "disclosure-layout-group#our-trade-mark",
+      "disclosure-layout-group#information",
+      "flex-layout.row#footer-mobile--bottom--container"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--col--container"
+    }
+  }
+}

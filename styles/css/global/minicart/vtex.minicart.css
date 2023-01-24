@@ -17,3 +17,9 @@
 .minicartWrapperContainer {
     padding-right: 1.75rem;
 }
+
+@media (max-width: 1025px) {
+    .minicartWrapperContainer {
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,83 @@
+{
+  "flex-layout.row#footer-mobile--bottom--container": {
+    "title": "Footer Mobile Bottom Container",
+    "children": [
+      "flex-layout.col#footer-mobile--bottom--col--1",
+      "flex-layout.col#footer-mobile--bottom--col--2",
+      "flex-layout.col#footer-mobile--bottom--col--3"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--bottom--container",
+      "fullWidth": true,
+      "width": "100%",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#footer-mobile--bottom--col--1": {
+    "title": "Footer Mobile Bottom Col 1",
+    "children": [
+      "rich-text#footer-mobile--bottom--col--1--text"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--bottom--col--1",
+      "width": "100%",
+      "fullWidth": true
+    }
+  },
+  "rich-text#footer-mobile--bottom--col--1--text": {
+    "title": "Footer Mobile Bottom Col 1 Text",
+    "props": {
+      "text": "© SUPERDRY COLOMBIA 2018",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "footer__mobile--bottom--col--1--text"
+    }
+  },
+  "flex-layout.col#footer-mobile--bottom--col--2": {
+    "title": "Footer Mobile Bottom Col 2",
+    "children": [
+      "image#footer-mobile--bottom--col--2--image--1",
+      "image#footer-mobile--bottom--col--2--image--2"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--bottom--col--2",
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#footer-mobile--bottom--col--2--image--1": {
+    "title": "Footer Mobile Bottom Col 2 Image 1",
+    "props": {
+      "src": "assets/img/footer-icons/logo-sic-footer.png",
+      "blockClass": "footer__mobile--bottom--col--2--image--1",
+      "preventHorizontalStretch": true,
+      "width": 150
+    }
+  },
+  "image#footer-mobile--bottom--col--2--image--2": {
+    "title": "Footer Mobile Bottom Col 2 Image 2",
+    "props": {
+      "src": "assets/img/footer-icons/camaradecomercio1.png",
+      "blockClass": "footer__mobile--bottom--col--2--image--2",
+      "preventHorizontalStretch": true,
+      "width": 84
+    }
+  },
+  "flex-layout.col#footer-mobile--bottom--col--3": {
+    "title": "Footer Mobile Bottom Col 3",
+    "children": [
+      "image#footer-mobile--bottom--col--3--image--1"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--bottom--col--3",
+      "width": "100%"
+    }
+  },
+  "image#footer-mobile--bottom--col--3--image--1": {
+    "title": "Footer Mobile Bottom Col 3 Image 1",
+    "props": {
+      "src": "assets/img/footer-icons/575x40_Todos-los-medios-de-pago.jpg",
+      "blockClass": "footer__mobile--bottom--col--3--image--1",
+      "width": "100%"
+    }
+  }
+}
