@@ -1,0 +1,38 @@
+.link--footer__desktop--col--container--menu--item {
+    font-size      : 12px;
+    text-decoration: none;
+    color          : #fff;
+    letter-spacing : 0.8px;
+    line-height    : 2;
+    font-weight    : 400;
+    transition     : all 0.3s ease-in-out;
+}
+
+.link--footer__desktop--col--container--menu--item:hover {
+    color: #FF5E00;
+}
+
+.childrenContainer--footer__choose-country--link {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    align-items     : center;
+    max-width       : 230px;
+    padding         : 6px;
+    background-color: #fff;
+    margin-bottom   : 1rem;
+
+}
+
+.link--footer__choose-country--link {
+    text-decoration: none;
+}
+
+.childrenContainer--follow-us--social--container--link {
+    margin-right: 10px;
+    transition  : all 0.2s ease-in-out
+}
+
+.childrenContainer--follow-us--social--container--link:hover {
+    transform: scale(1.3);
+}

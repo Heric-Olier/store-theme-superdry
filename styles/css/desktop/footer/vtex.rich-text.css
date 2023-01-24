@@ -1,0 +1,19 @@
+.paragraph--footer__desktop--col--container--title {
+    font-size     : 12px;
+    margin-bottom : 1rem;
+    color         : #FF5E00;
+    font-weight   : 400;
+    letter-spacing: 0.8px;
+
+}
+
+.paragraph--footer__desktop--col--container--choose-country--text,
+.paragraph--footer__desktop--col--container--follow-us--text {
+    font-size: 16px;
+    color    : #fff;
+}
+
+.paragraph--footer__choose-country--text {
+    font-weight: 400;
+    margin-left: 10px;
+}
