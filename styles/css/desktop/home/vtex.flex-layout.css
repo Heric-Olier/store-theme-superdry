@@ -13,9 +13,11 @@
     margin-bottom: 1rem;
 }
 
-.flexRow--home__product-list--section {
-    max-width: 1200px;
-    margin   : 0 auto;
+.flexRow--home__product-list--section,
+.flexRow--search-result-layout--list--container {
+    max-width     : 1200px;
+    margin        : 0 auto;
+    padding-bottom: 2rem;
 }
 
 .flexColChild--home__product-list--section {
@@ -92,4 +94,11 @@
 .flexRowContent--banner__image--two,
 .flexRowContent--banner__image--three {
     overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    .flexRow--search-result-layout--list--container {
+        max-width: 900px;
+    }
+
 }
