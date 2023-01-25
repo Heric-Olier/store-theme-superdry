@@ -1,0 +1,167 @@
+{
+  // <----- CONTAINER FOLLOW US ----->
+
+  "flex-layout.col#footer__desktop--col--container--follow-us": {
+    "title": "Footer Desktop Col Follow Us",
+    "children": [
+      "flex-layout.col#choose-country",
+      "flex-layout.col#follow-us--desktop"
+    ],
+    "props": {
+      "blockClass": "footer__desktop--col--container",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.col#choose-country": {
+    "title": "Choose Country",
+    "children": [
+      "rich-text#choose-country",
+      "link#choose-country--container"
+    ],
+    "props": {
+      "blockClass": "footer__desktop--col--container--choose-country"
+    }
+  },
+  "rich-text#choose-country": {
+    "title": "Choose Country",
+    "props": {
+      "text": "ESCOGE TU PAÍS",
+      "blockClass": "footer__desktop--col--container--choose-country--text"
+    }
+  },
+  "link#choose-country--container": {
+    "children": [
+      "flex-layout.row#flag--container",
+      "image#angle-up"
+    ],
+    "title": "Choose Country Container",
+    "props": {
+      "href": "#",
+      "blockClass": "footer__choose-country--link",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#flag--container": {
+    "children": [
+      "image#choose-country--container--icon",
+      "rich-text#choose-country--container--text"
+    ],
+    "props": {
+      "blockClass": "footer__choose-country--container--flag",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+  "image#angle-up": {
+    "title": "Angle Up",
+    "props": {
+      "src": "assets/img/footer-icons/up-angle.png",
+      "width": 12,
+      "blockClass": "footer__choose-country--angle-up"
+    }
+  },
+  "image#choose-country--container--icon": {
+    "title": "Choose Country Icon",
+    "props": {
+      "src": "assets/img/footer-icons/co.png",
+      "width": 32,
+      "height": 32,
+      "blockClass": "footer__choose-country--icon"
+    }
+  },
+  "rich-text#choose-country--container--text": {
+    "title": "Choose Country Text",
+    "props": {
+      "text": "Colombia",
+      "blockClass": "footer__choose-country--text"
+    }
+  },
+  "flex-layout.col#follow-us--desktop": {
+    "title": "Follow Us",
+    "children": [
+      "rich-text#follow-us--desktop",
+      "flex-layout.row#follow-us--social--container"
+    ],
+    "props": {
+      "blockClass": "footer__desktop--col--container--follow-us"
+    }
+  },
+  "flex-layout.row#follow-us--social--container": {
+    "children": [
+      "link#follow-us--container--desktop--1",
+      "link#follow-us--container--desktop--2",
+      "link#follow-us--container--desktop--3",
+      "link#follow-us--container--desktop--4",
+      "link#follow-us--container--desktop--5"
+    ],
+    "props": {
+      "blockClass": "follow-us--social--container",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+  "rich-text#follow-us--desktop": {
+    "title": "Follow Us Text",
+    "props": {
+      "text": "SÍGUENOS EN",
+      "blockClass": "footer__desktop--col--container--follow-us--text"
+    }
+  },
+  "link#follow-us--container--desktop--1": {
+    "title": "Follow Us Facebook",
+    "children": [
+      "image#facebook"
+    ],
+    "props": {
+      "href": "https://www.facebook.com/SuperdryColombia/",
+      "blockClass": "follow-us--social--container--link"
+    }
+  },
+  "link#follow-us--container--desktop--2": {
+    "title": "Follow Us Twitter",
+    "children": [
+      "image#twitter"
+    ],
+    "props": {
+      "href": "https://twitter.com/superdry",
+      "blockClass": "follow-us--social--container--link"
+    }
+  },
+  "link#follow-us--container--desktop--3": {
+    "title": "Follow Us Google Plus",
+    "children": [
+      "image#google+"
+    ],
+    "props": {
+      "href": "https://currents.google.com/+superdry",
+      "blockClass": "follow-us--social--container--link"
+    }
+  },
+  "link#follow-us--container--desktop--5": {
+    "title": "Follow Us Pinterest",
+    "children": [
+      "image#pinterest"
+    ],
+    "props": {
+      "src": "assets/img/footer-icons/pinterest.png",
+      "blockClass": "follow-us--social--container--link"
+    }
+  },
+  "link#follow-us--container--desktop--4": {
+    "title": "Follow Us Instagram",
+    "children": [
+      "image#instagram"
+    ],
+    "props": {
+      "href": "https://www.instagram.com/superdry/",
+      "blockClass": "follow-us--social--container--link"
+    }
+  }
+}

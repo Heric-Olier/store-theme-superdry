@@ -1,0 +1,29 @@
+{
+  "flex-layout.row#footer-desktop": {
+    "title": "Footer Desktop",
+    "children": [
+      "flex-layout.row#footer__desktop--top--container",
+      "flex-layout.row#footer__desktop--bottom--container"
+    ],
+    "props": {
+      "blockClass": "footer-desktop",
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#footer__desktop--top--container": {
+    "title": "Footer Desktop Top Container",
+    "children": [
+      "flex-layout.col#footer__desktop--col--container--follow-us",
+      "flex-layout.col#footer__desktop--col--container--our-company",
+      "flex-layout.col#footer__desktop--col--container--client-service",
+      "flex-layout.col#footer__desktop--col--container--our-trade-mark",
+      "flex-layout.col#footer__desktop--col--container--information"
+    ],
+    "props": {
+      "blockClass": "footer__desktop--top--container",
+      "fullWidth": true,
+      "width": "100%"
+    }
+  }
+}

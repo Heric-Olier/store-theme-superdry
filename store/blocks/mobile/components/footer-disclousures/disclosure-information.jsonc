@@ -1,0 +1,185 @@
+{
+  // DISCLOSURE LAYOUTS
+  //--------> INFORMATION <--------//
+
+  "disclosure-layout-group#information": {
+    "children": [
+      "disclosure-layout#information"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-layout-group",
+      "animated": true
+    }
+  },
+  "disclosure-layout#information": {
+    "children": [
+      "disclosure-trigger#information",
+      "disclosure-content#information"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-layout"
+    }
+  },
+  "disclosure-trigger#information": {
+    "children": [
+      "flex-layout.row#information__trigger"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-trigger"
+    }
+  },
+  "flex-layout.row#information__trigger": {
+    "children": [
+      "flex-layout.col#information__trigger"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-row",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#information__trigger": {
+    "children": [
+      "rich-text#information",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--trigger--container",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#information": {
+    "props": {
+      "text": "INFORMACIÓN",
+      "blockClass": "footer__mobile--rich-text--title"
+    }
+  },
+  "disclosure-content#information": {
+    "children": [
+      "flex-layout.row#information"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-content",
+      "animated": true
+    }
+  },
+  "flex-layout.row#information": {
+    "children": [
+      "link#information--1",
+      "link#information--2",
+      "link#information--3",
+      "link#information--4",
+      "link#information--5"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-row",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+
+  // information container 1
+
+  "link#information--1": {
+    "children": [
+      "rich-text#information--1",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#information--1": {
+    "props": {
+      "text": "TERMINOS Y CONDICIONES",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // information container 2
+
+  "link#information--2": {
+    "children": [
+      "rich-text#information--2",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#information--2": {
+    "props": {
+      "text": "POLÍTICA DE COOKIES",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // information container 3
+
+  "link#information--3": {
+    "children": [
+      "rich-text#information--3",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#information--3": {
+    "props": {
+      "text": "PROMOCIONES VIGENTES",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // information container 4
+
+  "link#information--4": {
+    "children": [
+      "rich-text#information--4",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#information--4": {
+    "props": {
+      "text": "POLÍTICA DE PRIVACIDAD",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // information container 5
+
+  "link#information--5": {
+    "children": [
+      "rich-text#information--5",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#information--5": {
+    "props": {
+      "text": "LOCALIZADOR DE TIENDAS",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.minicartTitle {
+    display: none;
+}
+
+.minicartIconContainer {
+    color: #fff;
+}
+
+.minicartIconContainer:hover {
+    color: #ffac7c;
+}
+
+.minicartQuantityBadgeDefault {
+    background-color: #FF5E00;
+}
+
+.minicartWrapperContainer {
+    padding-right: 1.75rem;
+}
+
+@media (max-width: 1025px) {
+    .minicartWrapperContainer {
+        padding-right: 0;
+    }
+}
