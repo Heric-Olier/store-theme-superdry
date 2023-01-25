@@ -1,0 +1,141 @@
+{
+  // DISCLOSURE LAYOUTS
+  //--------> OUR COMPANY <--------//
+
+  "disclosure-layout-group#our-company": {
+    "children": [
+      "disclosure-layout#our-company"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-layout-group",
+      "animated": true
+    }
+  },
+  "disclosure-layout#our-company": {
+    "children": [
+      "disclosure-trigger#our-company",
+      "disclosure-content#our-company"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-layout"
+    }
+  },
+  "disclosure-trigger#our-company": {
+    "children": [
+      "flex-layout.row#our-company__trigger"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-trigger"
+    }
+  },
+  "flex-layout.row#our-company__trigger": {
+    "children": [
+      "flex-layout.col#our-company__trigger"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-row",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#our-company__trigger": {
+    "children": [
+      "rich-text#our-company",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--trigger--container",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#our-company": {
+    "props": {
+      "text": "POR QUE COMPRAR EN SUPERDRY",
+      "blockClass": "footer__mobile--rich-text--title"
+    }
+  },
+  "disclosure-content#our-company": {
+    "children": [
+      "flex-layout.row#our-company"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-content",
+      "animated": true
+    }
+  },
+  "flex-layout.row#our-company": {
+    "children": [
+      "link#our-company--container--1",
+      "link#our-company--container--2",
+      "link#our-company--container--3"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-row",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+
+  // our company container 1
+
+  "link#our-company--container--1": {
+    "children": [
+      "rich-text#our-company--1",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/comprar-productos-de-la-marca",
+      "openNewTab": false
+    }
+  },
+  "rich-text#our-company--1": {
+    "props": {
+      "text": "COMPRAR PRODUCTOS DE LA MARCA",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // our company container 2
+
+  "link#our-company--container--2": {
+    "children": [
+      "rich-text#our-company--2",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/centro-de-ayuda",
+      "openNewTab": false
+    }
+  },
+  "rich-text#our-company--2": {
+    "props": {
+      "text": "CENTRO DE AYUDA",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // our company container 3
+
+  "link#our-company--container--3": {
+    "children": [
+      "rich-text#our-company--3",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/centro-de-ayuda",
+      "openNewTab": false
+    }
+  },
+  "rich-text#our-company--3": {
+    "props": {
+      "text": "DEVOLUCIONES",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  }
+}
