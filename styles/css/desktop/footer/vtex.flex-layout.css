@@ -2,6 +2,8 @@
     background-color: #000;
     padding         : 2rem;
     margin-top      : 1rem;
+    display         : flex;
+    flex-direction  : column;
 }
 
 .flexRowContent--footer__desktop--col--container--menu--container {
@@ -17,4 +19,17 @@
 
 .flexCol--footer__desktop--col--container {
     padding: 0 1rem;
+}
+
+.flexRowContent--footer__desktop--bottom--container {
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    margin-top     : 3rem;
+}
+
+.flexCol--footer__desktop--bottom--col--2 {
+    display        : flex;
+    justify-content: center;
+    flex-direction : row;
 }
