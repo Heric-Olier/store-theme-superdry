@@ -45,8 +45,7 @@
   },
   "search-result-layout": {
     "blocks": [
-      "search-result-layout.desktop",
-      "search-result-layout.mobile",
+      "search-result-layout.desktop#department",
       "search-not-found-layout"
     ]
   },

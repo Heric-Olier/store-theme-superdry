@@ -27,7 +27,6 @@
       "blockClass": "search__layout--desktop--container",
       "width": "100%",
       "fullWidth": true,
-      "preventHorizontalStretch": true,
       "preventRouteChange": true
     }
   },
@@ -35,9 +34,13 @@
     "title": "category results",
     "children": [
       "flex-layout.col#categoryresults--filter",
-      // "flex-layout.row#banner__images--container",
       "flex-layout.col#categoryresults--content"
-    ]
+    ],
+    "props": {
+      "blockClass": "search__layout--container",
+      "width": "100%",
+      "fullWidth": true
+    }
   },
   "flex-layout.col#categoryresults--filter": {
     "title": "category results filter",
@@ -46,22 +49,129 @@
     ],
     "props": {
       "blockClass": "search__filter--container",
-      "width": "20%"
+      "width": "16%"
     }
   },
 
-  // "flex-layout.row#banner__images--container": {
-  //   "title": "banner images container",
-  //   "children": [
-  //     "flex-layout.col#banner__images--top",
-  //     "flex-layout.col#banner__images--bottom"
-  //   ]
-  // },
+  "flex-layout.row#banner__images--container": {
+    "title": "banner images container",
+    "children": [
+      "flex-layout.col#banner__images--top",
+      "flex-layout.row#banner__images--bottom"
+    ],
+    "props": {
+      "blockClass": "images__banner--container",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#banner__images--top": {
+    "title": "banner images top",
+    "children": [
+      "image#banner__image--top"
+    ],
+    "props": {
+      "blockClass": "search__banner--top",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--top": {
+    "props": {
+      "src": "assets/img/landing-top-superdry-oct-2022.webp",
+      "alt": "banner image top",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#banner__images--bottom": {
+    "title": "banner images bottom",
+    "children": [
+      "link#banner__image--bottom--one",
+      "link#banner__image--bottom--two",
+      "link#banner__image--bottom--three",
+      "link#banner__image--bottom--four"
+    ],
+    "props": {
+      "blockClass": "search__banner--bottom",
+      "width": "100%",
+      "paddingTop": 5
+    }
+  },
+  "link#banner__image--bottom--one": {
+    "props": {
+      "href": "productos-top/camisetas",
+      "blockClass": "link__banner--bottom"
+    },
+    "children": [
+      "image#banner__image--bottom--one"
+    ]
+  },
+  "link#banner__image--bottom--two": {
+    "props": {
+      "href": "productos-top/buzos-y-camisetas",
+      "blockClass": "link__banner--bottom"
+    },
+    "children": [
+      "image#banner__image--bottom--two"
+    ]
+  },
+  "link#banner__image--bottom--three": {
+    "props": {
+      "href": "productos-top/jeans",
+      "blockClass": "link__banner--bottom"
+    },
+    "children": [
+      "image#banner__image--bottom--three"
+    ]
+  },
+  "link#banner__image--bottom--four": {
+    "props": {
+      "href": "productos-top/morrales",
+      "blockClass": "link__banner--bottom"
+    },
+    "children": [
+      "image#banner__image--bottom--four"
+    ]
+  },
+  "image#banner__image--bottom--one": {
+    "props": {
+      "src": "assets/img/camisetas-superdry-oct-2022-nueva-landing-desk.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--bottom--two": {
+    "props": {
+      "src": "assets/img/buzos-superdry-oct-2022-nueva-landing-desk.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--bottom--three": {
+    "props": {
+      "src": "assets/img/jeans-superdry-oct-2022-nueva-landing-desk.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--bottom--four": {
+    "props": {
+      "src": "assets/img/bolsos-superdry-oct-2022-nueva-landing-desk.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
   "flex-layout.col#categoryresults--content": {
     "title": "category results content",
     "children": [
+      "flex-layout.row#banner__images--container",
+      "flex-layout.row#departmentbreadcrumb",
+      "order-by.v2",
       "search-content#resultscontent--products"
     ]
+  },
+  "order-by.v2": {
+    "props": {
+      "blockClass": "search__order-by--container"
+    }
   },
   "search-content#resultscontent--products": {
     "title": "search content",
@@ -84,7 +194,7 @@
           }
         }
       ],
-      "GeneralGrid": "product-summary.shelf"
+      "GeneralGrid": "product-summary.shelf#product__summary--container--global"
     }
   },
   "flex-layout.row#departmentbreadcrumb": {
@@ -98,6 +208,11 @@
     "children": [
       "breadcrumb.search"
     ]
+  },
+  "breadcrumb.search": {
+    "props": {
+      "blockClass": "breadcrumb__search"
+    }
   },
   "search-result-layout.mobile#department": {
     "title": "search result layout mobile",

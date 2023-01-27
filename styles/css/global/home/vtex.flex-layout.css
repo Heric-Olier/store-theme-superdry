@@ -25,6 +25,15 @@
     border-radius   : 6px;
 }
 
+.flexRowContent--images__banner--container {
+    flex-direction: column;
+}
+
+.flexColChild--search__filter--container {
+    background-color: #f7f7f7;
+    padding         : 0 1.2rem;
+}
+
 @media (max-width: 1025px) {
     .flexRowContent--home__section-10 {
         display: block;

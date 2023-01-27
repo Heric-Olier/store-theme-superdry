@@ -1,4 +1,29 @@
 .searchResultContainer--search__layout--desktop--container {
-    max-width: 96% !important;
+    max-width: 99% !important;
 }
 
+.filterItem {
+    font-size  : 14px;
+    font-weight: 400;
+}
+
+.filterMessage {
+    background-color: rgba(80, 80, 80, 0.9);
+    padding         : 5px;
+    color           : #fff;
+    font-size       : 16px;
+    text-transform  : uppercase;
+    text-align      : center;
+}
+
+.orderByDropdown {
+    display: flex;
+}
+
+/* .orderByOptionsContainer {
+    width: 260px;
+} */
+
+.orderByButton {
+    width: 50%;
+}

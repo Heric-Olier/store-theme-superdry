@@ -38,3 +38,7 @@
     margin    : 0 auto 10px;
     object-fit: contain;
 }
+
+.searchResultContainer--search__layout--desktop--container {
+    max-width: 99% !important;
+}
