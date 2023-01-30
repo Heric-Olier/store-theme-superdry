@@ -1,0 +1,10 @@
+.link--breadcrumb__search {
+    font-size     : 12px;
+    font-weight   : 400;
+    text-transform: uppercase;
+    margin-left   : 1rem;
+}
+
+.link--breadcrumb__search:hover {
+    color: #fb441f;
+}
