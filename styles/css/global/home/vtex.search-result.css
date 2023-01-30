@@ -1,5 +1,6 @@
 .searchResultContainer--search__layout--desktop--container {
     max-width: 99% !important;
+    overflow : hidden;
 }
 
 .filterItem {
@@ -26,4 +27,44 @@
 
 .orderByButton {
     width: 50%;
+}
+
+.orderByButton--search__order-by--container {
+    width: 100%;
+}
+
+.orderByOptionItem--search__order-by--container--selected {
+    background-color: #E0C0AE;
+}
+
+.orderByButton--search__order-by--container {
+    width           : 100%;
+    border          : 1px solid #cccccc;
+    background-color: #f7f7f7;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    margin-left     : 0.7rem;
+    padding         : 0.6rem;
+    border-radius   : unset;
+}
+
+.container--layout--search__layout--mobile--container {
+    overflow: hidden;
+}
+
+.filterPopupTitle--search__order-by--container,
+.filterPopupTitle--filter-navigator__mobile {
+    font-weight: 700;
+}
+
+.filtersWrapperMobile--filter-navigator__mobile {
+    border          : 1px solid #cccccc;
+    background-color: #f7f7f7;
+    height          : 80%;
+    margin-right    : 0.7rem;
+}
+
+.filtersWrapperMobile--filter-navigator__mobile :global(.vtex-search-result-3-x-filterPopupButton) {
+    height: 2.6rem;
 }

@@ -22,11 +22,15 @@
     color           : #fff;
 }
 
-.element--product-summary--container {
+.element--product-summary--container,
+.element--search__grid--product-summary,
+.element--search__list--product-summary {
     display        : flex;
     justify-content: center;
     align-items    : center;
 }
+
+
 
 
 @media (max-width: 1024px) {

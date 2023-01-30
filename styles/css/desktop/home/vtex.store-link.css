@@ -115,11 +115,17 @@
     text-align     : center;
 }
 
-.childrenContainer--link__banner--bottom {
+.childrenContainer--link__banner--bottom,
+.childrenContainer--link__banner--bottom--mobile {
     transition: all 0.25s ease-in-out;
 }
 
-.childrenContainer--link__banner--bottom:hover {
+.childrenContainer--link__banner--bottom:hover,
+.childrenContainer--link__banner--bottom--mobile:hover {
     transform: scale(1.03);
     filter   : brightness(0.7);
+}
+
+.childrenContainer--link__banner--bottom--mobile {
+    margin-bottom: 0.5rem;
 }
