@@ -37,5 +37,22 @@
     height    : 40px;
     margin    : 0 auto 10px;
     object-fit: contain;
+}
 
+.imageElement--icon-grid:hover,
+.imageElement--icon-list:hover {
+    filter: opacity(0.5);
+}
+
+.searchResultContainer--search__layout--desktop--container {
+    max-width: 99% !important;
+}
+
+.imageElement--quickview__modal--button {
+    margin-top: 0.7rem;
+    filter    : opacity(0.5);
+}
+
+.imageElement--quickview__modal--button:hover{
+    filter    : opacity(1);
 }

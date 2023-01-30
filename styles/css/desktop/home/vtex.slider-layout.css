@@ -6,8 +6,7 @@
     max-height: initial !important;
 } */
 
-.sliderLeftArrow--home__slider--banner,
-.sliderRightArrow--home__slider--banner {
+.sliderArrows {
   width        : 24px !important;
   height       : 24px !important;
   padding      : 4px !important;
@@ -17,6 +16,17 @@
   outline      : 0 !important;
   background   : #fff !important;
 }
+
+.sliderArrows--search-result-list--products {
+  background: #000 !important;
+  color     : #fff !important;
+}
+
+.sliderArrows--search-result-list--products:hover {
+  background: #fb441f !important;
+  color     : #fff !important;
+}
+
 
 .sliderLeftArrow--home__slider--banner {
   left: 10px !important;

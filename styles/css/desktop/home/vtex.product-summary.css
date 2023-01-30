@@ -1,0 +1,41 @@
+.containerNormal--product-summary--container {
+    margin   : 0 10px;
+    max-width: 239px !important;
+}
+
+.buyButton :global(.vtex-button) {
+    border       : none;
+    border-radius: unset;
+    width        : 86%;
+    transition   : all 0.18s ease-in-out;
+}
+
+.container :global(.vtex-button) {
+    border       : none;
+    border-radius: unset;
+    width        : 86%;
+    transition   : all 0.18s ease-in-out;
+}
+
+.container :global(.vtex-button):hover {
+    background-color: #000;
+    color           : #fff;
+}
+
+.element--product-summary--container,
+.element--search__grid--product-summary,
+.element--search__list--product-summary {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .containerNormal--product-summary--container {
+        max-width: 100% !important;
+    }
+
+}

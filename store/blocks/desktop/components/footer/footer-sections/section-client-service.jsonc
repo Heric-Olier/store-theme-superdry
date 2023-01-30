@@ -1,0 +1,86 @@
+{
+  // <----- CONTAINER CLIENT SERVICE ----->
+
+  "flex-layout.col#footer__desktop--col--container--client-service": {
+    "title": "Footer Desktop Col Client Service",
+    "children": [
+      "rich-text#client-service--title",
+      "flex-layout.row#client-service--container"
+    ],
+    "props": {
+      "blockClass": "footer__desktop--col--container",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+  "rich-text#client-service--title": {
+    "title": "Client Service Title",
+    "props": {
+      "text": "SERVICIO AL CLIENTE",
+      "blockClass": "footer__desktop--col--container--title"
+    }
+  },
+  "flex-layout.row#client-service--container": {
+    "children": [
+      "link#client-service--one",
+      "link#client-service--two",
+      "link#client-service--three",
+      "link#client-service--four",
+      "link#client-service--five"
+    ],
+
+    "props": {
+      "blockClass": "footer__desktop--col--container--menu--container",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+  "link#client-service--one": {
+    "title": "Client Service One",
+    "props": {
+      "label": "LINEA ETICA",
+      "text": "LINEA ETICA",
+      "href": "/",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  },
+  "link#client-service--two": {
+    "title": "Client Service Two",
+    "props": {
+      "label": "CENTRO DE AYUDA",
+      "text": "CENTRO DE AYUDA",
+      "href": "/centro-de-ayuda",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  },
+  "link#client-service--three": {
+    "title": "Client Service Three",
+    "props": {
+      "label": "ENVIOS Y DEVOLUCIONES",
+      "text": "ENVIOS Y DEVOLUCIONES",
+      "href": "/",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  },
+  "link#client-service--four": {
+    "title": "Client Service Four",
+    "props": {
+      "label": "PREGUNTAS FRECUENTES",
+      "text": "PREGUNTAS FRECUENTES",
+      "href": "/",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  },
+  "link#client-service--five": {
+    "title": "Client Service Five",
+    "props": {
+      "label": "PONTE EN CONTACTO",
+      "text": "PONTE EN CONTACTO",
+      "href": "/",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  }
+}

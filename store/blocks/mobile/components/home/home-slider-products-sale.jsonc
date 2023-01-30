@@ -3,6 +3,7 @@
     "title": "Responsive Mobile Slider",
     "children": [
       "flex-layout.row#mobile__home--slider--sale--container",
+      "flex-layout.row#search__product--list--container",
       "flex-layout.row#home__section--7--mobile",
       "flex-layout.row#home__section--8--mobile",
       "flex-layout.row#home__section--9--mobile"

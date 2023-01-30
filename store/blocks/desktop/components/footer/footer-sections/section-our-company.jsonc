@@ -1,0 +1,65 @@
+{
+  // <----- CONTAINER OUR COMPANY ----->
+
+  "flex-layout.col#footer__desktop--col--container--our-company": {
+    "title": "Footer Desktop Col Our Company",
+    "children": [
+      "rich-text#our-company--title",
+      "flex-layout.row#our-company--container"
+    ],
+    "props": {
+      "blockClass": "footer__desktop--col--container",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+  "rich-text#our-company--title": {
+    "title": "Our Company Title",
+    "props": {
+      "text": "POR QUÉ COMPRAR CON SUPERDRY",
+      "blockClass": "footer__desktop--col--container--title"
+    }
+  },
+  "flex-layout.row#our-company--container": {
+    "children": [
+      "link#our-company--one",
+      "link#our-company--two",
+      "link#our-company--three"
+    ],
+    "props": {
+      "blockClass": "footer__desktop--col--container--menu--container",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+  "link#our-company--one": {
+    "title": "Our Company One",
+    "props": {
+      "label": "COMPRAR PRODUCTOS DE LA MARCA",
+      "text": "COMPRAR PRODUCTOS DE LA MARCA",
+      "href": "/comprar-productos-de-la-marca",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  },
+  "link#our-company--two": {
+    "title": "Our Company Two",
+    "props": {
+      "label": "ENTREGA GRATUITA",
+      "text": "ENTREGA GRATUITA",
+      "href": "/centro-de-ayuda",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  },
+  "link#our-company--three": {
+    "title": "Our Company Three",
+    "props": {
+      "label": "DEVOLUCIONES GRATUITAS",
+      "text": "DEVOLUCIONES GRATUITAS",
+      "href": "/centro-de-ayuda",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  }
+}

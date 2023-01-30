@@ -1,0 +1,76 @@
+{
+  // <----- CONTAINER OUR TRADE MARK ----->
+
+  "flex-layout.col#footer__desktop--col--container--our-trade-mark": {
+    "title": "Footer Desktop Col Our Trade Mark",
+    "children": [
+      "rich-text#our-trade-mark--title",
+      "flex-layout.row#our-trade-mark--container"
+    ],
+    "props": {
+      "blockClass": "footer__desktop--col--container",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+  "rich-text#our-trade-mark--title": {
+    "title": "Our Trade Mark Title",
+    "props": {
+      "text": "SUPERDRY, LA MARCA",
+      "blockClass": "footer__desktop--col--container--title"
+    }
+  },
+  "flex-layout.row#our-trade-mark--container": {
+    "children": [
+      "link#our-trade-mark--one",
+      "link#our-trade-mark--two",
+      "link#our-trade-mark--three",
+      "link#our-trade-mark--four"
+    ],
+
+    "props": {
+      "blockClass": "footer__desktop--col--container--menu--container",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+  "link#our-trade-mark--one": {
+    "title": "Our Trade Mark One",
+    "props": {
+      "label": "DIA SIN IVA",
+      "text": "DIA SIN IVA",
+      "href": "/",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  },
+  "link#our-trade-mark--two": {
+    "title": "Our Trade Mark Two",
+    "props": {
+      "label": "ACERCA DE NOSOTROS",
+      "text": "ACERCA DE NOSOTROS",
+      "href": "/",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  },
+  "link#our-trade-mark--three": {
+    "title": "Our Trade Mark Three",
+    "props": {
+      "label": "INFORMACION CORPORATIVA",
+      "text": "INFORMACION CORPORATIVA",
+      "href": "/",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  },
+  "link#our-trade-mark--four": {
+    "title": "Our Trade Mark Four",
+    "props": {
+      "label": "TRABAJA CON NOSOTROS",
+      "text": "TRABAJA CON NOSOTROS",
+      "href": "/",
+      "blockClass": "footer__desktop--col--container--menu--item"
+    }
+  }
+}

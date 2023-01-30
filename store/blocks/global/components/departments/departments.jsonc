@@ -1,0 +1,664 @@
+{
+  "store.search#department": {
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default"
+      }
+    },
+    "blocks": [
+      "search-result-layout#department"
+    ]
+  },
+  "search-result-layout#department": {
+    "title": "search result layout",
+    "blocks": [
+      "search-result-layout.desktop#department",
+      "search-result-layout.mobile#department",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#department": {
+    "title": "search result layout desktop",
+    "children": [
+      "flex-layout.row#categoryresults--desktop"
+    ],
+    "props": {
+      "blockClass": "search__layout--desktop--container",
+      "width": "100%",
+      "fullWidth": true,
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.mobile#department": {
+    "title": "search result layout mobile",
+    "children": [
+      "flex-layout.row#categoryresults--mobile"
+    ],
+    "props": {
+      "blockClass": "search__layout--mobile--container",
+      "width": "100%",
+      "fullWidth": true,
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#categoryresults--mobile": {
+    "title": "category results",
+    "children": [
+      "responsive-layout.mobile#categoryresults--content"
+    ],
+    "props": {
+      "blockClass": "search__layout--container",
+      "width": "100%",
+      "fullWidth": true,
+      "preventRouteChange": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#categoryresults--desktop": {
+    "title": "category results",
+    "children": [
+      "responsive-layout.desktop#categoryresults--filter",
+      "responsive-layout.desktop#categoryresults--content"
+    ],
+    "props": {
+      "blockClass": "search__layout--container",
+      "width": "100%",
+      "fullWidth": true,
+      "preventRouteChange": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "responsive-layout.desktop#categoryresults--filter": {
+    "title": "category results filter",
+    "children": [
+      "flex-layout.col#categoryresults--filter"
+    ],
+    "props": {
+      "blockClass": "search__filter--container",
+      "width": "16%",
+      "horizontalAlign": "between"
+    }
+  },
+  "responsive-layout.desktop#categoryresults--content": {
+    "title": "category results content",
+    "children": [
+      "flex-layout.col#categoryresults--content"
+    ],
+    "props": {
+      "blockClass": "search__content--container",
+      "width": "84%",
+      "horizontalAlign": "between"
+    }
+  },
+  "responsive-layout.mobile#categoryresults--filter": {
+    "title": "category results filter",
+    "children": [
+      "flex-layout.row#galleryswitcher--mobile"
+    ],
+    "props": {
+      "blockClass": "search__filter--container--mobile",
+      "width": "100%",
+      "horizontalAlign": "between"
+    }
+  },
+  "responsive-layout.mobile#categoryresults--content": {
+    "title": "category results content",
+    "children": [
+      "flex-layout.col#categoryresults--content--mobile"
+    ],
+    "props": {
+      "blockClass": "search__content--container--mobile",
+      "width": "100%",
+      "horizontalAlign": "between"
+    }
+  },
+  "flex-layout.col#categoryresults--filter": {
+    "title": "category results filter",
+    "children": [
+      "filter-navigator.v3"
+    ],
+    "props": {
+      "blockClass": "search__filter--container",
+      "width": "16%",
+      "horizontalAlign": "between"
+    }
+  },
+
+  "filter-navigator.v3": {
+    "blocks": [
+      "sidebar-close-button"
+    ],
+    "props": {
+      "navigationTypeOnMobile": "collapsible",
+      "truncateFilters": true
+    }
+  },
+
+  "flex-layout.row#banner__images--container--desktop": {
+    "title": "banner images container",
+    "children": [
+      "flex-layout.col#banner__images--top",
+      "flex-layout.row#banner__images--bottom"
+    ],
+    "props": {
+      "blockClass": "images__banner--container",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#banner__images--container--mobile": {
+    "title": "banner images container",
+    "children": [
+      "flex-layout.col#banner__images--top--mobile",
+      "flex-layout.col#banner__images--bottom--mobile"
+    ],
+    "props": {
+      "blockClass": "images__banner--container",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#banner__images--top--mobile": {
+    "title": "banner images top",
+    "children": [
+      "image#banner__image--top--mobile"
+    ],
+    "props": {
+      "blockClass": "search__banner--top--mobile",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--top--mobile": {
+    "props": {
+      "src": "assets/img/top-superdry-nueva-landing-mobile-oct-2022.webp",
+      "alt": "banner image top",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#banner__images--bottom--mobile": {
+    "title": "banner images bottom",
+    "children": [
+      "link#banner__image--bottom--one--mobile",
+      "link#banner__image--bottom--two--mobile",
+      "link#banner__image--bottom--three--mobile",
+      "link#banner__image--bottom--four--mobile"
+    ],
+    "props": {
+      "blockClass": "search__banner--bottom",
+      "width": "100%"
+    }
+  },
+  "link#banner__image--bottom--one--mobile": {
+    "props": {
+      "href": "productos-top/buzos-y-chaquetas",
+      "blockClass": "link__banner--bottom--mobile"
+    },
+    "children": [
+      "image#banner__image--bottom--one--mobile"
+    ]
+  },
+  "link#banner__image--bottom--two--mobile": {
+    "props": {
+      "href": "productos-top/camisetas",
+      "blockClass": "link__banner--bottom--mobile"
+    },
+    "children": [
+      "image#banner__image--bottom--two--mobile"
+    ]
+  },
+  "link#banner__image--bottom--three--mobile": {
+    "props": {
+      "href": "productos-top/jeans",
+      "blockClass": "link__banner--bottom--mobile"
+    },
+    "children": [
+      "image#banner__image--bottom--three--mobile"
+    ]
+  },
+  "link#banner__image--bottom--four--mobile": {
+    "props": {
+      "href": "productos-top/morrales",
+      "blockClass": "link__banner--bottom--mobile"
+    },
+    "children": [
+      "image#banner__image--bottom--four--mobile"
+    ]
+  },
+  "image#banner__image--bottom--one--mobile": {
+    "props": {
+      "src": "assets/img/buzos-superdry-nueva-landing-mobile-oct-2022.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--bottom--two--mobile": {
+    "props": {
+      "src": "assets/img/camisas-superdry-nueva-landing-mobile-oct-2022.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--bottom--three--mobile": {
+    "props": {
+      "src": "assets/img/jeans-superdry-nueva-landing-mobile-oct-2022.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--bottom--four--mobile": {
+    "props": {
+      "src": "assets/img/bolsos-superdry-nueva-landing-mobile-oct-2022.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.col#banner__images--top": {
+    "title": "banner images top",
+    "children": [
+      "image#banner__image--top"
+    ],
+    "props": {
+      "blockClass": "search__banner--top",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--top": {
+    "props": {
+      "src": "assets/img/landing-top-superdry-oct-2022.webp",
+      "alt": "banner image top",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#banner__images--bottom": {
+    "title": "banner images bottom",
+    "children": [
+      "link#banner__image--bottom--one",
+      "link#banner__image--bottom--two",
+      "link#banner__image--bottom--three",
+      "link#banner__image--bottom--four"
+    ],
+    "props": {
+      "blockClass": "search__banner--bottom",
+      "width": "100%",
+      "paddingTop": 5
+    }
+  },
+  "link#banner__image--bottom--one": {
+    "props": {
+      "href": "productos-top/camisetas",
+      "blockClass": "link__banner--bottom"
+    },
+    "children": [
+      "image#banner__image--bottom--one"
+    ]
+  },
+  "link#banner__image--bottom--two": {
+    "props": {
+      "href": "productos-top/buzos-y-camisetas",
+      "blockClass": "link__banner--bottom"
+    },
+    "children": [
+      "image#banner__image--bottom--two"
+    ]
+  },
+  "link#banner__image--bottom--three": {
+    "props": {
+      "href": "productos-top/jeans",
+      "blockClass": "link__banner--bottom"
+    },
+    "children": [
+      "image#banner__image--bottom--three"
+    ]
+  },
+  "link#banner__image--bottom--four": {
+    "props": {
+      "href": "productos-top/morrales",
+      "blockClass": "link__banner--bottom"
+    },
+    "children": [
+      "image#banner__image--bottom--four"
+    ]
+  },
+  "image#banner__image--bottom--one": {
+    "props": {
+      "src": "assets/img/camisetas-superdry-oct-2022-nueva-landing-desk.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--bottom--two": {
+    "props": {
+      "src": "assets/img/buzos-superdry-oct-2022-nueva-landing-desk.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--bottom--three": {
+    "props": {
+      "src": "assets/img/jeans-superdry-oct-2022-nueva-landing-desk.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "image#banner__image--bottom--four": {
+    "props": {
+      "src": "assets/img/bolsos-superdry-oct-2022-nueva-landing-desk.webp",
+      "alt": "banner image bottom",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#categoryresults--content": {
+    "title": "category results content",
+    "children": [
+      "flex-layout.row#banner__images--container--desktop",
+      "flex-layout.row#departmentbreadcrumb",
+      "flex-layout.row#galleryswitcher--desktop",
+      "search-content#resultscontent--products"
+    ],
+    "props": {
+      "blockClass": "search__content--container",
+      "width": "84%",
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "between"
+    }
+  },
+  "flex-layout.col#categoryresults--content--mobile": {
+    "title": "category results content mobile",
+    "children": [
+      "flex-layout.row#departmentbreadcrumb",
+      "flex-layout.row#galleryswitcher--mobile",
+      "flex-layout.row#banner__images--container--mobile",
+      "search-content#resultscontent--products"
+    ],
+    "props": {
+      "blockClass": "search__content--container",
+      "width": "100%",
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "between"
+    }
+  },
+
+  "order-by.v2": {
+    "props": {
+      "blockClass": "search__order-by--container",
+      "width": "50%"
+    }
+  },
+  "search-content#resultscontent--products": {
+    "title": "search content",
+    "blocks": [
+      "gallery#department",
+      "not-found"
+    ]
+  },
+  "gallery#department": {
+    "title": "gallery",
+    "props": {
+      "layouts": [
+        {
+          "name": "desktop-grid",
+          "component": "SummaryGrid",
+          "itemsPerRow": {
+            "desktop": 4,
+            "tablet": 2,
+            "phone": 2
+          }
+        },
+        {
+          "name": "desktop-list",
+          "component": "SummaryList",
+          "itemsPerRow": 1
+        }
+      ],
+      "SummaryGrid": "product-summary.shelf#search__grid",
+      "SummaryList": "product-summary.shelf#search__list"
+    }
+  },
+  "product-summary.shelf#search__grid": {
+    "title": "product summary grid",
+    "props": {
+      "blockClass": "search__grid--product-summary",
+      "alignment": "center"
+    },
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "add-to-cart-button",
+      "modal-trigger#quickview__modal"
+    ]
+  },
+  "product-summary.shelf#search__list": {
+    "title": "product summary list",
+    "props": {
+      "blockClass": "search__list--product-summary"
+    },
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "add-to-cart-button",
+      "modal-trigger#quickview__modal"
+    ]
+  },
+  "modal-trigger#quickview__modal": {
+    "title": "quick view modal trigger",
+    "props": {
+      "blockClass": "quickview__modal--trigger"
+    },
+    "children": [
+      "image#quickview__modal--button",
+      "modal-layout#quickview__modal--layout"
+    ]
+  },
+  "image#quickview__modal--button": {
+    "title": "quick view modal button",
+    "props": {
+      "src": "assets/img/icon-eye.svg",
+      "alt": "quick view modal button",
+      "width": 22,
+      "blockClass": "quickview__modal--button"
+    }
+  },
+  "modal-layout#quickview__modal--layout": {
+    "title": "quick view modal layout",
+    "props": {
+      "blockClass": "quickview__modal--layout",
+      "title": "Quick View",
+      "showCloseButton": true,
+      "width": "70%"
+    },
+    "children": [
+      "flex-layout.row#quickview__modal--row"
+      
+    ]
+  },
+  "flex-layout.row#quickview__modal--row": {
+    "title": "quick view modal row",
+    "children": [
+      "flex-layout.col#quickview__modal--image",
+      "flex-layout.col#quickview__modal--info"
+    ],
+    "props": {
+      "blockClass": "quickview__modal--row",
+      "paddingTop": 6,
+      "paddingBottom": 6
+      
+    }
+  },
+  "flex-layout.col#quickview__modal--image": {
+    "title": "quick view modal image",
+    "children": [
+      "product-images"
+    ],
+    "props": {
+      "blockClass": "quickview__modal--image",
+      "paddingLeft": 6,
+      "paddingRight": 6
+    }
+  },
+  "product-images": {
+    "title": "quick view modal product images",
+    "props": {
+      "blockClass": "quickview__modal--image"
+    }
+  },
+  "flex-layout.col#quickview__modal--info": {
+    "title": "quick view modal info",
+    "children": [
+      "close-button",
+      "vtex.store-components:product-name",
+      "vtex.store-components:product-brand",
+      "product-identifier.product",
+      "product-description",
+      "product-price",
+      "product-separator",
+      "product-rating-inline",
+      "share",
+      "product-separator",
+      "product-quantity",
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "quickview__modal--info",
+      "paddingLeft": 6,
+      "paddingRight": 6
+    }
+  },
+  "vtex.store-components:product-name": {
+    "title": "quick view modal product name",
+    "props": {
+      "tag": "h3",
+      "blockClass": "quickview__modal--product-name"
+    }
+  },
+
+  "flex-layout.row#departmentbreadcrumb": {
+    "title": "department breadcrumb row",
+    "children": [
+      "flex-layout.col#departmentbreadcrumb"
+    ]
+  },
+  "flex-layout.col#departmentbreadcrumb": {
+    "title": "department breadcrumb col",
+    "children": [
+      "breadcrumb.search"
+    ]
+  },
+  "breadcrumb.search": {
+    "props": {
+      "blockClass": "breadcrumb__search"
+    }
+  },
+  "flex-layout.row#galleryswitcher--desktop": {
+    "title": "gallery switcher row",
+    "children": [
+      "flex-layout.col#gallery-layout-switcher#desktop",
+      "flex-layout.col#order-by.v2"
+    ],
+    "props": {
+      "blockClass": "gallery-switcher__container",
+      "width": "100%",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#galleryswitcher--mobile": {
+    "title": "gallery switcher row",
+    "children": [
+      "filter-navigator.v3#mobile",
+      "flex-layout.col#container--gallery&order"
+    ],
+    "props": {
+      "blockClass": "gallery-switcher__container--mobile",
+      "width": "100%",
+      "preventHorizontalStretch": true,
+      "sticky": true
+    }
+  },
+  "filter-navigator.v3#mobile": {
+    "title": "filter navigator mobile",
+    "blocks": [
+      "sidebar-close-button"
+    ],
+    "props": {
+      "blockClass": "filter-navigator__mobile"
+    }
+  },
+  "flex-layout.col#container--gallery&order": {
+    "title": "gallery switcher row",
+    "children": [
+      "flex-layout.col#gallery-layout-switcher#desktop",
+      "flex-layout.col#order-by.v2"
+    ],
+    "props": {
+      "blockClass": "gallery-switcher__order--container",
+      "width": "100%",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#gallery-layout-switcher#desktop": {
+    "title": "gallery switcher desktop",
+    "children": [
+      "gallery-layout-switcher#desktop"
+    ],
+    "props": {
+      "blockClass": "gallery-switcher__desktop"
+    }
+  },
+  "flex-layout.col#order-by.v2": {
+    "title": "order by v2",
+    "children": [
+      "order-by.v2"
+    ],
+    "props": {
+      "blockClass": "order-by__v2",
+      "width": "100%"
+    }
+  },
+  "gallery-layout-switcher#desktop": {
+    "children": [
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list"
+    ],
+    "props": {
+      "blockClass": "gallery-switcher__desktop"
+    }
+  },
+  "gallery-layout-option#grid": {
+    "props": {
+      "name": "desktop-grid"
+    },
+    "children": [
+      "image#icon-grid"
+    ]
+  },
+  "gallery-layout-option#list": {
+    "props": {
+      "name": "desktop-list"
+    },
+    "children": [
+      "image#icon-list"
+    ]
+  },
+  "image#icon-grid": {
+    "props": {
+      "src": "assets/img/icon-grid.svg",
+      "alt": "icon grid",
+      "width": 16,
+      "blockClass": "icon-grid"
+    }
+  },
+  "image#icon-list": {
+    "props": {
+      "src": "assets/img/icon-list.svg",
+      "alt": "icon list",
+      "width": 16,
+      "blockClass": "icon-list"
+    }
+  }
+}

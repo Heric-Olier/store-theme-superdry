@@ -1,55 +1,6 @@
 {
-  // <----- SECTION 1 ------>
 
-  "flex-layout.row#home__section-1": {
-    "title": "Home Section 1",
-    "children": [
-      "list-context.image-list#home__slider--list"
-    ],
-    "props": {
-      "marginTop": 3,
-      "blockClass": "home__slider--section-1",
-      "fullWidth": true,
-      "paddingBottom": 6
-    }
-  },
-
-  // <----- SECTION 3 ------>
-
-  "flex-layout.row#home__section-3": {
-    "title": "Home Section 3",
-    "children": [
-      "flex-layout.col#banner__image--one"
-    ],
-    "props": {
-      "marginTop": 3,
-      "blockClass": "banner__image--one",
-      "fullWidth": true
-    }
-  },
-  "flex-layout.col#banner__image--one": {
-    "title": "Banner Image One",
-    "children": [
-      "image#banner__image--one"
-    ],
-    "props": {
-      "blockClass": "banner__image--one"
-    }
-  },
-  "image#banner__image--one": {
-    "title": "Banner Image One",
-    "props": {
-      "src": "assets/img/banner-camisetas-home-desk-2023.webp",
-      "blockClass": "banner__image--one",
-      "title": "Banner Image One",
-      "link": {
-        "url": "/camisetas",
-        "newTab": false,
-        "attributeNoFollow": true
-      }
-    }
-  },
-
+  
   // <----- SECTION 4 ------>
 
   "flex-layout.row#home__section-4": {

@@ -1,0 +1,6 @@
+.trigger--footer__mobile--disclosure-trigger {
+    border          : none;
+    background-color: black;
+    width           : 100%;
+    margin          : 16px 0;
+}

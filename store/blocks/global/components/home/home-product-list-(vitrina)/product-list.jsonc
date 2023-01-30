@@ -1,0 +1,73 @@
+{
+  "flex-layout.row#search__product--list--container": {
+    "title": "Search Result List Container",
+    "children": [
+      "list-context.product-list#search__result--list"
+    ],
+    "props": {
+      "blockClass": "search-result-layout--list--container",
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  "list-context.product-list#search__result--list": {
+    "title": "Search Result List",
+    "blocks": [
+      "product-summary.shelf#product__summary--container--global"
+    ],
+    "children": [
+      "slider-layout#search__result--list--products"
+    ],
+    "props": {
+      "blockClass": "search-result-list"
+    }
+  },
+  "slider-layout#search__result--list--products": {
+    "title": "Search Result List Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "infinite": true,
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+
+      "blockClass": "search-result-list--products"
+    }
+  },
+  "product-summary.shelf#product__summary--container--global": {
+    "title": "Search Result Product Summary Mobile",
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-attachment-list",
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "product-summary--container",
+      "preventHorizontalStretch": true
+    }
+  },
+  "add-to-cart-button": {
+    "title": "Search Result Product Summary Buy Button Mobile",
+    "props": {
+      "blockClass": "product-add-to-cart",
+      "text": "AÑADIR A LA BOLSA"
+    }
+  },
+  "product-summary-image": {
+    "title": "Search Result Product Summary Image Mobile",
+    "props": {
+      "blockClass": "product-summary--image",
+      "width": 300
+    }
+  }
+}

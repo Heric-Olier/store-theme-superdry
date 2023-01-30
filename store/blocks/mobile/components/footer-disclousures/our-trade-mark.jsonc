@@ -1,0 +1,164 @@
+{
+  // DISCLOSURE LAYOUTS
+  //--------> OUR TRADE MARK <--------//
+
+  "disclosure-layout-group#our-trade-mark": {
+    "children": [
+      "disclosure-layout#our-trade-mark"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-layout-group",
+      "animated": true
+    }
+  },
+  "disclosure-layout#our-trade-mark": {
+    "children": [
+      "disclosure-trigger#our-trade-mark",
+      "disclosure-content#our-trade-mark"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-layout"
+    }
+  },
+  "disclosure-trigger#our-trade-mark": {
+    "children": [
+      "flex-layout.row#our-trade-mark__trigger"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-trigger"
+    }
+  },
+  "flex-layout.row#our-trade-mark__trigger": {
+    "children": [
+      "flex-layout.col#our-trade-mark__trigger"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-row",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#our-trade-mark__trigger": {
+    "children": [
+      "rich-text#our-trade-mark",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--trigger--container",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#our-trade-mark": {
+    "props": {
+      "text": "SUPERDRY, LA MARCA",
+      "blockClass": "footer__mobile--rich-text--title"
+    }
+  },
+
+  "disclosure-content#our-trade-mark": {
+    "children": [
+      "flex-layout.row#our-trade-mark"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--disclosure-content",
+      "animated": true
+    }
+  },
+  "flex-layout.row#our-trade-mark": {
+    "children": [
+      "link#our-trade-mark--1",
+      "link#our-trade-mark--2",
+      "link#our-trade-mark--3",
+      "link#our-trade-mark--4"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-row",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "width": "100%"
+    }
+  },
+
+  // our trade mark container 1
+
+  "link#our-trade-mark--1": {
+    "children": [
+      "rich-text#our-trade-mark--1",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#our-trade-mark--1": {
+    "props": {
+      "text": "DIA SIN IVA",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // our trade mark container 2
+
+  "link#our-trade-mark--2": {
+    "children": [
+      "rich-text#our-trade-mark--2",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#our-trade-mark--2": {
+    "props": {
+      "text": "ACERCA DE NOSOTROS",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // our trade mark container 3
+
+  "link#our-trade-mark--3": {
+    "children": [
+      "rich-text#our-trade-mark--3",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#our-trade-mark--3": {
+    "props": {
+      "text": "INFORMACIÓN CORPORATIVA",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  },
+
+  // our trade mark container 4
+
+  "link#our-trade-mark--4": {
+    "children": [
+      "rich-text#our-trade-mark--4",
+      "image#next"
+    ],
+    "props": {
+      "blockClass": "footer__mobile--flex-layout-col--container",
+      "width": "100%",
+      "href": "/",
+      "openNewTab": false
+    }
+  },
+  "rich-text#our-trade-mark--4": {
+    "props": {
+      "text": "TRABAJA CON NOSOTROS",
+      "blockClass": "footer__mobile--rich-text"
+    }
+  }
+}

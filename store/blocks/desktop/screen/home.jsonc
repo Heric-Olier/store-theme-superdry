@@ -35,6 +35,12 @@
       "flex-layout.row#home__section-6"
     ]
   },
+  "responsive-layout.desktop#home__section-6--search--result": {
+    "title": "Home Section 6--search--result Desktop",
+    "children": [
+      "flex-layout.row#search__product--list--container"
+    ]
+  },
   "responsive-layout.desktop#home__section-7": {
     "title": "Home Section 6 Desktop",
     "children": [

@@ -1,0 +1,16 @@
+{
+  // <----- SECTION 1 ------>
+
+  "flex-layout.row#home__section-1": {
+    "title": "Home Section 1",
+    "children": [
+      "list-context.image-list#home__slider--list"
+    ],
+    "props": {
+      "marginTop": 3,
+      "blockClass": "home__slider--section-1",
+      "fullWidth": true,
+      "paddingBottom": 6
+    }
+  }
+}

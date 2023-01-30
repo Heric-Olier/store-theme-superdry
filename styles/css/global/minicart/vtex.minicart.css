@@ -1,0 +1,37 @@
+.minicartTitle {
+    display: none;
+}
+
+.minicartIconContainer {
+    color: #fff;
+}
+
+.minicartIconContainer:hover {
+    color: #ffac7c;
+}
+
+.minicartQuantityBadgeDefault {
+    background-color: #FF5E00;
+}
+
+.minicartWrapperContainer {
+    padding-right: 1.75rem;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+    background-color: #FF5E00;
+    color           : #fff;
+    border          : none;
+    transition      : all 0.2s ease-in-out;
+}
+
+.minicartCheckoutButton :global(.vtex-button):hover {
+    background-color: #000000;
+    color           : #fff;
+}
+
+@media (max-width: 1025px) {
+    .minicartWrapperContainer {
+        padding-right: 0;
+    }
+}
