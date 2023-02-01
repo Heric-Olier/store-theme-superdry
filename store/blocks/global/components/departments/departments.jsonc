@@ -474,7 +474,6 @@
     },
     "children": [
       "flex-layout.row#quickview__modal--row"
-      
     ]
   },
   "flex-layout.row#quickview__modal--row": {
@@ -487,7 +486,6 @@
       "blockClass": "quickview__modal--row",
       "paddingTop": 6,
       "paddingBottom": 6
-      
     }
   },
   "flex-layout.col#quickview__modal--image": {
@@ -510,7 +508,6 @@
   "flex-layout.col#quickview__modal--info": {
     "title": "quick view modal info",
     "children": [
-      "close-button",
       "vtex.store-components:product-name",
       "vtex.store-components:product-brand",
       "product-identifier.product",
@@ -534,6 +531,11 @@
     "props": {
       "tag": "h3",
       "blockClass": "quickview__modal--product-name"
+    }
+  },
+  "add-to-cart-button": {
+    "props": {
+      "width": "50%"
     }
   },
 

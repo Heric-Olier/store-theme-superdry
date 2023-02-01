@@ -1,0 +1,6 @@
+.listContainer--product__tabs--desktop--tab-layout--tabs--list :global(.vtex-button):focus {
+    background-color: #000;
+    color           : #fff;
+    border          : none;
+
+}

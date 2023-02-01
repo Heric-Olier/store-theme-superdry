@@ -8,3 +8,13 @@
 .link--breadcrumb__search:hover {
     color: #fb441f;
 }
+
+.term--breadcrumb__search {
+    font-size     : 12px;
+    font-weight   : 400;
+    text-transform: uppercase;
+}
+
+.homeLink--breadcrumb__search {
+    margin-left: 0;
+}

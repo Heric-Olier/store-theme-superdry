@@ -69,5 +69,11 @@
       "blockClass": "product-summary--image",
       "width": 300
     }
+  },
+  "product-summary-price": {
+    "title": "Search Result Product Summary Price Mobile",
+    "props": {
+      "blockClass": "product-summary--price--container"
+    }
   }
 }
