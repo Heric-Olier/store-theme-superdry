@@ -1,0 +1,17 @@
+.paragraph--about-us--content--top--title {
+    font-family   : 'Roboto-bold';
+    letter-spacing: 1px;
+    color         : #ff5e00;
+    font-size     : 1.75rem;
+    margin-right  : 1rem;
+}
+
+.paragraph--about-us--content--bottom--text {
+    font-weight  : 400;
+    font-size    : .875rem;
+    margin-bottom: .4rem;
+}
+
+.paragraph--about-us--content--top--text {
+    font-size: .875rem;
+}

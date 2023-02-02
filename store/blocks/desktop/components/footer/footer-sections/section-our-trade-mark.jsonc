@@ -51,7 +51,7 @@
     "props": {
       "label": "ACERCA DE NOSOTROS",
       "text": "ACERCA DE NOSOTROS",
-      "href": "/",
+      "href": "/acerca-de-nosotros",
       "blockClass": "footer__desktop--col--container--menu--item"
     }
   },

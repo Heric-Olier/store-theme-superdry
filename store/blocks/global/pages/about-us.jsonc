@@ -1,0 +1,92 @@
+{
+  "store.custom#about-us": {
+    "blocks": [
+      "flex-layout.row#about-us"
+    ]
+  },
+  "flex-layout.row#about-us": {
+    "title": "About Us",
+    "children": [
+      "flex-layout.col#about-us--content"
+    ],
+    "props": {
+      "blockClass": "about-us"
+    }
+  },
+  "flex-layout.col#about-us--content": {
+    "title": "About Us Content",
+    "children": [
+      "flex-layout.row#about-us--content--top",
+      "flex-layout.row#about-us--content--bottom"
+    ],
+    "props": {
+      "blockClass": "about-us--content"
+    }
+  },
+  "flex-layout.row#about-us--content--top": {
+    "title": "About Us Content Top",
+    "children": [
+      "rich-text#about-us--content--top--title",
+      "rich-text#about-us--content--top--text"
+    ],
+    "props": {
+      "blockClass": "about-us--content--top"
+    }
+  },
+  "rich-text#about-us--content--top--title": {
+    "title": "About Us Content Top Title",
+    "props": {
+      "text": "ACERCA DE NOSOTROS",
+      "blockClass": "about-us--content--top--title"
+    }
+  },
+  "rich-text#about-us--content--top--text": {
+    "title": "About Us Content Top Text",
+    "props": {
+      "text": "Línea de atención Colombia: (4) 265 31 11 ext:4297 - 4300 Lunes a viernes 8am - 5pm",
+      "blockClass": "about-us--content--top--text"
+    }
+  },
+  "flex-layout.row#about-us--content--bottom": {
+    "title": "About Us Content Bottom",
+    "children": [
+      "flex-layout.col#about-us--content--bottom"
+    ],
+    "props": {
+      "blockClass": "about-us--content--bottom--row",
+        "paddingTop": 7
+    }
+  },
+  "flex-layout.col#about-us--content--bottom": {
+    "title": "About Us Content Bottom",
+    "children": [
+      "rich-text#about-us--content--bottom--text--1",
+      "rich-text#about-us--content--bottom--text--2",
+      "rich-text#about-us--content--bottom--text--3"
+    ],
+    "props": {
+      "blockClass": "about-us--content--bottom--col"
+    }
+  },
+  "rich-text#about-us--content--bottom--text--1": {
+    "title": "About Us Content Bottom Text 1",
+    "props": {
+      "text": "Superdry es una marca original y contemporánea centrada en productos de calidad, fusión de estilo vintage norteamericano, arte gráfico japonés y moda británica. Se caracteriza por tejidos de calidad, auténticos lavados vintage, detalles únicos, los mejores gráficos a mano del mundo y cortes de sastre en estilos diversos. Esta exclusividad ha aportado a la marca un atractivo único, además de seguidores entre los famosos de todo el mundo.",
+      "blockClass": "about-us--content--bottom--text"
+    }
+  },
+  "rich-text#about-us--content--bottom--text--2": {
+    "title": "About Us Content Bottom Text 2",
+    "props": {
+      "text": "Superdry cuenta con una importante y creciente presencia en el mundo entero, Ha llegado a 46 países.",
+      "blockClass": "about-us--content--bottom--text"
+    }
+  },
+  "rich-text#about-us--content--bottom--text--3": {
+    "title": "About Us Content Bottom Text 3",
+    "props": {
+      "text": "Superdry cuenta con 4 tiendas en Colombia y la tienda virtual con la cual puedes realizar compras a nivel nacional.",
+      "blockClass": "about-us--content--bottom--text"
+    }
+  }
+}

@@ -46,6 +46,7 @@
   "search-result-layout": {
     "blocks": [
       "search-result-layout.desktop#department",
+      "search-result-layout.mobile#department",
       "search-not-found-layout"
     ]
   },
