@@ -1,0 +1,44 @@
+.productBrand--product__name--desktop {
+    font-size  : 2.5rem;
+    font-weight: bold;
+}
+
+.productImageTag--quickview__modal--image {
+    max-height: unset !important;
+}
+
+.productDescriptionTitle--product__description--desktop {
+    font-weight   : bold;
+    font-size     : 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.productDescriptionText--product__description--desktop {
+    color         : #000000;
+    font-weight   : 400;
+    font-size     : 14px;
+    letter-spacing: 1.3px;
+    line-height   : 1.2;
+}
+
+
+@media (max-width: 1024px) {
+    .productNameContainer--product__name--desktop {
+        text-align: center;
+        padding   : 1rem;
+    }
+
+    .productBrand--product__name--desktop {
+        font-size: 1.4rem;
+    }
+
+    .price_sellingPriceContainer {
+        text-align: center;
+    }
+
+    .price_sellingPrice--product__price--mobile {
+        font-weight: bold;
+    }
+
+}
