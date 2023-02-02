@@ -1,0 +1,8 @@
+{
+  "store.custom#about-us": {
+    "path": "/acerca-de-nosotros"
+  },
+  "store.custom#size__page": {
+    "path": "/tallas"
+  }
+}

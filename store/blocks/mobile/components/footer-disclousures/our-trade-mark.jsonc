@@ -109,7 +109,7 @@
     "props": {
       "blockClass": "footer__mobile--flex-layout-col--container",
       "width": "100%",
-      "href": "/",
+      "href": "/acerca-de-nosotros",
       "openNewTab": false
     }
   },

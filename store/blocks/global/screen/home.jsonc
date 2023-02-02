@@ -5,7 +5,6 @@
       "responsive-layout.desktop#home__section-1",
       "responsive-layout.mobile#phone__and__tablet",
       "flex-layout.row#home__section--global",
-      // "responsive-layout.desktop#home__section-2",
       "responsive-layout.desktop#home__section-3",
       "responsive-layout.desktop#home__section-4",
       "responsive-layout.desktop#home__section-5",

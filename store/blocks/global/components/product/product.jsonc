@@ -5,6 +5,7 @@
       "responsive-layout.mobile#product"
     ]
   },
+   // Desktop Layout
   "responsive-layout.desktop#product": {
     "children": [
       "flex-layout.row#product__info",

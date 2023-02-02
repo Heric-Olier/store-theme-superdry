@@ -1,0 +1,10 @@
+.flexRowContent--about-us--content--top {
+    justify-content: center;
+    align-items    : end;
+    padding        : 0.7rem 0;
+    border-bottom  : 1px solid grey;
+}
+
+.flexRowContent--about-us {
+    padding: 2rem .5rem;
+}
