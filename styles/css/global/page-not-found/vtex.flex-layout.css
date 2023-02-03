@@ -1,0 +1,6 @@
+.flexColChild--not-found--content--col {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    position       : relative;
+}
