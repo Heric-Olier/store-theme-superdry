@@ -1,0 +1,47 @@
+{
+  "store.not-found#search": {
+    "blocks": [
+      "flex-layout.row#not-found--container"
+    ]
+  },
+  "flex-layout.row#not-found--container": {
+    "title": "Not Found Container",
+    "children": [
+      "flex-layout.col#not-found--content"
+    ],
+    "props": {
+      "blockClass": "not-found--container"
+    }
+  },
+  "flex-layout.col#not-found--content": {
+    "title": "Not Found Content",
+    "children": [
+      "image#not-found--image"
+      //   "link#not-found--link--go-home"
+    ],
+    "props": {
+      "blockClass": "not-found--content--col"
+    }
+  },
+  "image#not-found--image": {
+    "title": "Not Found Image",
+    "props": {
+      "src": "assets/img/not-found-image-desktop.png",
+      "blockClass": "not-found--image",
+      "alt": "not found image"
+    }
+  },
+  "link#not-found--link--go-home": {
+    "title": "Not Found Link Go Home",
+    "props": {
+      "href": "/",
+      "blockClass": "not-found--link--go-home",
+      "label": "Go Home"
+    }
+  },
+  "search-not-found-layout": {
+    "children": [
+      "flex-layout.row#not-found--container"
+    ]
+  }
+}
