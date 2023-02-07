@@ -1,0 +1,9 @@
+{
+  "whatsapp-button": {
+    "props": {
+      "logo": "assets/img/whatsapp-icon.svg",
+      "phone": "5711999999999",
+      "message": "Hola, me gustaría saber más sobre este producto"
+    }
+  }
+}
