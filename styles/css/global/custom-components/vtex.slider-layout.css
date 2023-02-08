@@ -1,11 +1,12 @@
 .sliderLayoutContainer--bullet__group--slider {
   max-width: 75rem;
-  margin   : 0 auto 0.7rem;
+  margin   : 0.7rem auto;
 }
 
 .bullet__item--bullet__group--slider {
   margin    : 0 0.4rem;
   text-align: center;
+  overflow  : hidden;
 }
 
 .bullet__item--link--bullet__group--slider {
@@ -16,9 +17,22 @@
   font-size      : .82rem;
 }
 
+.bullet__item--image--bullet__group--slider {
+  transition: all 0.3s ease-in-out;
+}
+
+.bullet__item--image--bullet__group--slider:hover {
+  filter   : brightness(0.7);
+  transform: scale(1.1);
+}
+
 .bullet__item--title--bullet__group--slider {
   background-color: #fb441f;
   color           : #fff;
   padding         : 0.7rem 0.2rem;
+  transition      : all 0.3s ease-in-out;
+}
 
+.bullet__item--title--bullet__group--slider:hover {
+  background-color: #000;
 }

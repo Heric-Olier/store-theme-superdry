@@ -1,4 +1,14 @@
 {
+  "flex-layout.row#list__context--bullet-group-global": {
+    "title": "list context bullet group global",
+    "children": [
+      "list-context.bullet-group"
+    ],
+    "props": {
+      "blockClass": "list__context--bullet-group-global",
+      "fullWidth": true
+    }
+  },
   "list-context.bullet-group": {
     "title": "list context bullet group",
     "children": [
@@ -8,42 +18,42 @@
       "bullets": [
         {
           "image": "assets/img/Gorro-Para-Hombre-Vintage-Boy-Cap-Superdry1718.webp",
-          "titleBullet": "Gorro Para Hombre",
+          "titleBullet": "Gorro Hombre",
           "link": {
             "url": "/Gorro-Para-Hombre-Vintage-Boy-Cap-Superdry1718p"
           }
         },
         {
           "image": "assets/img/Morral-No-Portatil-Para-Hombre-Sport-Style-Montana-Superdry530.webp",
-          "titleBullet": "Morral No Portatil red",
+          "titleBullet": "Morral red",
           "link": {
             "url": "/morral-no-portatil-para-hombre-sport-style-montana-superdry/p"
           }
         },
         {
           "image": "assets/img/Tenis-Para-Hombre-Code-Chunky-Basket-Trainer-Superdry5247.webp",
-          "titleBullet": "Tenis Para Hombre",
+          "titleBullet": "Tenis Black",
           "link": {
             "url": "/tenis-para-hombre-code-chunky-basket-trainer-superdry/p"
           }
         },
         {
           "image": "assets/img/Morral-No-Portatil-Para-Hombre-assic-Montana-Superdry516.webp",
-          "titleBullet": "Morral No Portatil green",
+          "titleBullet": "Morral green",
           "link": {
             "url": "/morral-no-portatil-para-hombre-assic-montana-superdry/p"
           }
         },
         {
           "image": "assets/img/Sandalias-Para-Hombre-Code-Essential-Pool-Slide-Superdry2250.webp",
-          "titleBullet": "Sandalias Para Hombre",
+          "titleBullet": "Sandalias unisex",
           "link": {
             "url": "/sandalias-para-hombre-code-essential-pool-slide-superdry/p"
           }
         },
         {
           "image": "assets/img/Pesquero-Para-Hombre-Sportstyle-Bucket-Hat-Superdry1106.webp",
-          "titleBullet": "Pesquero Para Hombre",
+          "titleBullet": "Pesquero Hombre",
           "link": {
             "url": "/pesquero-para-hombre-sportstyle-bucket-hat-superdry/p"
           }
@@ -56,12 +66,11 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
-      "infinite": true,
+      "infinite": false,
       "fullWidth": true,
       "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "true",
       "blockClass": "bullet__group--slider"
     }
   }
