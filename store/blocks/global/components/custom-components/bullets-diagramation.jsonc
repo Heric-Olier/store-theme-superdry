@@ -1,0 +1,68 @@
+{
+  "list-context.bullet-group": {
+    "title": "list context bullet group",
+    "children": [
+      "slider-layout#bullet-group"
+    ],
+    "props": {
+      "bullets": [
+        {
+          "image": "assets/img/Gorro-Para-Hombre-Vintage-Boy-Cap-Superdry1718.webp",
+          "titleBullet": "Gorro Para Hombre",
+          "link": {
+            "url": "/Gorro-Para-Hombre-Vintage-Boy-Cap-Superdry1718p"
+          }
+        },
+        {
+          "image": "assets/img/Morral-No-Portatil-Para-Hombre-Sport-Style-Montana-Superdry530.webp",
+          "titleBullet": "Morral No Portatil red",
+          "link": {
+            "url": "/morral-no-portatil-para-hombre-sport-style-montana-superdry/p"
+          }
+        },
+        {
+          "image": "assets/img/Tenis-Para-Hombre-Code-Chunky-Basket-Trainer-Superdry5247.webp",
+          "titleBullet": "Tenis Para Hombre",
+          "link": {
+            "url": "/tenis-para-hombre-code-chunky-basket-trainer-superdry/p"
+          }
+        },
+        {
+          "image": "assets/img/Morral-No-Portatil-Para-Hombre-assic-Montana-Superdry516.webp",
+          "titleBullet": "Morral No Portatil green",
+          "link": {
+            "url": "/morral-no-portatil-para-hombre-assic-montana-superdry/p"
+          }
+        },
+        {
+          "image": "assets/img/Sandalias-Para-Hombre-Code-Essential-Pool-Slide-Superdry2250.webp",
+          "titleBullet": "Sandalias Para Hombre",
+          "link": {
+            "url": "/sandalias-para-hombre-code-essential-pool-slide-superdry/p"
+          }
+        },
+        {
+          "image": "assets/img/Pesquero-Para-Hombre-Sportstyle-Bucket-Hat-Superdry1106.webp",
+          "titleBullet": "Pesquero Para Hombre",
+          "link": {
+            "url": "/pesquero-para-hombre-sportstyle-bucket-hat-superdry/p"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#bullet-group": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "true",
+      "blockClass": "bullet__group--slider"
+    }
+  }
+}
