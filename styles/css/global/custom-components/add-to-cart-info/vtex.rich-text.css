@@ -1,0 +1,12 @@
+.paragraph--add-to-cart-info--desktop--rich-text {
+  margin-left: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size  : 1.5rem;
+}
+
+@media (max-width: 480px) {
+
+  .paragraph--add-to-cart-info--desktop--rich-text {
+    font-size: 1rem;
+  }
+}

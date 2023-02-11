@@ -58,7 +58,8 @@
       "flex-layout.row#product__share",
       "product-identifier.product",
       "product-description",
-      "flex-layout.col#shipping__returns"
+      "flex-layout.col#shipping__returns",
+      "modal-trigger#add-to-cart-info"
     ],
     "props": {
       "blockClass": "product__info--details--mobile--container",
