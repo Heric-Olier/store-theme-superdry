@@ -53,6 +53,12 @@
     filter    : opacity(0.5);
 }
 
-.imageElement--quickview__modal--button:hover{
-    filter    : opacity(1);
+.imageElement--quickview__modal--button:hover {
+    filter: opacity(1);
+}
+
+
+.price_sellingPrice--product-summary--price--container {
+    font-weight: bold !important;
+    font-family: 'Roboto-Medium' !important;
 }

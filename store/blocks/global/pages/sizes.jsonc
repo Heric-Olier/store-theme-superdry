@@ -1,0 +1,126 @@
+{
+  "store.custom#size__page": {
+    "blocks": [
+      "responsive-layout.desktop#size__page",
+      "responsive-layout.mobile#size__page"
+    ]
+  },
+
+  // Desktop Layout
+  "responsive-layout.desktop#size__page": {
+    "title": "size page desktop layout",
+    "children": [
+      "flex-layout.row#size__page__content"
+    ],
+    "props": {
+      "blockClass": "size__page__desktop--layout--container"
+    }
+  },
+  "flex-layout.row#size__page__content": {
+    "title": "size page desktop layout",
+    "children": [
+      "flex-layout.col#size__page__content"
+    ],
+    "props": {
+      "blockClass": "size__page__desktop--layout--container--row",
+      "width": "100%",
+      "marginTop": 7
+    }
+  },
+  "flex-layout.col#size__page__content": {
+    "title": "size page desktop layout",
+    "children": [
+      "image#size__page__content--man--top",
+      "image#size__page__content--woman--top",
+      "image#size__page__content--man--bottom",
+      "image#size__page__content--woman--bottom"
+    ],
+    "props": {
+      "blockClass": "size__page__desktop--layout--container--col",
+      "width": "100%"
+    }
+  },
+  "image#size__page__content--man--top": {
+    "title": "image page size man top",
+    "props": {
+      "src": "assets/img/sizing-guide-mens.webp",
+      "alt": "size page image top",
+      "blockClass": "size__page__desktop--layout--container--col--image"
+    }
+  },
+  "image#size__page__content--woman--top": {
+    "title": "image page size woman top",
+    "props": {
+      "src": "assets/img/sizing-guide-womens.webp",
+      "alt": "size page image top",
+      "blockClass": "size__page__desktop--layout--container--col--image"
+    }
+  },
+  "image#size__page__content--man--bottom": {
+    "title": "image page size woman bottom",
+    "props": {
+      "src": "assets/img/Superdry-GuiaTallas-HombreDesktop.webp",
+      "alt": "size page image bottom",
+      "blockClass": "size__page__desktop--layout--container--col--image"
+    }
+  },
+  "image#size__page__content--woman--bottom": {
+    "title": "image page size woman bottom",
+    "props": {
+      "src": "assets/img/Superdry-GuiaTallas-MujerDesktop.webp",
+      "alt": "size page image bottom",
+      "blockClass": "size__page__desktop--layout--container--col--image"
+    }
+  },
+
+  // Mobile Layout
+  "responsive-layout.mobile#size__page": {
+    "title": "size page mobile layout",
+    "children": [
+      "flex-layout.row#size__page__content--mobile"
+    ],
+    "props": {
+      "blockClass": "size__page__mobile--layout--container"
+    }
+  },
+  "flex-layout.row#size__page__content--mobile": {
+    "title": "size page mobile layout",
+    "children": [
+      "flex-layout.col#size__page__content--mobile"
+    ],
+    "props": {
+      "blockClass": "size__page__mobile--layout--container--row",
+      "width": "100%",
+      "marginTop": 7
+    }
+  },
+  "flex-layout.col#size__page__content--mobile": {
+    "title": "size page desktop layout",
+    "children": [
+      "image#size__page__content--man--top",
+      "image#size__page__content--woman--top",
+      "image#size__page__content--man--bottom--mobile",
+      "image#size__page__content--woman--bottom--mobile"
+    ],
+    "props": {
+      "blockClass": "size__page__mobile--layout--container--col",
+      "width": "100%"
+    }
+  },
+  "image#size__page__content--man--bottom--mobile": {
+    "title": "image page size woman bottom",
+    "props": {
+      "src": "assets/img/Superdry-GuiaTallas-HombreMobile.webp",
+      "alt": "size page image bottom",
+      "blockClass": "size__page__desktop--layout--container--col--image"
+    }
+  },
+  "image#size__page__content--woman--bottom--mobile": {
+    "title": "image page size woman bottom",
+    "props": {
+      "src": "assets/img/Superdry-GuiaTallas-MujerMobile.webp",
+      "alt": "size page image bottom",
+      "blockClass": "size__page__desktop--layout--container--col--image"
+    }
+  }
+}

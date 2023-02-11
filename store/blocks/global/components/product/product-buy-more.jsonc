@@ -1,0 +1,29 @@
+{
+  "flex-layout.row#product__buy--more": {
+    "title": "product buy more desktop layout",
+    "children": [
+      "flex-layout.col#product__buy--more--container"
+    ],
+    "props": {
+      "blockClass": "product__buy--more--container--row",
+      "marginTop": 8
+    }
+  },
+  "flex-layout.col#product__buy--more--container": {
+    "title": "product buy more desktop layout",
+    "children": [
+      "rich-text#product__buy--more",
+      "list-context.product-list#search__result--list"
+    ],
+    "props": {
+      "blockClass": "product__buy--more--container--col"
+    }
+  },
+  "rich-text#product__buy--more": {
+    "title": "product buy more text",
+    "props": {
+      "text": "TAMBIÉN PODRÍA GUSTARTE",
+      "blockClass": "product__buy--more--container--col--rich-text"
+    }
+  }
+}

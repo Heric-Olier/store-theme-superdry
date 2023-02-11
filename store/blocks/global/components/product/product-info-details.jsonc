@@ -1,0 +1,243 @@
+{
+  "flex-layout.row#product__info": {
+    "title": "product info desktop layout",
+    "children": [
+      "flex-layout.col#product__info--image",
+      "flex-layout.col#product__info--details"
+    ],
+    "props": {
+      "blockClass": "product__info--desktop--container"
+    }
+  },
+  "flex-layout.col#product__info--image": {
+    "title": "product info desktop layout images",
+    "children": [
+      "flex-layout.row#product__breadcrumb",
+      "product-images",
+      "flex-layout.row#product__share",
+      "flex-layout.col#shipping__returns"
+    ],
+    "props": {
+      "blockClass": "product__info--desktop--image",
+      "width": "60%"
+    }
+  },
+  "flex-layout.row#product__share": {
+    "title": "product share desktop layout",
+    "children": [
+      "share"
+    ],
+    "props": {
+      "blockClass": "product__share--desktop"
+    }
+  },
+  "flex-layout.col#shipping__returns": {
+    "title": "product shipping__returns desktop layout",
+    "children": [
+      "disclosure-layout-group#shipping__returns"
+    ],
+    "props": {
+      "blockClass": "shipping__returns--desktop"
+    }
+  },
+  "disclosure-layout-group#shipping__returns": {
+    "title": "product shipping__returns desktop layout",
+    "children": [
+      "disclosure-layout#shipping__returns"
+    ],
+    "props": {
+      "blockClass": "shipping__returns--desktop--disclosure-layout-group",
+      "animated": true
+    }
+  },
+  "disclosure-layout#shipping__returns": {
+    "title": "product shipping__returns desktop layout",
+    "children": [
+      "disclosure-trigger#shipping__returns",
+      "disclosure-content#shipping__returns"
+    ],
+    "props": {
+      "blockClass": "shipping__returns--desktop--disclosure-layout"
+    }
+  },
+  "disclosure-trigger#shipping__returns": {
+    "title": "product shipping__returns desktop layout",
+    "children": [
+      "flex-layout.row#shipping__returns__trigger"
+    ],
+    "props": {
+      "blockClass": "shipping__returns--desktop--disclosure-trigger"
+    }
+  },
+  "flex-layout.row#shipping__returns__trigger": {
+    "title": "product shipping__returns desktop layout",
+    "children": [
+      "flex-layout.col#shipping__returns__trigger"
+    ],
+    "props": {
+      "blockClass": "shipping__returns--desktop--flex-layout-row",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#shipping__returns__trigger": {
+    "title": "product shipping__returns desktop layout",
+    "children": [
+      "rich-text#shipping__returns__trigger",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "shipping__returns--desktop--flex-layout-col",
+      "width": "100%"
+    }
+  },
+  "rich-text#shipping__returns__trigger": {
+    "title": "product shipping__returns title",
+    "props": {
+      "blockClass": "shipping__returns--desktop--rich-text--disclosure",
+      "text": "ENVÍOS Y DEVOLUCIONES"
+    }
+  },
+  "disclosure-content#shipping__returns": {
+    "title": "product shipping__returns desktop layout",
+    "children": [
+      "flex-layout.col#shipping__returns__content"
+    ],
+    "props": {
+      "blockClass": "shipping__returns--desktop--disclosure-content"
+    }
+  },
+  "flex-layout.col#shipping__returns__content": {
+    "title": "product shipping__returns desktop content",
+    "children": [
+      "rich-text#shipping__returns__content--title--1",
+      "rich-text#shipping__returns__content--text--1",
+      "rich-text#shipping__returns__content--title--2",
+      "rich-text#shipping__returns__content--text--2"
+    ],
+    "props": {
+      "blockClass": "shipping__returns--desktop--flex-layout-row",
+      "fullWidth": true
+    }
+  },
+  "rich-text#shipping__returns__content--title--1": {
+    "title": "product shipping__returns title 1",
+    "props": {
+      "blockClass": "shipping__returns--desktop--rich-text--title",
+      "text": "ENVÍOS"
+    }
+  },
+  "rich-text#shipping__returns__content--text--1": {
+    "title": "product shipping__returns text 1",
+    "props": {
+      "blockClass": "shipping__returns--desktop--rich-text--1",
+      "text": "¡Llegamos a gran parte de Colombia! Envíos gratis a partir de $250.000 COP dependiendo de tu ciudad. Conoce costos y cobertura aquí"
+    }
+  },
+  "rich-text#shipping__returns__content--title--2": {
+    "title": "product shipping__returns title 2",
+    "props": {
+      "blockClass": "shipping__returns--desktop--rich-text--title",
+      "text": "DEVOLUCIONES"
+    }
+  },
+  "rich-text#shipping__returns__content--text--2": {
+    "title": "product shipping__returns text 2",
+    "props": {
+      "blockClass": "shipping__returns--desktop--rich-text--2",
+      "text": "Puedes solicitar la devolución de un producto, en un plazo de 5 días a partir de la fecha de entrega. Recuerda que debes devolver el producto en las mismas condiciones en que lo recibiste y el transporte y demás gastos que conlleve a la devolución serán asumidos por ti. Conoce nuestras Políticas de Cambios y Garantías aquí"
+    }
+  },
+  "flex-layout.col#product__info--details": {
+    "title": "product info desktop layout info",
+    "children": [
+      "vtex.store-components:product-name",
+      "vtex.store-components:product-brand",
+      "product-price#price__product",
+      "product-rating-summary",
+      "sku-selector",
+      "product-separator",
+      "product-quantity",
+      "link#product__size--guide--button",
+      "add-to-cart-button",
+      "product-identifier.product",
+      "product-description",
+      "modal-trigger#add-to-cart-info"
+    ],
+    "props": {
+      "blockClass": "product__info--desktop--details",
+      "paddingLeft": 6,
+      "paddingRight": 6,
+      "width": "40%",
+      "preventVerticalStretch": true,
+      "rowGap": 6
+    }
+  },
+  "modal-trigger#add-to-cart-info": {
+    "title": "product add to cart info",
+    "children": [
+      "modal-layout#add-to-cart-info"
+    ],
+    "props": {
+      "blockClass": "add-to-cart-info--desktop--modal-trigger",
+      "customPixelEventName": "addToCart",
+      "label": "Ver más información"
+    }
+  },
+  "product-price#price__product": {
+    "props": {
+      "showSavings": true,
+      "blockClass": "product__price--desktop"
+    }
+  },
+  "modal-layout#add-to-cart-info": {
+    "title": "product add to cart info",
+    "children": [
+      "modal-header#add-to-cart-info",
+      "add-to-cart-info"
+    ],
+    "props": {
+      "blockClass": "add-to-cart-info--desktop--modal-layout",
+      "title": "Información de compra"
+    }
+  },
+  "modal-header#add-to-cart-info": {
+    "title": "product add to cart info",
+    "children": [
+      "rich-text#add-to-cart-info"
+    ],
+    "props": {
+      "blockClass": "add-to-cart-info--desktop--modal-header",
+      "showCloseButton": true,
+      "background": "#f2f2f2"
+    }
+  },
+  "rich-text#add-to-cart-info": {
+    "title": "product add to cart info",
+    "props": {
+      "blockClass": "add-to-cart-info--desktop--rich-text",
+      "text": "TUS PRODUCTOS",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "vtex.store-components:product-name": {
+    "props": {
+      "blockClass": "product__name--desktop",
+      "tag": "h2"
+    }
+  },
+  "product-description": {
+    "title": "product description",
+    "props": {
+      "blockClass": "product__description--desktop"
+    }
+  },
+  "link#product__size--guide--button": {
+    "title": "product size guide button",
+    "props": {
+      "blockClass": "product__size--guide--button--desktop",
+      "href": "/tallas",
+      "label": "GUÍA DE TALLAS"
+    }
+  }
+}

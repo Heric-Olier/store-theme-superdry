@@ -1,0 +1,32 @@
+{
+  "store.product": {
+    "children": [
+      "responsive-layout.desktop#product",
+      "responsive-layout.mobile#product"
+    ]
+  },
+   // Desktop Layout
+  "responsive-layout.desktop#product": {
+    "children": [
+      "flex-layout.row#product__info",
+      "flex-layout.row#product__buy--more",
+      "flex-layout.row#product__tabs"
+    ],
+    "props": {
+      "blockClass": "product__desktop--layout--container"
+    }
+  },
+
+  // Mobile Layout
+  "responsive-layout.mobile#product": {
+    "children": [
+      "flex-layout.row#product__name--mobile",
+      "flex-layout.row#product__info--mobile",
+      "flex-layout.row#product__buy--more",
+      "flex-layout.row#product__tabs"
+    ],
+    "props": {
+      "blockClass": "product__mobile--layout--container"
+    }
+  }
+}

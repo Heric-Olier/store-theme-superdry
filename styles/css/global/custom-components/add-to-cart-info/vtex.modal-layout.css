@@ -1,0 +1,17 @@
+.paper--add-to-cart-info--desktop--modal-layout {
+  border-radius: unset;
+}
+
+.headerContainer--add-to-cart-info--desktop--modal-header {
+  background : #dfdfdf;
+  align-items: center;
+}
+
+.closeIcon--add-to-cart-info--desktop--modal-header {
+  color           : #fff !important;
+  background-color: #000 !important;
+}
+
+.closeIcon--add-to-cart-info--desktop--modal-header:hover {
+  background-color: #464646 !important;
+}

@@ -1,0 +1,9 @@
+.imageElement--not-found--image {
+    width: 60%;
+}
+
+@media (max-width: 1024px) {
+    .imageElement--not-found--image {
+        width: 100%;
+    }
+}

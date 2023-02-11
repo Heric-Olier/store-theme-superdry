@@ -1,7 +1,6 @@
 .flexRowContent--footer-desktop {
     background-color: #000;
     padding         : 2rem;
-    margin-top      : 1rem;
     display         : flex;
     flex-direction  : column;
 }
