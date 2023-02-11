@@ -18,8 +18,7 @@
       "responsive-layout.phone#home__section-1",
       "responsive-layout.mobile#phone__and__tablet--sale",
       "responsive-layout.mobile#phone__and__tablet--sale--slider",
-      "flex-layout.row#home__section-10--global",
-      "whatsapp-button"
+      "flex-layout.row#home__section-10--global"
     ]
   }
 }

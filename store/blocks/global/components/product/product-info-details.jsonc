@@ -152,7 +152,7 @@
     "children": [
       "vtex.store-components:product-name",
       "vtex.store-components:product-brand",
-      "product-price",
+      "product-price#price__product",
       "product-rating-summary",
       "sku-selector",
       "product-separator",
@@ -160,7 +160,8 @@
       "link#product__size--guide--button",
       "add-to-cart-button",
       "product-identifier.product",
-      "product-description"
+      "product-description",
+      "modal-trigger#add-to-cart-info"
     ],
     "props": {
       "blockClass": "product__info--desktop--details",
@@ -169,6 +170,54 @@
       "width": "40%",
       "preventVerticalStretch": true,
       "rowGap": 6
+    }
+  },
+  "modal-trigger#add-to-cart-info": {
+    "title": "product add to cart info",
+    "children": [
+      "modal-layout#add-to-cart-info"
+    ],
+    "props": {
+      "blockClass": "add-to-cart-info--desktop--modal-trigger",
+      "customPixelEventName": "addToCart",
+      "label": "Ver más información"
+    }
+  },
+  "product-price#price__product": {
+    "props": {
+      "showSavings": true,
+      "blockClass": "product__price--desktop"
+    }
+  },
+  "modal-layout#add-to-cart-info": {
+    "title": "product add to cart info",
+    "children": [
+      "modal-header#add-to-cart-info",
+      "add-to-cart-info"
+    ],
+    "props": {
+      "blockClass": "add-to-cart-info--desktop--modal-layout",
+      "title": "Información de compra"
+    }
+  },
+  "modal-header#add-to-cart-info": {
+    "title": "product add to cart info",
+    "children": [
+      "rich-text#add-to-cart-info"
+    ],
+    "props": {
+      "blockClass": "add-to-cart-info--desktop--modal-header",
+      "showCloseButton": true,
+      "background": "#f2f2f2"
+    }
+  },
+  "rich-text#add-to-cart-info": {
+    "title": "product add to cart info",
+    "props": {
+      "blockClass": "add-to-cart-info--desktop--rich-text",
+      "text": "TUS PRODUCTOS",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
   },
   "vtex.store-components:product-name": {
