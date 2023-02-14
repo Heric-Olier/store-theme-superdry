@@ -2,6 +2,24 @@
   border-radius: unset;
 }
 
+/*personalizamos el scrollbar*/
+.paper--add-to-cart-info--desktop--modal-layout::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+.paper--add-to-cart-info--desktop--modal-layout::-webkit-scrollbar-track {
+  background: #cecece;
+}
+
+.paper--add-to-cart-info--desktop--modal-layout::-webkit-scrollbar-thumb {
+  background   : #000;
+  border-radius: 5px;
+}
+
+.paper--add-to-cart-info--desktop--modal-layout::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .headerContainer--add-to-cart-info--desktop--modal-header {
   background : #dfdfdf;
   align-items: center;

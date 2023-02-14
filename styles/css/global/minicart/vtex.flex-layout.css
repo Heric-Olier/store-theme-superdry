@@ -1,0 +1,56 @@
+.flexRowContent--mini-cart-product-list--row {
+  padding         : 0.5rem;
+  background-color: #f5f5f6;
+  margin          : 0.7rem 0;
+  border-bottom   : 1px solid #bfbfbf;
+}
+
+.flexRow--minicart-footer {
+  background-color: #f9f9f9;
+}
+
+.flexRow--minicart-footer :global(.vtex-checkout-summary-0-x-summaryItemLabel),
+.flexRow--minicart-footer :global(.vtex-checkout-summary-0-x-price) {
+  font-size     : 1.2rem;
+  font-family   : 'Roboto-Medium';
+  font-weight   : 900;
+  text-transform: uppercase;
+}
+
+.flexRow--minicart-footer :global(.vtex-button__label) {
+  font-family: 'Poppins-Bold';
+}
+
+.flexRow--minicart-footer :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+  text-align: center;
+}
+
+.flexCol--mini-cart-product-list--main-container {
+  align-items: flex-start;
+}
+
+.flexColChild--mini-cart-product-list--main-container :global(.vtex-product-list-0-x-productName) {
+  text-transform: uppercase;
+  font-size     : .875rem;
+  line-height   : 0.9;
+}
+
+.flexColChild--mini-cart-product-list--main-container :global(.vtex-product-list-0-x-price) {
+  font-size  : .875rem;
+  font-family: 'Roboto-Medium';
+  font-weight: bold;
+  margin-top : .3rem;
+}
+
+@media (max-width: 480px) {
+  .flexCol--mini-cart-product-list--main-container {
+    margin: 0 0.5rem;
+  }
+
+  .flexColChild--mini-cart-product-list--main-container :global(.vtex-product-list-0-x-productName) {
+
+    font-size     : .76rem;
+
+  }
+
+}
