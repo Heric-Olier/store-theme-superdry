@@ -1,0 +1,12 @@
+.deleteIcon--remove-button__minicart {
+  color           : #fff !important;
+  background-color: #000 !important;
+  width           : 1.5rem;
+  height          : 1.5rem;
+  display         : flex;
+  margin-left     : 0.5rem;
+}
+
+.deleteIcon--remove-button__minicart:hover {
+  background-color: #575757 !important;
+}

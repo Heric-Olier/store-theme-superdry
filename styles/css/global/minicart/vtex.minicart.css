@@ -1,37 +1,64 @@
 .minicartTitle {
-    display: none;
+  display: none;
+}
+
+.minicartProductListContainer--minicart-product-list--container {
+  padding: 0 0.5rem;
 }
 
 .minicartIconContainer {
-    color: #fff;
+  color: #fff;
 }
 
 .minicartIconContainer:hover {
-    color: #ffac7c;
+  color: #ffac7c;
 }
 
 .minicartQuantityBadgeDefault {
-    background-color: #FF5E00;
+  background-color: #FF5E00;
 }
 
 .minicartWrapperContainer {
-    padding-right: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .minicartCheckoutButton :global(.vtex-button) {
-    background-color: #FF5E00;
-    color           : #fff;
-    border          : none;
-    transition      : all 0.2s ease-in-out;
+  background-color: #FF5E00;
+  color           : #fff;
+  border          : none;
+  border-radius   : unset;
+  transition      : all 0.2s ease-in-out;
 }
 
 .minicartCheckoutButton :global(.vtex-button):hover {
-    background-color: #000000;
-    color           : #fff;
+  background-color: #000000;
+  color           : #fff;
+}
+
+.popupChildrenContainer--minicart__container--popup {
+  padding: 0;
+}
+
+/*personalizamos el scrollbar*/
+.minicartProductListContainer--minicart-product-list--container::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.minicartProductListContainer--minicart-product-list--container::-webkit-scrollbar-track {
+  background: #cecece;
+}
+
+.minicartProductListContainer--minicart-product-list--container::-webkit-scrollbar-thumb {
+  background   : #000;
+  border-radius: 5px;
+}
+
+.minicartProductListContainer--minicart-product-list--container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media (max-width: 1025px) {
-    .minicartWrapperContainer {
-        padding-right: 0;
-    }
+  .minicartWrapperContainer {
+    padding-right: 0;
+  }
 }
