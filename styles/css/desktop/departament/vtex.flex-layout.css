@@ -1,0 +1,22 @@
+.flexCol--search__by--department--col {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  width          : 100%;
+  text-align     : center;
+}
+
+.flexColChild--search__by--department--col {
+  width: 100%;
+}
+
+.flexColChild--search__by--department--title {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  width           : 100%;
+  text-align      : center;
+  background-color: #505050e6;
+  padding         : 0.5rem 0.4rem;
+  margin-bottom   : 1rem;
+}

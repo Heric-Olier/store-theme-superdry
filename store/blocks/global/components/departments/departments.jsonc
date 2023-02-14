@@ -116,15 +116,52 @@
   "flex-layout.col#categoryresults--filter": {
     "title": "category results filter",
     "children": [
-      "filter-navigator.v3"
+      "filter-navigator.v3",
+      "flex-layout.row#search__by--department"
     ],
     "props": {
       "blockClass": "search__filter--container",
-      "width": "16%",
+      "width": "20%",
       "horizontalAlign": "between"
     }
   },
-
+  "flex-layout.row#search__by--department": {
+    "title": "search by department",
+    "children": [
+      "flex-layout.col#search__by--department"
+    ],
+    "props": {
+      "blockClass": "search__by--department--container",
+      "width": "100%",
+      "horizontalAlign": "between"
+    }
+  },
+  "flex-layout.col#search__by--department": {
+    "title": "search by department",
+    "children": [
+      "flex-layout.col#title__search--by--department",
+      "department-search"
+    ],
+    "props": {
+      "blockClass": "search__by--department--col"
+    }
+  },
+  "flex-layout.col#title__search--by--department": {
+    "title": "title search by department",
+    "children": [
+      "rich-text#search__by--department"
+    ],
+    "props": {
+      "blockClass": "search__by--department--title",
+      "width": "100%"
+    }
+  },
+  "rich-text#search__by--department": {
+    "props": {
+      "text": "BUSCA POR DEPARTAMENTO",
+      "blockClass": "search__by--department--text"
+    }
+  },
   "filter-navigator.v3": {
     "blocks": [
       "sidebar-close-button"
@@ -357,7 +394,7 @@
     ],
     "props": {
       "blockClass": "search__content--container",
-      "width": "84%",
+      "width": "80%",
       "preserveLayoutOnMobile": true,
       "horizontalAlign": "between"
     }
@@ -368,6 +405,7 @@
       "flex-layout.row#departmentbreadcrumb",
       "flex-layout.row#galleryswitcher--mobile",
       "flex-layout.row#banner__images--container--mobile",
+      "flex-layout.row#search__by--department",
       "search-content#resultscontent--products"
     ],
     "props": {
