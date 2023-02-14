@@ -4,5 +4,8 @@
   },
   "store.custom#size__page": {
     "path": "/tallas"
+  },
+  "store.custom#help__center": {
+    "path": "/centro-de-ayuda"
   }
 }
