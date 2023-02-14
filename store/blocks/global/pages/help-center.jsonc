@@ -1,0 +1,61 @@
+{
+  "store.custom#help__center": {
+    "blocks": [
+      "responsive-layout.desktop#help__center",
+      "responsive-layout.mobile#help__center"
+    ]
+  },
+
+  // Desktop Layout
+  "responsive-layout.desktop#help__center": {
+    "title": "help center desktop layout",
+    "children": [
+      "flex-layout.row#help__center__content"
+    ],
+    "props": {
+      "blockClass": "help__center__desktop--layout--container"
+    }
+  },
+  "flex-layout.row#help__center__content": {
+    "title": "help center desktop layout",
+    "children": [
+      "flex-layout.col#help__center__content"
+    ],
+    "props": {
+      "blockClass": "help__center__desktop--layout--container--row",
+      "width": "100%",
+      "marginTop": 7,
+      "marginBottom": 7
+    }
+  },
+  "flex-layout.col#help__center__content": {
+    "title": "help center desktop layout",
+    "children": [
+      "pdf-reader"
+    ],
+    "props": {
+      "blockClass": "help__center__desktop--layout--container--col",
+      "width": "100%"
+    }
+  },
+  "pdf-reader": {
+    "title": "pdf reader",
+    "props": {
+      "pdfUrl": "assets/documents/superdry_centro_de_ayuda.pdf",
+      "width": "100%",
+      "height": 900,
+      "blockClass": "help__center__desktop--layout--container--col--pdf"
+    }
+  },
+
+  // Mobile Layout
+  "responsive-layout.mobile#help__center": {
+    "title": "help center mobile layout",
+    "children": [
+      "flex-layout.row#help__center__content"
+    ],
+    "props": {
+      "blockClass": "help__center__mobile--layout--container"
+    }
+  }
+}
