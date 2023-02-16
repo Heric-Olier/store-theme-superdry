@@ -29,11 +29,6 @@
   flex-direction: column;
 }
 
-.flexColChild--search__filter--container {
-  background-color: #f7f7f7;
-  padding         : 0 1rem;
-}
-
 .flexRowContent--gallery-switcher__container {
   display        : flex;
   justify-content: flex-end;
