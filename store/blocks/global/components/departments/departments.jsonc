@@ -117,12 +117,13 @@
     "title": "category results filter",
     "children": [
       "filter-navigator.v3",
-      "flex-layout.row#search__by--department"
+      "flex-layout.row#search__by--department",
+      "flex-layout.row#quick__order--container"
     ],
     "props": {
       "blockClass": "search__filter--container",
       "width": "20%",
-      "horizontalAlign": "between"
+      "preventVerticalStretch": true
     }
   },
   "flex-layout.row#search__by--department": {
@@ -133,9 +134,48 @@
     "props": {
       "blockClass": "search__by--department--container",
       "width": "100%",
-      "horizontalAlign": "between"
+      "marginTop": 7
     }
   },
+  "flex-layout.row#quick__order--container": {
+    "title": "quick order container",
+    "children": [
+      "flex-layout.col#quick__order--container"
+    ],
+    "props": {
+      "blockClass": "quick__order--container--row",
+      "width": "100%",
+      "marginTop": 7
+    }
+  },
+  "flex-layout.col#quick__order--container": {
+    "title": "quick order container",
+    "children": [
+      "flex-layout.col#quick__order--title",
+      "quick-order"
+    ],
+    "props": {
+      "blockClass": "search__by--department--col",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#quick__order--title": {
+    "title": "quick order title",
+    "children": [
+      "rich-text#quick__order--title"
+    ],
+    "props": {
+      "blockClass": "search__by--department--title",
+      "width": "100%"
+    }
+  },
+  "rich-text#quick__order--title": {
+    "props": {
+      "text": "COMPRA RÁPIDA",
+      "blockClass":"search__by--department--text"
+    }
+  },
+
   "flex-layout.col#search__by--department": {
     "title": "search by department",
     "children": [
@@ -406,6 +446,7 @@
       "flex-layout.row#galleryswitcher--mobile",
       "flex-layout.row#banner__images--container--mobile",
       "flex-layout.row#search__by--department",
+      "flex-layout.row#quick__order--container",
       "search-content#resultscontent--products"
     ],
     "props": {

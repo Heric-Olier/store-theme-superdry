@@ -1,9 +1,16 @@
+.flexCol--search__filter--container {
+  background-color: #f7f7f7;
+  padding         : 0 1rem;
+}
+
 .flexCol--search__by--department--col {
   display        : flex;
   justify-content: center;
   align-items    : center;
   width          : 100%;
   text-align     : center;
+  padding        : 1rem 0;
+  border-bottom  : 1px solid #E1E2E4;
 }
 
 .flexColChild--search__by--department--col {
