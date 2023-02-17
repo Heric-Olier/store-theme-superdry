@@ -1,0 +1,8 @@
+.flexRowContent--sustainable__desktop--layout--container--row {
+  flex-direction: column;
+}
+
+.flexCol--sustainable__desktop--layout--container--col--slider,
+.flexCol--sustainable__mobile--layout--container--col--slider {
+  margin-bottom: 5rem;
+}

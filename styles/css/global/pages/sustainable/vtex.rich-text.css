@@ -1,0 +1,19 @@
+.paragraph--sustainable__desktop--layout--container--col--title {
+  font-size    : 3rem;
+  font-weight  : 700;
+  font-family  : 'Roboto-Black';
+  color        : #000;
+  margin-bottom: 1.5rem;
+  line-height  : 0.9;
+}
+
+.paragraph--sustainable__desktop--layout--container--col--text {
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .paragraph--sustainable__desktop--layout--container--col--title {
+    font-size: 2rem;
+  }
+
+}

@@ -1,0 +1,226 @@
+{
+  "store.custom#sustainable": {
+    "blocks": [
+      "responsive-layout.desktop#sustainable",
+      "responsive-layout.mobile#sustainable"
+    ]
+  },
+
+  // Desktop Layout
+  "responsive-layout.desktop#sustainable": {
+    "title": "top products desktop layout",
+    "children": [
+      "flex-layout.row#sustainable__content"
+    ],
+    "props": {
+      "blockClass": "sustainable__desktop--layout--container"
+    }
+  },
+  "flex-layout.row#sustainable__content": {
+    "title": "top products desktop layout",
+    "children": [
+      "flex-layout.col#sustainable__content--slider",
+      "flex-layout.col#sustainable__content"
+    ],
+    "props": {
+      "blockClass": "sustainable__desktop--layout--container--row",
+      "width": "100%",
+      "marginTop": 7,
+      "marginBottom": 7
+    }
+  },
+  "flex-layout.col#sustainable__content--slider": {
+    "title": "top products desktop layout",
+    "children": [
+      "list-context.image-list#sustainable__content--list"
+    ],
+    "props": {
+      "blockClass": "sustainable__desktop--layout--container--col--slider",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#sustainable__content": {
+    "title": "top products desktop layout",
+    "children": [
+      "rich-text#sustainable__content--title",
+      "rich-text#sustainable__content--text",
+      "custom-grid"
+    ],
+    "props": {
+      "blockClass": "sustainable__desktop--layout--container--col",
+      "width": "100%"
+    }
+  },
+  "list-context.image-list#sustainable__content--list": {
+    "title": "sustainable__content--list",
+    "children": [
+      "slider-layout#sustainable__content--list"
+    ],
+    "props": {
+      "blockClass": "sustainable__desktop--layout--container--col--list",
+      "preload": true,
+      "link": {
+        "url": "/sale",
+        "params": {
+          "map": "c"
+        }
+      },
+      "images": [
+        {
+          "image": "assets/img/banner-landing-organic-carrusel-desk.webp",
+          "description": "Slide 1"
+        },
+        {
+          "image": "assets/img/banner-landing-organic-carrusel-desk-no-texto.webp",
+          "description": "Slide 2"
+        },
+        {
+          "image": "assets/img/banner-veggan-sin-texto-desk.webp",
+          "description": "Slide 3"
+        }
+      ]
+    }
+  },
+  "slider-layout#sustainable__content--list": {
+    "title": "Slider Layout",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "sustainable__desktop--layout--container--col--slider",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "rich-text#sustainable__content--title": {
+    "props": {
+      "text": "Moda Sostenible Superdry",
+      "blockClass": "sustainable__desktop--layout--container--col--title",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#sustainable__content--text": {
+    "props": {
+      "text": "Celebra el día de la tierra con nuestra colección Sostenible, prendas con todo el estilo característico Superdry, lo mejor de la moda británica con sello ecológico. Con esta colección puedes contribuir con la salud del planeta, sin perder tu estilo crea Outfits geniales . Con un pie en nuestro futuro ecológico y el otro a la vanguardia de la moda.",
+      "blockClass": "sustainable__desktop--layout--container--col--text",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "custom-grid": {
+    "title": "custom grid",
+    "props": {
+      "blockClass": "sustainable__desktop--layout--container--col--grid"
+    },
+    "children": [
+      "image#custom__grid--one",
+      "image#custom__grid--two",
+      "image#custom__grid--three",
+      "image#custom__grid--four",
+      "image#custom__grid--five"
+    ]
+  },
+  "image#custom__grid--one": {
+    "props": {
+      "src": "assets/img/Banner-landing-sostenible-sp-feb-mobile.webp",
+      "blockClass": "custom__grid--one"
+    }
+  },
+  "image#custom__grid--two": {
+    "props": {
+      "src": "assets/img/Camiseta-Para-Mujer-Code-Essential-Fitted-Crop-Tee-Superdry2387.webp",
+      "blockClass": "custom__grid--two"
+    }
+  },
+  "image#custom__grid--three": {
+    "props": {
+      "src": "assets/img/Camiseta-Para-Mujer-Code-Essential-Fitted-Crop-Tee-Superdry2371.webp",
+      "blockClass": "custom__grid--three"
+    }
+  },
+  "image#custom__grid--four": {
+    "props": {
+      "src": "assets/img/Buzo-Hoodie-Cerrado-Para-Hombre-Cl-Hood-Superdry816.webp",
+      "blockClass": "custom__grid--four"
+    }
+  },
+  "image#custom__grid--five": {
+    "props": {
+      "src": "assets/img/Buzo-Hoodie-Cerrado-Para-Hombre-Vl-Hood-Superdry474.webp",
+      "blockClass": "custom__grid--five"
+    }
+  },
+
+  // mobile layout
+  "responsive-layout.mobile#sustainable": {
+    "title": "top products mobile layout",
+    "children": [
+      "flex-layout.row#sustainable__content--mobile--slider",
+      "flex-layout.row#sustainable__content--mobile"
+    ],
+    "props": {
+      "blockClass": "sustainable__mobile--layout--container"
+    }
+  },
+  "flex-layout.row#sustainable__content--mobile": {
+    "title": "top products mobile layout",
+    "children": [
+      "flex-layout.col#sustainable__content"
+    ],
+    "props": {
+      "blockClass": "sustainable__mobile--layout--container--row",
+      "width": "100%",
+      "marginTop": 7,
+      "marginBottom": 7
+    }
+  },
+  "flex-layout.row#sustainable__content--mobile--slider": {
+    "title": "top products mobile layout",
+    "children": [
+      "list-context.image-list#sustainable__content--list--mobile"
+    ],
+    "props": {
+      "blockClass": "sustainable__mobile--layout--container--col--slider",
+      "width": "100%",
+      "marginTop": 7,
+      "marginBottom": 7
+    }
+  },
+  "list-context.image-list#sustainable__content--list--mobile": {
+    "title": "sustainable__content--list",
+    "children": [
+      "slider-layout#sustainable__content--list"
+    ],
+    "props": {
+      "blockClass": "sustainable__mobile--layout--container--col--slider--list",
+      "preload": true,
+      "link": {
+        "url": "/sale",
+        "params": {
+          "map": "c"
+        }
+      },
+      "images": [
+        {
+          "image": "assets/img/banner-landing-vegan-carrusel-sin-texto-mobile.webp",
+          "description": "Slide 1"
+        },
+        {
+          "image": "assets/img/banner-landing-organic-carrusel-mobile-no-texto.webp",
+          "description": "Slide 2"
+        },
+        {
+          "image": "assets/img/banner-landing-organic-carrusel-mobile.webp",
+          "description": "Slide 3"
+        }
+      ]
+    }
+  }
+}
