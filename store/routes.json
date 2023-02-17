@@ -7,5 +7,8 @@
   },
   "store.custom#help__center": {
     "path": "/centro-de-ayuda"
+  },
+  "store.custom#sustainable": {
+    "path": "/sostenible"
   }
 }
