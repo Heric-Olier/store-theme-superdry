@@ -1,0 +1,11 @@
+{
+  "pdf-reader": {
+    "title": "pdf reader",
+    "props": {
+      "pdfUrl": "assets/documents/superdry_centro_de_ayuda.pdf",
+      "width": "100%",
+      "height": 900,
+      "blockClass": "help__center__desktop--layout--container--col--pdf"
+    }
+  }
+}
