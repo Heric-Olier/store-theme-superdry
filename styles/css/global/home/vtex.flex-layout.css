@@ -1,71 +1,66 @@
 .flexCol--home__slider--section-2--image {
-    position: relative;
+  position: relative;
 }
 
 .flexCol--home__slider--section-2--container__buttons {
-    justify-content: center;
-    align-items    : center;
-    flex-direction : row;
-    position       : absolute;
-    top            : 74%;
-    left           : 50%;
-    transform      : translate(-50%, -50%);
-    height         : auto;
-    width          : 82%;
+  justify-content: center;
+  align-items    : center;
+  flex-direction : row;
+  position       : absolute;
+  top            : 74%;
+  left           : 50%;
+  transform      : translate(-50%, -50%);
+  height         : auto;
+  width          : 82%;
 }
 
 .flexRowContent--home__section-10 {
-    display         : flex;
-    justify-content : space-around;
-    align-items     : center;
-    width           : 95% !important;
-    margin          : 1rem auto 1rem;
-    padding         : 2rem;
-    background-color: #000;
-    border-radius   : 6px;
+  display         : flex;
+  justify-content : space-around;
+  align-items     : center;
+  width           : 95% !important;
+  margin          : 1rem auto 1rem;
+  padding         : 2rem;
+  background-color: #000;
+  border-radius   : 6px;
 }
 
 .flexRowContent--images__banner--container {
-    flex-direction: column;
-}
-
-.flexColChild--search__filter--container {
-    background-color: #f7f7f7;
-    padding         : 0 1.2rem;
+  flex-direction: column;
 }
 
 .flexRowContent--gallery-switcher__container {
-    display        : flex;
-    justify-content: flex-end;
-    align-items    : center;
+  display        : flex;
+  justify-content: flex-end;
+  align-items    : center;
 }
 
 .flexRowContent--gallery-switcher__container--mobile {
-    display         : flex;
-    justify-content : space-between;
-    align-items     : center;
-    background-color: #f7f7f7;
-    padding         : 5px 0;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  background-color: #f7f7f7;
+  padding         : 5px 0;
 }
 
 .flexCol--gallery-switcher__order--container {
-    display       : flex;
-    flex-direction: row;
-    align-items   : center;
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
 }
 
 .flexCol--search__banner--top--mobile {
-    margin-bottom: 1.7rem;
+  margin-bottom: 1.7rem;
 }
 
 .flexColChild--quickview__modal--info :global(.vtex-button):hover {
-    background-color: #000;
-    border          : none;
+  background-color: #000;
+  border          : none;
 }
 
 @media (max-width: 1025px) {
-    .flexRowContent--home__section-10 {
-        display: block;
-        padding: 1rem;
-    }
+  .flexRowContent--home__section-10 {
+    display: block;
+    padding: 1rem;
+  }
 }

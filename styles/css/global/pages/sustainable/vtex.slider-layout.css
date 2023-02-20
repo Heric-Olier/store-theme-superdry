@@ -1,0 +1,4 @@
+.imageElement--sustainable__desktop--layout--container--col--slider,
+.imageElement--sustainable__mobile--layout--container--col--slider {
+  max-height: initial !important;
+}
