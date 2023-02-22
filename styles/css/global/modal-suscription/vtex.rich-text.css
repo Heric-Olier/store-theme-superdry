@@ -1,0 +1,10 @@
+.paragraph--modal-suscription {
+  font-size  : 1rem;
+  color      : #7b7b7b;
+  line-height: 1.2;
+}
+
+.paragraph--modal-suscription--text--left {
+  font-size: .625rem;
+  color    : rgb(200, 200, 200);
+}

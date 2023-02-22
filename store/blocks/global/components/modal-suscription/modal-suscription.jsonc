@@ -1,0 +1,109 @@
+{
+  "modal-trigger#modal-suscription": {
+    "props": {
+      "trigger": "load",
+      "blockClass": "modal-suscription"
+    },
+    "children": [
+      "modal-layout#modal-suscription"
+    ]
+  },
+  "modal-layout#modal-suscription": {
+    "props": {
+      "title": "Suscribirse",
+      "blockClass": "modal__suscription--layout",
+      "showBackdrop": false,
+      "backdropMode": "clickable",
+      "backdropBlockClass": "modal__suscription--backdrop",
+      "showHeader": false,
+      "showFooter": false
+    },
+    "children": [
+      "flex-layout.row#modal-suscription"
+      // "flex-layout.row#modal-suscription--button"
+    ]
+  },
+  "flex-layout.row#modal-suscription": {
+    "title": "modal suscription",
+    "children": [
+      "flex-layout.col#modal-suscription--left",
+      "flex-layout.col#modal-suscription--right"
+    ],
+    "props": {
+      "blockClass": "modal__suscription--content--row"
+    }
+  },
+  "flex-layout.col#modal-suscription--left": {
+    "title": "modal suscription content",
+    "children": [
+      "image#modal-suscription--image",
+      "rich-text#modal-suscription--text--left"
+    ],
+    "props": {
+      "blockClass": "modal__suscription--content--col--left",
+      "width": "30%",
+      "height": "100%",
+      "preventVerticalStretch": true,
+      "rowGap": 7
+    }
+  },
+  "flex-layout.col#modal-suscription--right": {
+    "title": "modal suscription content",
+    "children": [
+      "rich-text#modal-suscription--text--right",
+      "flex-layout.row#modal-suscription--button"
+    ],
+    "props": {
+      "blockClass": "modal__suscription--content--col--right",
+      "width": "70%",
+      "height": "100%",
+      "preventVerticalStretch": true,
+      "rowGap": 8
+    }
+  },
+  "rich-text#modal-suscription--text--right": {
+    "props": {
+      "text": "¿Quieres recibir las novedades de nuestra web ?",
+      "blockClass": "modal-suscription",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "flex-layout.row#modal-suscription--button": {
+    "title": "modal suscription",
+    "children": [
+      "link#modal-suscription--button--left",
+      "link#modal-suscription--button--right"
+    ],
+    "props": {
+      "blockClass": "modal__suscription--content--button--row",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "link#modal-suscription--button--left": {
+    "props": {
+      "label": "Si, quiero suscribirme",
+      "blockClass": "modal-suscription--button--left",
+      "href": "/registro"
+    }
+  },
+  "link#modal-suscription--button--right": {
+    "props": {
+      "label": "Ahora no",
+      "blockClass": "modal-suscription--button--right"
+    }
+  },
+  "image#modal-suscription--image": {
+    "props": {
+      "src": "assets/img/superdry_logo_suscription.jpg",
+      "blockClass": "modal-suscription--image"
+    }
+  },
+  "rich-text#modal-suscription--text--left": {
+    "props": {
+      "text": "BY ICOMMKT",
+      "blockClass": "modal-suscription--text--left"
+    }
+  }
+}
