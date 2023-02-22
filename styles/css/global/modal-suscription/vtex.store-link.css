@@ -1,0 +1,29 @@
+.link--modal-suscription--button--left {
+  font-size       : .8125rem;
+  font-weight     : 400;
+  color           : #fff;
+  padding         : 0.6rem 1rem;
+  background-color: #fb5121;
+  border-radius   : 1.5625rem;
+  text-decoration : none;
+  margin-right    : 0.5rem;
+}
+
+.link--modal-suscription--button--left:hover {
+  background-color: #000;
+  color           : #fff;
+}
+
+.link--modal-suscription--button--right {
+  font-size      : .8125rem;
+  font-weight    : 400;
+  color          : #fb5121;
+  text-decoration: none;
+  margin-left    : 0.5rem;
+  display        : flex;
+  align-items    : center;
+}
+
+.link--modal-suscription--button--right:hover {
+  color: #000;
+}

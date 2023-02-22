@@ -1,0 +1,13 @@
+.flexRow--modal__suscription--content--row {
+  padding        : 0.8rem;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  width          : 100%;
+  height         : 100%;
+}
+
+.flexCol--modal__suscription--content--col--right {
+  align-items : center;
+  padding-left: 0.8rem;
+}
